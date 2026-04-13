@@ -287,12 +287,12 @@ export default function AuditPage() {
               </div>
 
               {activeTab === 'ACCOUNTABILITY' && (
-                <div className="flex items-center gap-2 overflow-x-auto pb-2 lg:pb-0 custom-scrollbar">
+                <div className="flex flex-wrap items-center gap-2 w-full lg:w-auto">
                    {['ALL', 'AUTH', 'USER_MANAGEMENT', 'CONFIGURATION', 'SHIFT', 'MANAGEMENT'].map(type => (
                      <button
                        key={type}
                        onClick={() => setFilterType(type)}
-                       className={`px-4 py-2.5 rounded-xl border text-[9px] font-black tracking-widest transition-all whitespace-nowrap ${filterType === type ? 'bg-bg-panel border-accent-cyan text-accent-cyan' : 'bg-bg-panel/40 border-border-primary/20 text-foreground-tertiary hover:border-accent-cyan/40'}`}
+                       className={`px-4 py-2.5 rounded-xl border text-[9px] font-black tracking-widest transition-all whitespace-nowrap lg:whitespace-normal ${filterType === type ? 'bg-bg-panel border-accent-cyan text-accent-cyan shadow-lg shadow-accent-cyan/10' : 'bg-bg-panel/40 border-border-primary/20 text-foreground-tertiary hover:border-accent-cyan/40'}`}
                      >
                        {t(`audit.categories.${type}`)}
                      </button>
