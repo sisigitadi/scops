@@ -2,6 +2,8 @@
 
 Sistem pemantauan operasional SOC (Security Operations Center) yang dirancang untuk memberikan visibilitas real-time, manajemen insiden, dan koordinasi tim dalam lingkungan investigasi digital.
 
+## Live Demo: https://sisigitadi.github.io/scops/#/app
+
 ## 🚀 Fitur Utama
 
 - **Real-Time Dashboards**: Visualisasi performa operasional dan metrik keamanan secara langsung.
