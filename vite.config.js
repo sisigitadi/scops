@@ -6,6 +6,7 @@ export default defineConfig(({ mode }) => ({
   plugins: [
     react(),
     VitePWA({
+      injectRegister: 'auto',
       registerType: 'autoUpdate',
       includeAssets: ['logo.png', 'pwa-icon-512.png'],
       manifest: {
@@ -16,8 +17,8 @@ export default defineConfig(({ mode }) => ({
         background_color: '#020617',
         display: 'standalone',
         orientation: 'portrait-primary',
-        start_url: './',
-        scope: './',
+        start_url: '.',
+        scope: '.',
         icons: [
           {
             src: 'logo.png',
