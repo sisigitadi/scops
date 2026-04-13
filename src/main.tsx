@@ -14,6 +14,10 @@ import ErrorBoundary from './components/common/ErrorBoundary';
 import { OperationsProvider } from './context/OperationsContext';
 import { CasesProvider } from './context/CasesContext';
 import './index.css';
+import { registerSW } from 'virtual:pwa-register';
+
+// Tactical PWA Bootstrap: Engage Service Worker for offline forensics
+registerSW({ immediate: true });
 
 /**
  * Main Entry Point — The SOCOps Neural Root

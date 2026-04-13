@@ -1,9 +1,37 @@
-/* global process */
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import { VitePWA } from 'vite-plugin-pwa'
 
 export default defineConfig(({ mode }) => ({
-  plugins: [react()],
+  plugins: [
+    react(),
+    VitePWA({
+      registerType: 'autoUpdate',
+      includeAssets: ['logo.png', 'pwa-icon-512.png'],
+      manifest: {
+        name: 'SOCOps - Tactical Command Center',
+        short_name: 'SOCOps',
+        description: 'High-Density Clinical Forensic SOC Operations Center',
+        theme_color: '#020617',
+        background_color: '#020617',
+        display: 'standalone',
+        orientation: 'portrait-primary',
+        icons: [
+          {
+            src: 'logo.png',
+            sizes: '192x192',
+            type: 'image/png'
+          },
+          {
+            src: 'pwa-icon-512.png',
+            sizes: '512x512',
+            type: 'image/png',
+            purpose: 'any maskable'
+          }
+        ]
+      }
+    })
+  ],
   base: mode === 'production' ? '/scops/' : '/',
   server: {
     proxy: {
