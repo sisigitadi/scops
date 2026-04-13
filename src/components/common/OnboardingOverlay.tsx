@@ -115,55 +115,55 @@ export default function OnboardingOverlay({ onComplete }: OnboardingOverlayProps
               />
             </div>
 
-            <div className="p-10 pt-14">
-              <div className="flex justify-between items-start mb-10">
+            <div className="p-6 md:p-10 pt-10 md:pt-14">
+              <div className="flex flex-col sm:flex-row justify-between items-start gap-6 mb-8 md:mb-10">
                 <div className="flex items-center gap-4">
-                  <div className="w-16 h-16 rounded-3xl bg-accent-cyan/10 border border-accent-cyan/20 flex items-center justify-center text-accent-cyan shadow-xl">
-                    {React.cloneElement(step.icon, { size: 32, strokeWidth: 2.5 })}
+                  <div className="w-12 h-12 md:w-16 md:h-16 shrink-0 rounded-2xl md:rounded-3xl bg-accent-cyan/10 border border-accent-cyan/20 flex items-center justify-center text-accent-cyan shadow-xl">
+                    {React.cloneElement(step.icon as any, { size: 28, className: "md:size-[32px]", strokeWidth: 2.5 })}
                   </div>
                   <div>
-                    <p className="text-[10px] font-black uppercase tracking-[0.3em] text-accent-cyan mb-1">DEMO ONBOARDING • STEP {currentStep + 1}/{demoSteps.length}</p>
-                    <h2 className="text-2xl font-black text-foreground-primary uppercase tracking-tighter">{step.target}</h2>
+                    <p className="text-[8px] md:text-[10px] font-black uppercase tracking-[0.2em] md:tracking-[0.3em] text-accent-cyan mb-1">DEMO ONBOARDING • STEP {currentStep + 1}/{demoSteps.length}</p>
+                    <h2 className="text-xl md:text-2xl font-black text-foreground-primary uppercase tracking-tighter leading-tight">{step.target}</h2>
                   </div>
                 </div>
                 <button 
                   onClick={handleComplete}
-                  className="p-2 hover:bg-bg-panel rounded-xl text-foreground-muted transition-colors"
+                  className="absolute top-6 right-6 p-2 hover:bg-bg-panel rounded-xl text-foreground-muted transition-colors sm:relative sm:top-0 sm:right-0"
                 >
                   <X size={20} />
                 </button>
               </div>
 
-              <div className="space-y-6">
-                <p className="text-lg font-bold text-foreground-secondary leading-relaxed uppercase tracking-tight">
+              <div className="space-y-4 md:space-y-6">
+                <p className="text-base md:text-lg font-bold text-foreground-secondary leading-relaxed uppercase tracking-tight">
                   {(t(`onboarding.${step.key}.title`) as string) || 'Experience true SOC accountability.'}
                 </p>
-                <p className="text-sm font-medium text-foreground-muted leading-relaxed">
+                <p className="text-xs md:text-sm font-medium text-foreground-muted leading-relaxed">
                   {(t(`onboarding.${step.key}.desc`) as string) || 'Integrate with real data but in a safe environment.'}
                 </p>
               </div>
 
-              <div className="mt-14 flex items-center justify-between gap-4">
+              <div className="mt-10 md:mt-14 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-4">
                 <div className="flex gap-2">
                   <button 
                     onClick={handleBack}
                     disabled={currentStep === 0}
-                    className="flex items-center gap-2 px-6 py-4 rounded-2xl border border-border-primary font-bold text-[11px] uppercase tracking-widest text-foreground-muted hover:bg-bg-panel disabled:opacity-30 transition-all"
+                    className="flex-1 sm:flex-none flex items-center justify-center gap-2 px-6 py-4 rounded-2xl border border-border-primary font-bold text-[10px] md:text-[11px] uppercase tracking-widest text-foreground-muted hover:bg-bg-panel disabled:opacity-30 transition-all"
                   >
                     <ChevronLeft size={16} /> {(t('onboarding.btnBack') as string) || 'Previous'}
                   </button>
                 </div>
                 
-                <div className="flex gap-3">
+                <div className="flex flex-col sm:flex-row gap-3">
                   <button 
                     onClick={handleComplete}
-                    className="px-6 py-4 rounded-2xl font-bold text-[11px] uppercase tracking-widest text-foreground-muted hover:text-foreground-primary transition-colors"
+                    className="order-2 sm:order-1 py-4 px-6 rounded-2xl font-bold text-[10px] md:text-[11px] uppercase tracking-widest text-foreground-muted hover:text-foreground-primary transition-colors text-center"
                   >
                     {(t('onboarding.btnSkip') as string) || 'Skip Tour'}
                   </button>
                   <button 
                     onClick={handleNext}
-                    className="flex items-center gap-2 px-8 py-4 rounded-2xl bg-accent-cyan font-bold text-[11px] uppercase tracking-widest text-white shadow-lg shadow-cyan-500/20 hover:scale-105 active:scale-95 transition-all"
+                    className="order-1 sm:order-2 flex items-center justify-center gap-2 px-8 py-4 rounded-2xl bg-accent-cyan font-bold text-[10px] md:text-[11px] uppercase tracking-widest text-white shadow-lg shadow-cyan-500/20 hover:scale-105 active:scale-95 transition-all text-center"
                   >
                     {currentStep === demoSteps.length - 1 ? ((t('onboarding.btnFinish') as string) || 'Launch System') : ((t('onboarding.btnNext') as string) || 'Next Step')}
                     <ChevronRight size={16} />

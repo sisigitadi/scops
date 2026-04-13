@@ -128,15 +128,15 @@ export default function ShiftGuardModal({ forceOpen = false, onClose }: ShiftGua
             <div className={`absolute -right-20 -top-20 w-64 h-64 rounded-full blur-[100px] opacity-20 ${isEntry ? 'bg-status-success-text' : 'bg-status-danger-text'}`} />
             
             <form onSubmit={handleSubmit} className="flex flex-col flex-1 min-h-0 relative z-10">
-              <div className="flex-1 overflow-y-auto p-8 sm:p-12 custom-scrollbar space-y-8">
-                <div className={`w-20 h-20 rounded-3xl flex items-center justify-center mb-8 border-2 floating ${
+              <div className="flex-1 overflow-y-auto p-6 md:p-12 custom-scrollbar space-y-8">
+                <div className={`w-16 h-16 md:w-20 md:h-20 rounded-2xl md:rounded-3xl flex items-center justify-center mb-6 md:mb-8 border-2 floating ${
                   isEntry ? 'bg-status-success-bg/10 text-status-success-text border-status-success-border/20' : 'bg-status-danger-bg/10 text-status-danger-text border-status-danger-border/20'
                 }`}>
-                  {isEntry ? <LogIn size={36} strokeWidth={2.5} /> : <LogOut size={36} strokeWidth={2.5} />}
+                  {isEntry ? <LogIn size={28} className="md:size-[36px]" strokeWidth={2.5} /> : <LogOut size={28} className="md:size-[36px]" strokeWidth={2.5} />}
                 </div>
 
-                <div className="mb-10 text-left">
-                  <h2 className="text-3xl font-black text-foreground-primary tracking-tight uppercase leading-none">
+                <div className="mb-8 md:mb-10 text-left">
+                  <h2 className="text-2xl md:text-3xl font-black text-foreground-primary tracking-tight uppercase leading-tight">
                     {getTitle() as string}
                   </h2>
                   <div className="flex items-center gap-2 mt-4">
@@ -148,12 +148,12 @@ export default function ShiftGuardModal({ forceOpen = false, onClose }: ShiftGua
                 </div>
 
                 <div className="space-y-8">
-                  <div className="grid grid-cols-2 gap-4">
-                    <div className="p-5 rounded-3xl bg-bg-panel/40 border border-border-primary/20">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div className="p-4 md:p-5 rounded-2xl md:rounded-3xl bg-bg-panel/40 border border-border-primary/20">
                        <span className="text-[8px] font-black text-foreground-tertiary uppercase tracking-widest block mb-1">{t('ops.shiftGuard.identity') as string}</span>
                        <span className="text-xs font-bold text-foreground-primary uppercase truncate block">{user?.name}</span>
                     </div>
-                    <div className="p-5 rounded-3xl bg-bg-panel/40 border border-border-primary/20 text-right">
+                    <div className="p-4 md:p-5 rounded-2xl md:rounded-3xl bg-bg-panel/40 border border-border-primary/20 text-right">
                        <span className="text-[8px] font-black text-foreground-tertiary uppercase tracking-widest block mb-1">{t('ops.shiftGuard.timestamp') as string}</span>
                        <span className="text-xs font-bold text-foreground-primary uppercase block">
                           {pulse(new Date(), { includeTime: true, style: 'dmy' }).split(' ')[1]}
@@ -161,7 +161,7 @@ export default function ShiftGuardModal({ forceOpen = false, onClose }: ShiftGua
                     </div>
                   </div>
 
-                  <div className="p-6 rounded-[2rem] bg-bg-panel/40 border border-border-primary/20 space-y-6">
+                  <div className="p-5 md:p-6 rounded-[1.5rem] md:rounded-[2rem] bg-bg-panel/40 border border-border-primary/20 space-y-6">
                     <div className="flex items-center justify-between border-b border-border-primary/10 pb-4">
                        <span className="text-[10px] font-black text-foreground-tertiary uppercase tracking-widest">
                           {isAdmin ? t('ops.shiftGuard.contextAdmin') : isManager ? t('ops.shiftGuard.contextManager') : isAuditor ? t('ops.shiftGuard.contextAuditor') : t('ops.shiftGuard.liveQueue') as string}
@@ -273,8 +273,8 @@ export default function ShiftGuardModal({ forceOpen = false, onClose }: ShiftGua
                 </div>
               </div>
 
-              <div className="p-8 sm:p-12 pt-4 border-t border-border-primary/10 bg-bg-card/80 backdrop-blur-md relative z-20">
-                <div className="flex gap-4">
+              <div className="p-6 md:p-12 pt-4 border-t border-border-primary/10 bg-bg-card/80 backdrop-blur-md relative z-20">
+                <div className="flex flex-col sm:flex-row gap-4">
                   <button
                     type="button"
                     onClick={() => {
@@ -284,20 +284,20 @@ export default function ShiftGuardModal({ forceOpen = false, onClose }: ShiftGua
                       setIsOpen(false);
                       if (onClose) onClose();
                     }}
-                    className="premium-button flex-1 !py-6 !text-xs !font-black !tracking-[0.4em] !border-border-primary/40 !text-foreground-secondary uppercase"
+                    className="premium-button flex-1 !py-5 md:!py-6 !text-[10px] md:!text-xs !font-black !tracking-[0.3em] md:!tracking-[0.4em] !border-border-primary/40 !text-foreground-secondary uppercase"
                   >
                     {t('ops.shiftGuard.actionCancel') as string}
                   </button>
                   <button
                     type="submit"
-                    className={`premium-button flex-[2] !py-6 !text-xs !font-black !tracking-[0.4em] uppercase shadow-2xl transition-all group overflow-hidden relative ${
+                    className={`premium-button flex-[2] !py-5 md:!py-6 !text-[10px] md:!text-xs !font-black !tracking-[0.3em] md:!tracking-[0.4em] uppercase shadow-2xl transition-all group overflow-hidden relative ${
                       isEntry ? '!bg-status-success-text !text-slate-900 shadow-status-success-bg/20' : '!bg-status-danger-text !text-white shadow-status-danger-bg/20'
                     }`}
                     disabled={!canSubmit}
                   >
-                    <span className="relative z-10 flex items-center justify-center gap-4">
+                    <span className="relative z-10 flex items-center justify-center gap-3 md:gap-4">
                       {isEntry ? t('ops.shiftGuard.actionCommence') : t('ops.shiftGuard.actionFinalize') as string}
-                      <ArrowRight size={18} className="group-hover:translate-x-2 transition-transform" />
+                      <ArrowRight size={16} className="group-hover:translate-x-2 transition-transform md:size-[18px]" />
                     </span>
                   </button>
                 </div>

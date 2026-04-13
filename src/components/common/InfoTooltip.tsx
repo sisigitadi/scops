@@ -18,6 +18,7 @@ export default function InfoTooltip({ text, vAlign = 'bottom', align = 'center' 
   const { language } = useLanguage();
   const [isVisible, setIsVisible] = useState(false);
   const [coords, setCoords] = useState({ top: 0, left: 0, width: 0 });
+  const [dynamicAlign, setDynamicAlign] = useState<'left' | 'right' | 'center'>(align);
   const anchorRef = useRef<HTMLSpanElement>(null);
 
   const updateCoords = () => {
@@ -28,6 +29,19 @@ export default function InfoTooltip({ text, vAlign = 'bottom', align = 'center' 
         left: rect.left + window.scrollX,
         width: rect.width
       });
+
+      // Edge-Aware Logic: Prevent tooltip from bleeding off-screen
+      const tooltipWidth = 18 * 16; // 18rem
+      const padding = 20;
+      const viewportWidth = window.innerWidth;
+      
+      if (rect.left < tooltipWidth / 2 + padding) {
+        setDynamicAlign('left');
+      } else if (viewportWidth - rect.right < tooltipWidth / 2 + padding) {
+        setDynamicAlign('right');
+      } else {
+        setDynamicAlign('center');
+      }
     }
   };
 
@@ -45,18 +59,29 @@ export default function InfoTooltip({ text, vAlign = 'bottom', align = 'center' 
 
   if (!text) return null;
 
-  // vAlign logic: bottom means ABOVE the icon, top means BELOW the icon
-  // In portal mode, we use fixed/absolute positioning with calculated top.
+  // Horizontal translation logic based on edge-awareness
+  const getTranslateX = () => {
+    if (dynamicAlign === 'left') return '0%';
+    if (dynamicAlign === 'right') return '-100%';
+    return '-50%';
+  };
+
+  const getLeft = () => {
+    if (dynamicAlign === 'left') return coords.left - 10;
+    if (dynamicAlign === 'right') return coords.left + coords.width + 10;
+    return coords.left + (coords.width / 2);
+  };
+
   const tooltipStyle: React.CSSProperties = {
     position: 'absolute',
-    left: coords.left + (coords.width / 2),
+    left: getLeft(),
     zIndex: 1000000,
     width: '18rem',
-    maxWidth: '85vw',
+    maxWidth: 'calc(100vw - 40px)',
     pointerEvents: 'none',
     transition: 'opacity 0.2s, transform 0.2s',
     opacity: isVisible ? 1 : 0,
-    transform: `translate(-50%, ${vAlign === 'bottom' ? '-100%' : '0'}) scale(${isVisible ? 1 : 0.95})`,
+    transform: `translate(${getTranslateX()}, ${vAlign === 'bottom' ? '-100%' : '0'}) scale(${isVisible ? 1 : 0.95})`,
     marginTop: vAlign === 'bottom' ? '-12px' : '36px',
     top: coords.top
   };
@@ -67,8 +92,9 @@ export default function InfoTooltip({ text, vAlign = 'bottom', align = 'center' 
     height: '0.75rem',
     backgroundColor: '#020617',
     border: '1px solid rgba(34, 211, 238, 0.6)',
-    transform: 'rotate(45deg) translateX(-50%)',
-    left: '50%',
+    transform: `rotate(45deg) translateX(${dynamicAlign === 'center' ? '-50%' : '0'})`,
+    left: dynamicAlign === 'center' ? '50%' : (dynamicAlign === 'left' ? '20px' : 'auto'),
+    right: dynamicAlign === 'right' ? '20px' : 'auto',
     zIndex: -1,
     ...(vAlign === 'bottom' 
       ? { bottom: '-6px', borderTop: 'none', borderLeft: 'none' } 
