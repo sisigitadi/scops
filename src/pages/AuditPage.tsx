@@ -259,7 +259,7 @@ export default function AuditPage() {
 
         <StaggerItem>
            <div className="flex flex-col lg:flex-row gap-6 mb-8 items-start lg:items-center">
-              <div className="flex flex-wrap p-1.5 bg-bg-panel/40 border border-border-primary/20 rounded-2xl w-full md:w-fit">
+              <div className="flex flex-nowrap overflow-x-auto no-scrollbar md:overflow-visible p-1.5 bg-bg-panel/40 border border-border-primary/20 rounded-2xl w-full md:w-fit gap-1.5">
                  {[
                   { id: 'ACCOUNTABILITY', label: t('audit.tabAccountability'), icon: <User size={14} /> },
                   { id: 'TECHNICAL', label: t('audit.tabTechnical'), icon: <DatabaseIcon size={14} /> }
@@ -267,10 +267,10 @@ export default function AuditPage() {
                   <button
                     key={tab.id}
                     onClick={() => { setActiveTab(tab.id as any); setFilterType('ALL'); }}
-                    className={`flex-1 md:flex-none flex items-center justify-center gap-3 px-3 sm:px-6 py-3 rounded-xl text-[10px] font-black tracking-widest transition-all ${activeTab === tab.id ? 'bg-accent-cyan border border-accent-cyan/40 text-background-main shadow-lg shadow-accent-cyan/20' : 'text-foreground-tertiary hover:text-foreground-primary'}`}
+                    className={`flex-shrink-0 md:flex-none flex items-center justify-center gap-3 px-6 sm:px-8 py-3 rounded-xl text-[10px] font-black tracking-widest transition-all whitespace-nowrap ${activeTab === tab.id ? 'bg-accent-cyan border border-accent-cyan/40 text-background-main shadow-lg shadow-accent-cyan/20' : 'text-foreground-tertiary hover:text-foreground-primary hover:bg-white/5'}`}
                   >
                     {tab.icon}
-                    <span className="truncate sm:whitespace-normal">{tab.label}</span>
+                    <span className="max-w-none">{tab.label}</span>
                   </button>
                 ))}
               </div>
@@ -287,12 +287,12 @@ export default function AuditPage() {
               </div>
 
               {activeTab === 'ACCOUNTABILITY' && (
-                <div className="flex flex-wrap items-center gap-2 w-full lg:w-auto">
+                <div className="flex flex-nowrap overflow-x-auto no-scrollbar md:flex-wrap items-center gap-2 w-full lg:w-auto pb-2 lg:pb-0">
                    {['ALL', 'AUTH', 'USER_MANAGEMENT', 'CONFIGURATION', 'SHIFT', 'MANAGEMENT'].map(type => (
                      <button
                        key={type}
                        onClick={() => setFilterType(type)}
-                       className={`px-4 py-2.5 rounded-xl border text-[9px] font-black tracking-widest transition-all whitespace-nowrap lg:whitespace-normal ${filterType === type ? 'bg-bg-panel border-accent-cyan text-accent-cyan shadow-lg shadow-accent-cyan/10' : 'bg-bg-panel/40 border-border-primary/20 text-foreground-tertiary hover:border-accent-cyan/40'}`}
+                       className={`flex-shrink-0 px-4 py-2.5 rounded-xl border text-[9px] font-black tracking-widest transition-all whitespace-nowrap ${filterType === type ? 'bg-bg-panel border-accent-cyan text-accent-cyan shadow-lg shadow-accent-cyan/10' : 'bg-bg-panel/40 border-border-primary/20 text-foreground-tertiary hover:border-accent-cyan/40 hover:bg-white/5'}`}
                      >
                        {t(`audit.categories.${type}`)}
                      </button>
