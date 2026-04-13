@@ -3,7 +3,8 @@ import { NavLink, useLocation, Link } from 'react-router-dom';
 import { 
   Menu, 
   Shield, Sun, Moon,
-  LogOut
+  LogOut,
+  ArrowLeft
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useLanguage } from '../../context/LanguageContext';
@@ -72,50 +73,37 @@ export default function AppTopbar({ onOpenSidebar, onOpenExitProtocol }: AppTopb
     <header className="h-20 border-b border-border-primary/40 bg-bg-main/80 backdrop-blur-xl sticky top-0 z-[100] transition-all">
       <div className="max-w-[1920px] mx-auto h-full px-6 flex items-center justify-between">
           <div className="flex items-center gap-3 sm:gap-6">
-             <div className="relative">
-                <button 
-                  onClick={onOpenSidebar}
-                  className="lg:hidden p-2 rounded-xl bg-bg-panel border border-border-primary/40 text-foreground-primary hover:bg-bg-card transition-all"
-                >
-                  <Menu size={20} />
-                </button>
-
-                {/* Tactical Menu Hint - Only on mobile, pulses persistently */}
-                <motion.div 
-                  initial={{ opacity: 0, y: 15 }}
-                  animate={{ 
-                    opacity: 1,
-                    y: [15, 5, 15]
-                  }}
-                  transition={{ 
-                    opacity: { duration: 1 },
-                    y: { duration: 3, repeat: Infinity, ease: "easeInOut" }
-                  }}
-                  className="lg:hidden absolute left-1/2 -top-10 -translate-x-1/2 flex flex-col items-center pointer-events-none z-[200] whitespace-nowrap"
-                >
-                  <div className="flex flex-col items-center">
-                    <div className="bg-bg-panel/95 border border-accent-cyan/40 rounded-lg py-1.5 px-3 backdrop-blur-md shadow-[0_0_20px_rgba(34,211,238,0.2)]">
-                      <span className="text-[8px] font-black text-accent-cyan tracking-[0.4em] uppercase">{t('nav.menu') || 'MENU'}</span>
-                    </div>
-                    {/* Downward pointing arrow */}
-                    <motion.div 
-                      animate={{ y: [0, 4, 0] }}
-                      transition={{ duration: 1.5, repeat: Infinity }}
-                      className="mt-1 flex flex-col items-center"
-                    >
-                      <div className="w-px h-3 bg-accent-cyan/60" />
-                      <div className="w-1.5 h-1.5 border-r border-b border-accent-cyan rotate-45 -mt-1" />
-                    </motion.div>
-                  </div>
-                </motion.div>
-             </div>
+             <button 
+                onClick={onOpenSidebar}
+                className="lg:hidden p-2 rounded-xl bg-bg-panel border border-border-primary/40 text-foreground-primary hover:bg-bg-card transition-all"
+             >
+                <Menu size={20} />
+             </button>
              
              <div className="flex items-center gap-4">
                 <Link to={appBasePath} className="flex items-center gap-3 group">
                    <div className="p-2.5 rounded-xl bg-accent-cyan/10 border border-accent-cyan/20 group-hover:bg-accent-cyan/20 transition-all shadow-lg shadow-accent-cyan/5">
                       <Shield size={24} className="text-accent-cyan" strokeWidth={2.5} />
                    </div>
-                     <div className="flex flex-col min-w-[120px] sm:min-w-[200px]">
+                     <div className="flex flex-col min-w-[120px] sm:min-w-[200px] relative">
+                        {/* Tactical Menu Hint - Positioned specifically above 'Register' text for mobile discovery */}
+                        <motion.div 
+                          initial={{ opacity: 0, x: 10 }}
+                          animate={{ 
+                            opacity: [0, 1, 1, 0],
+                            x: [10, 0, 0, 10]
+                          }}
+                          transition={{ 
+                            duration: 4,
+                            repeat: Infinity,
+                            repeatDelay: 2
+                          }}
+                          className="lg:hidden absolute -top-4 left-0 flex items-center gap-1.5 pointer-events-none z-[110]"
+                        >
+                          <ArrowLeft size={10} className="text-accent-cyan" strokeWidth={3} />
+                          <span className="text-[7px] font-black text-accent-cyan tracking-[0.3em] uppercase">{t('nav.menu') || 'MENU'}</span>
+                        </motion.div>
+
                         <span className="text-xs sm:text-sm font-black tracking-[0.2em] text-foreground-primary leading-none uppercase">{brandName}</span>
                         <div className="hidden sm:flex items-center gap-1.5 mt-1.5 opacity-60">
                            <span className="text-[8px] font-black tracking-widest text-foreground-tertiary uppercase">{t('topbar.dashboard')}</span>
