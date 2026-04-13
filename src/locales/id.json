@@ -16,7 +16,8 @@
     "settings": "Pusat Kendali",
     "settings_global": "Pusat Kendali",
     "management": "Pusat Manajemen",
-    "operations": "Operasi Taktis"
+    "operations": "Operasi Taktis",
+    "menu": "MENU"
   },
   "sidebar": {
     "secOpsCenter": "PUSAT OPERASI KEAMANAN",

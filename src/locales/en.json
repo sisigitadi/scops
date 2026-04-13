@@ -16,7 +16,8 @@
     "settings": "Control Center",
     "settings_global": "Control Center",
     "management": "Management Hub",
-    "operations": "Tactical Operations"
+    "operations": "Tactical Operations",
+    "menu": "Menu"
   },
   "sidebar": {
     "secOpsCenter": "SECURITY OPERATIONS CENTER",
