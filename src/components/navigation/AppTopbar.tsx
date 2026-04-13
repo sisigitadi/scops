@@ -72,12 +72,39 @@ export default function AppTopbar({ onOpenSidebar, onOpenExitProtocol }: AppTopb
     <header className="h-20 border-b border-border-primary/40 bg-bg-main/80 backdrop-blur-xl sticky top-0 z-[100] transition-all">
       <div className="max-w-[1920px] mx-auto h-full px-6 flex items-center justify-between">
           <div className="flex items-center gap-3 sm:gap-6">
-             <button 
-                onClick={onOpenSidebar}
-                className="lg:hidden p-2 rounded-xl bg-bg-panel border border-border-primary/40 text-foreground-primary hover:bg-bg-card transition-all"
-             >
-                <Menu size={20} />
-             </button>
+             <div className="relative">
+                <button 
+                  onClick={onOpenSidebar}
+                  className="lg:hidden p-2 rounded-xl bg-bg-panel border border-border-primary/40 text-foreground-primary hover:bg-bg-card transition-all"
+                >
+                  <Menu size={20} />
+                </button>
+
+                {/* Tactical Menu Hint - Only on mobile, pulses periodically */}
+                <motion.div 
+                  initial={{ opacity: 0, x: 10 }}
+                  animate={{ 
+                    opacity: [0, 1, 1, 0],
+                    x: [10, 3, 3, 10]
+                  }}
+                  transition={{ 
+                    duration: 4,
+                    repeat: Infinity,
+                    repeatDelay: 5
+                  }}
+                  className="lg:hidden absolute left-12 top-1/2 -translate-y-1/2 flex items-center gap-2 pointer-events-none whitespace-nowrap z-[110]"
+                >
+                  <div className="flex items-center bg-bg-panel/90 border border-accent-cyan/30 rounded-lg py-1.5 px-3 backdrop-blur-md shadow-2xl shadow-accent-cyan/10">
+                    <span className="text-[7px] font-black text-accent-cyan tracking-[0.4em] uppercase mr-2">{t('nav.menu') || 'MENU'}</span>
+                    <motion.div
+                      animate={{ x: [-2, 2, -2] }}
+                      transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+                    >
+                      <div className="w-1.5 h-1.5 border-t-2 border-l-2 border-accent-cyan -rotate-45" />
+                    </motion.div>
+                  </div>
+                </motion.div>
+             </div>
              
              <div className="flex items-center gap-4">
                 <Link to={appBasePath} className="flex items-center gap-3 group">
