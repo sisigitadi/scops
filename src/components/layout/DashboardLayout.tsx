@@ -7,6 +7,7 @@ import AppFooter from '../navigation/AppFooter';
 import { useLanguage } from '../../context/LanguageContext';
 import { useTheme } from '../../context/ThemeContext';
 import ShiftGuardModal from '../management/ShiftGuardModal';
+import PWAInstallPrompt from '../common/PWAInstallPrompt';
 import { useSocket } from '../../context/SocketContext';
 
 /**
@@ -95,11 +96,12 @@ export default function DashboardLayout() {
         </div>
       </div>
       
-      {/* Global Duty Enforcement Plane */}
       <ShiftGuardModal 
         forceOpen={forceShiftModal} 
         onClose={() => setForceShiftModal(false)} 
       />
+
+      <PWAInstallPrompt />
 
     </div>
   );

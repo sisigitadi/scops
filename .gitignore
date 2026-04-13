@@ -34,7 +34,11 @@ logs
 !README.md
 scratch/
 .gemini/
-dev.db
+# Database & Server Artifacts
+dev.db*
+*.db-journal
+*.db-wal
+server/dev.db*
 *.ps1
 *.bat
 vite.config.js.timestamp-*

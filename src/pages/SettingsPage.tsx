@@ -345,7 +345,7 @@ export default function SettingsPage() {
   ];
 
   return (
-    <div className="pb-20">
+    <div className="relative flex flex-col min-h-screen pb-10">
       <StaggerGroup delay={0.1} stagger={0.08}>
         {/* Header Section — Operational Management Style */}
         <StaggerItem>
@@ -473,7 +473,7 @@ export default function SettingsPage() {
         </AnimatePresence>
       </StaggerGroup>
       {/* STRATEGIC COMMAND HUD (Floating Governance Strip) */}
-      <div className="fixed bottom-8 left-1/2 -translate-x-1/2 z-[100] w-fit">
+      <div className="sticky bottom-8 self-center z-[100] w-fit mt-10">
         <div className="premium-capsule !p-2 flex items-center gap-3 bg-background-main/80 backdrop-blur-2xl border-2 border-accent-cyan/30 shadow-[0_20px_50px_-10px_rgba(0,0,0,0.5)] animate-in slide-in-from-bottom-10 duration-1000">
           <div className="flex items-center gap-2 px-4 border-r border-border-primary/20">
             <Shield size={16} className="text-accent-cyan animate-pulse" />
