@@ -32,6 +32,7 @@ logs
 # Internal Documentation & Artifacts
 *.md
 !README.md
+!SOC_OPS_DEV_GUIDE.md
 scratch/
 .gemini/
 # Database & Server Artifacts
