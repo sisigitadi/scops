@@ -86,13 +86,13 @@ export default function AttendanceStatus({ isReadOnly }: AttendanceStatusProps) 
     const manualStatus = attendance[today]?.[analystId] || attendance[today]?.[aid];
     const isScheduled = scheduledIds.some(id => String(id).toLowerCase() === aid);
 
-    if (isActive) return { label: t('ops.monitor.status.onDuty'), color: 'bg-status-success/20 text-status-success-text', icon: <CheckCircle2 size={12} /> };
-    if (manualStatus === 'sakit') return { label: t('ops.attendance.sick'), color: 'bg-rose-500/20 text-rose-400', icon: <AlertCircle size={12} /> };
-    if (manualStatus === 'ijin') return { label: t('ops.attendance.leave'), color: 'bg-amber-500/20 text-amber-400', icon: <Info size={12} /> };
-    if (manualStatus === 'unauthorized') return { label: t('ops.attendance.unauthorized'), color: 'bg-rose-700/20 text-rose-600', icon: <X size={12} /> };
+    if (isActive) return { label: t('ops.monitor.status.onDuty'), color: 'bg-status-success-bg/20 text-status-success-text', icon: <CheckCircle2 size={12} /> };
+    if (manualStatus === 'sakit') return { label: t('ops.attendance.sick'), color: 'bg-rose-500/25 text-rose-400', icon: <AlertCircle size={12} /> };
+    if (manualStatus === 'ijin') return { label: t('ops.attendance.leave'), color: 'bg-amber-500/25 text-amber-400', icon: <Info size={12} /> };
+    if (manualStatus === 'unauthorized') return { label: t('ops.attendance.unauthorized'), color: 'bg-rose-700/30 text-rose-500', icon: <X size={12} /> };
     
-    if (isScheduled) return { label: t('ops.monitor.status.awaiting'), color: 'bg-bg-panel/40 text-foreground-tertiary', icon: <Clock size={12} /> };
-    return { label: t('ops.monitor.status.offSchedule'), color: 'bg-bg-panel/20 text-foreground-muted', icon: <Clock size={12} /> };
+    if (isScheduled) return { label: t('ops.monitor.status.awaiting'), color: 'bg-accent-cyan/15 text-accent-cyan', icon: <Clock size={12} /> };
+    return { label: t('ops.monitor.status.offSchedule'), color: 'bg-bg-panel/40 text-foreground-tertiary', icon: <Clock size={12} /> };
   };
 
   return (

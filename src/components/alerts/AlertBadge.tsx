@@ -8,17 +8,17 @@ import { useLanguage } from '../../context/LanguageContext';
  */
 
 const statusStyles: Record<string, string> = {
-  critical: 'bg-status-danger-bg/20 text-status-danger-text border-status-danger-border/30',
-  kritis: 'bg-status-danger-bg/20 text-status-danger-text border-status-danger-border/30',
-  high: 'bg-status-danger-bg/10 text-status-danger-text border-status-danger-border/20',
-  tinggi: 'bg-status-danger-bg/10 text-status-danger-text border-status-danger-border/20',
-  medium: 'bg-status-warning-bg/20 text-status-warning-text border-status-warning-border/30',
-  sedang: 'bg-status-warning-bg/20 text-status-warning-text border-status-warning-border/30',
-  low: 'bg-status-info-bg/20 text-status-info-text border-status-info-border/30',
-  rendah: 'bg-status-info-bg/20 text-status-info-text border-status-info-border/30',
-  open: 'bg-bg-panel/60 text-foreground-tertiary border-border-primary/40',
-  investigating: 'bg-status-warning-bg/10 text-status-warning-text border-status-warning-border/20',
-  closed: 'bg-status-success-bg/20 text-status-success-text border-status-success-border/30',
+  critical: 'bg-status-danger-bg/20 text-status-danger-text border-status-danger-border/40',
+  kritis: 'bg-status-danger-bg/20 text-status-danger-text border-status-danger-border/40',
+  high: 'bg-status-danger-bg/15 text-status-danger-text border-status-danger-border/30',
+  tinggi: 'bg-status-danger-bg/15 text-status-danger-text border-status-danger-border/30',
+  medium: 'bg-status-warning-bg/25 text-status-warning-text border-status-warning-border/40',
+  sedang: 'bg-status-warning-bg/25 text-status-warning-text border-status-warning-border/40',
+  low: 'bg-status-info-bg/25 text-status-info-text border-status-info-border/40',
+  rendah: 'bg-status-info-bg/25 text-status-info-text border-status-info-border/40',
+  open: 'bg-accent-cyan/15 text-accent-cyan border-accent-cyan/40',
+  investigating: 'bg-status-warning-bg/15 text-status-warning-text border-status-warning-border/30',
+  closed: 'bg-status-success-bg/25 text-status-success-text border-status-success-border/40',
 };
 
 const idLabelMap: Record<string, string> = {
