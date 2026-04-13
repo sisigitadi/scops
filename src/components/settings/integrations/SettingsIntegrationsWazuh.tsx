@@ -148,21 +148,21 @@ export default function SettingsIntegrationsWazuh({
                   <input type={isDemoUser ? "password" : "text"} value={localSettings.wazuh.indexer.host} onChange={e => updateIndexerField('host', e.target.value)} disabled={isReadOnly} className="premium-input w-full bg-bg-panel/40 font-black tracking-widest" placeholder="0.0.0.0" />
                 </div>
                 <div className="col-span-12 sm:col-span-4 space-y-2">
-                  <label className="text-[10px] font-black text-foreground-tertiary uppercase tracking-[0.3em] pl-2">PORT</label>
-                  <input type={isDemoUser ? "password" : "number"} value={localSettings.wazuh.indexer.port} onChange={e => updateIndexerField('port', e.target.value)} disabled={isReadOnly} className="premium-input w-full bg-bg-panel/40 font-black tracking-widest" placeholder="9200" />
-                </div>
+                   <label className="text-[10px] font-black text-foreground-tertiary uppercase tracking-[0.3em] pl-2">{t('common.port')}</label>
+                   <input type={isDemoUser ? "password" : "number"} value={localSettings.wazuh.indexer.port} onChange={e => updateIndexerField('port', e.target.value)} disabled={isReadOnly} className="premium-input w-full bg-bg-panel/40 font-black tracking-widest" placeholder="9200" />
+                 </div>
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <div className="space-y-2">
                   <div className="flex items-center gap-2">
-                     <label className="text-[10px] font-black text-foreground-tertiary uppercase tracking-[0.3em] pl-2">USER</label>
+                     <label className="text-[10px] font-black text-foreground-tertiary uppercase tracking-[0.3em] pl-2">{t('common.user')}</label>
                      <InfoTooltip text={(t('settings.tooltips.indexerUser') as string)} />
                   </div>
                   <input type={isDemoUser ? "password" : "text"} value={localSettings.wazuh.indexer.user} onChange={e => updateIndexerField('user', e.target.value)} disabled={isReadOnly} className="premium-input w-full bg-bg-panel/40 font-black tracking-widest" />
                 </div>
                 <div className="space-y-2">
                   <div className="flex items-center gap-2">
-                     <label className="text-[10px] font-black text-foreground-tertiary uppercase tracking-[0.3em] pl-2">PASSWORD</label>
+                     <label className="text-[10px] font-black text-foreground-tertiary uppercase tracking-[0.3em] pl-2">{t('common.password')}</label>
                      <InfoTooltip text={(t('settings.tooltips.indexerPass') as string)} />
                   </div>
                   <input type="password" value={isDemoUser ? '********' : localSettings.wazuh.indexer.password} onChange={e => updateIndexerField('password', e.target.value)} disabled={isReadOnly} className="premium-input w-full bg-bg-panel/40" />

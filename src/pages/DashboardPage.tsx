@@ -129,7 +129,7 @@ export default function DashboardPage() {
                      onChange={(e) => setStartHour(e.target.value)}
                      className="bg-transparent text-[11px] font-black text-accent-cyan focus:outline-none w-20"
                    />
-                   <span className="text-[9px] font-black text-foreground-tertiary opacity-40 uppercase tracking-widest px-2">TO</span>
+                   <span className="text-[9px] font-black text-foreground-tertiary opacity-40 uppercase tracking-widest px-2">{t('common.to')}</span>
                    <input 
                      type="time" 
                      value={endHour} 

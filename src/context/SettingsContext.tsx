@@ -77,7 +77,7 @@ const SettingsContext = createContext<SettingsContextType | undefined>(undefined
 
 const defaultSettings: SOCSettings = {
   appName: 'SOC OPS',
-  orgName: 'Security Control Center',
+  orgName: 'Security Operation Centre',
   refreshInterval: 30,
   users: [], // Seed data handled by bootstrap/registry
   wazuh: { 

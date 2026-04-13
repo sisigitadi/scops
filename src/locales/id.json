@@ -52,7 +52,7 @@
   "common": {
     "locale_tag": "id-ID",
     "appTitle": "SOC OPS",
-    "appSubtitle": "Pusat Kontrol Keamanan",
+    "appSubtitle": "Security Operation Centre",
     "productionTag": "Mode Produksi",
     "productionNotice": "Platform terhubung ke infrastruktur keamanan operasional.",
     "records": "entitas/catatan",
@@ -63,6 +63,10 @@
     "reliabilityTracking": "SISTEM BERJALAN NORMAL",
     "systemNotification": "NOTIFIKASI SISTEM",
     "newAlert": "Notifikasi Baru",
+    "endpoint": "Endpoint",
+    "port": "Port",
+    "user": "Pengguna",
+    "password": "Kata Sandi",
     "to": "HINGGA",
     "action": "Tindakan",
     "exportLogs": "EKSPOR LOG",
@@ -744,6 +748,10 @@
     },
     "readOnlyNotice": "Mode Baca Saja",
     "groupGeneral": "Operasional Global",
+    "fields": {
+      "appName": "Identitas Aplikasi",
+      "orgName": "Identitas Organisasi"
+    },
     "groupBranding": "Identitas & Logo",
     "groupIntegrations": "Integrasi Layanan",
     "corporateBrandingAsset": "Logo",

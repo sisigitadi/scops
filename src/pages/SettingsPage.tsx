@@ -375,16 +375,16 @@ export default function SettingsPage() {
           </header>
         </StaggerItem>
 
-         <StaggerItem>
-            <div className="flex flex-nowrap overflow-visible p-1 bg-bg-panel/40 border border-border-primary/20 rounded-[2rem] gap-1 mb-10 relative z-20 w-full">
+        <StaggerItem>
+            <div className="flex flex-nowrap overflow-x-auto no-scrollbar md:overflow-visible p-1.5 bg-bg-panel/40 border border-border-primary/20 rounded-[2.5rem] md:rounded-[2rem] gap-1.5 mb-10 relative z-20 w-full">
               {mainTabs.map(tab => (
                 <button
                   key={tab.id}
                   onClick={() => setActiveTab(tab.id)}
-                  className={`flex flex-1 items-center justify-center gap-0.5 px-1 py-3 rounded-[1.5rem] text-[11px] font-black tracking-tighter transition-all whitespace-nowrap min-w-0 overflow-visible ${activeTab === tab.id ? 'bg-accent-cyan text-foreground-inverse shadow-xl shadow-accent-cyan/20' : 'text-foreground-tertiary hover:text-foreground-primary hover:bg-white/5'}`}
+                  className={`flex-shrink-0 md:flex-1 flex items-center justify-center gap-2 px-6 md:px-2 py-3.5 md:py-3 rounded-[2rem] md:rounded-[1.5rem] text-[10px] md:text-[11px] font-black tracking-tighter md:tracking-normal transition-all whitespace-nowrap ${activeTab === tab.id ? 'bg-accent-cyan text-foreground-inverse shadow-xl shadow-accent-cyan/20' : 'text-foreground-tertiary hover:text-foreground-primary hover:bg-white/5'}`}
                 >
-                   <span className="shrink-0 scale-75 lg:scale-100">{tab.icon}</span>
-                   <span className="truncate">{tab.label}</span>
+                   <span className="shrink-0 scale-90 md:scale-100">{tab.icon}</span>
+                   <span className="max-w-none">{tab.label}</span>
                    <div className="scale-90 opacity-70 hover:opacity-100 transition-opacity ml-1 shrink-0">
                      <InfoTooltip 
                        vAlign="top" 

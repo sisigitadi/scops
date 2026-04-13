@@ -53,29 +53,62 @@ export default function AppFooter() {
   ];
 
   return (
-    <footer className="w-full mt-auto py-10 px-8 flex flex-col items-center justify-center gap-6 bg-transparent relative z-10">
+    <footer className="w-full mt-auto py-12 px-8 flex flex-col items-center justify-center gap-10 bg-transparent relative z-10">
       <div className="absolute inset-x-0 top-0 h-[1px] bg-gradient-to-r from-transparent via-border-primary/20 to-transparent" />
       
-      {/* Row 1: Platform Information */}
+      {/* Row 1: Primary Brand Interaction */}
+      <div className="flex flex-col items-center gap-4">
+        <motion.button 
+          onClick={() => setIsAboutOpen(true)}
+          className="group flex items-center gap-4 px-10 py-4 rounded-[2rem] bg-bg-panel/40 border border-border-primary hover:border-accent-cyan/40 text-accent-cyan hover:bg-bg-panel/60 hover:shadow-[0_0_30px_rgba(34,211,238,0.15)] transition-all duration-500"
+          whileHover={{ scale: 1.02 }}
+          whileTap={{ scale: 0.98 }}
+        >
+          <div className="p-2 rounded-xl bg-accent-cyan/10 group-hover:bg-accent-cyan/20 transition-colors">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6">
+              <circle cx="12" cy="12" r="10" />
+              <line x1="12" y1="16" x2="12" y2="12" />
+              <line x1="12" y1="8" x2="12.01" y2="8" />
+            </svg>
+          </div>
+          <div className="flex flex-col items-start gap-0.5">
+            <span className="text-[11px] font-black uppercase tracking-[0.3em]">{(t('nav.about') as string) || 'ABOUT'}</span>
+            <span className="text-[8px] font-bold text-foreground-tertiary uppercase tracking-widest opacity-60">{(t('footer.securePlatform') as string) || 'SECURITY OPERATIONS PLATFORM'}</span>
+          </div>
+        </motion.button>
+      </div>
+
+      {/* Row 2: Secondary Tactical Vectors (Social) */}
       <div className="flex flex-wrap items-center justify-center gap-4">
         {socialLinks.map((social) => (
-          <a key={social.id} href={social.url} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 px-6 py-2.5 rounded-2xl bg-bg-panel border border-border-primary text-foreground-tertiary hover:text-accent-cyan hover:border-accent-cyan/40 hover:shadow-[0_0_15px_rgba(34,211,238,0.1)] transition-all">
+          <motion.a 
+            key={social.id} 
+            href={social.url} 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="flex items-center gap-3 px-6 py-3 rounded-2xl bg-bg-panel/20 border border-border-primary/10 text-foreground-tertiary hover:text-accent-cyan hover:border-accent-cyan/40 hover:bg-bg-panel/40 transition-all duration-300"
+            whileHover={{ y: -2 }}
+          >
             {social.icon}
-            <span className="text-[10px] font-black uppercase tracking-widest">{social.label}</span>
-          </a>
+            <span className="text-[9px] font-black uppercase tracking-widest">{social.label}</span>
+          </motion.a>
         ))}
       </div>
 
-      {/* Row 2: Community Sentiment */}
-      <div className="flex items-center gap-2 text-[9px] font-black text-foreground-tertiary uppercase tracking-[0.3em] opacity-60">
-        <span>{(t('footer.builtWith') as string) || 'DIBUAT DENGAN'}</span>
-        <Heart size={12} className="text-status-danger-text animate-pulse" fill="currentColor" />
-        <span>{(t('footer.forCommunity') as string) || 'UNTUK KOMUNITAS'}</span>
-      </div>
-
-      {/* Row 3: Operational Signature */}
-      <div className="text-[10px] font-black text-foreground-secondary uppercase tracking-[0.4em]">
-        &copy; 2026 SIGIT ADI
+      {/* Row 3: Operational Signature & Community Sentiment */}
+      <div className="flex flex-col items-center gap-5">
+        <div className="flex items-center gap-3 text-[9px] font-black text-foreground-tertiary uppercase tracking-[0.4em] opacity-40">
+          <span>{(t('footer.builtWith') as string) || 'BUILT WITH'}</span>
+          <Heart size={14} className="text-status-danger-text animate-pulse" fill="currentColor" />
+          <span>{(t('footer.forCommunity') as string) || 'FOR THE COMMUNITY'}</span>
+        </div>
+        
+        <div className="flex flex-col items-center gap-2">
+          <div className="text-[10px] font-black text-foreground-secondary uppercase tracking-[0.5em] opacity-80">
+            &copy; {currentYear} SIGIT ADI
+          </div>
+          <div className="h-1 w-12 rounded-full bg-gradient-to-r from-transparent via-accent-cyan/30 to-transparent" />
+        </div>
       </div>
 
       <AboutModal isOpen={isAboutOpen} onClose={() => setIsAboutOpen(false)} />

@@ -1081,6 +1081,15 @@ button:disabled, [role="button"]:disabled, .btn-disabled {
   box-shadow: 0 0 15px rgba(34, 211, 238, 0.4);
 }
 
+/* Hide scrollbar utility */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 /* Mobile Table Scroll Hint */
 .table-scroll::after {
   content: '→';

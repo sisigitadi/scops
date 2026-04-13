@@ -52,7 +52,7 @@
   "common": {
     "locale_tag": "en-US",
     "appTitle": "SOC OPS",
-    "appSubtitle": "Security Control Center",
+    "appSubtitle": "Security Operation Centre",
     "productionTag": "Production Mode",
     "productionNotice": "Platform is connected to operational security infrastructure.",
     "records": "entities/records",
@@ -65,6 +65,10 @@
     "exportLogs": "EXPORT AUDIT TRAIL",
     "systemNotification": "SYSTEM NOTIFICATION",
     "newAlert": "New Alert",
+    "endpoint": "Endpoint",
+    "port": "Port",
+    "user": "User",
+    "password": "Password",
     "to": "TO",
     "action": "Action",
     "exportLogs": "EXPORT LOGS",
@@ -692,6 +696,10 @@
     },
     "readOnlyNotice": "Read-Only Mode",
     "groupGeneral": "Global Operations",
+    "fields": {
+      "appName": "Application Identity",
+      "orgName": "Organization Identity"
+    },
     "groupBranding": "Identity & Logo",
     "groupIntegrations": "Service Integrations",
     "corporateBrandingAsset": "Logo",
@@ -1405,5 +1413,123 @@
     "technical": {
       "administrativeAction": "Administrative Action"
     }
+  },
+  "fpos": {
+    "title": "SYSTEM SUPPRESSION GOVERNANCE",
+    "subtitle": "HIGH-PERFORMANCE VIRTUAL REGISTER FOR AUDITING AND RECOVERY OF SUPPRESSED NOTIFICATION SIGNATURES.",
+    "searchPlaceholder": "SEARCH SUPPRESSION ARCHIVE...",
+    "bulk": {
+      "restore": "Restore Selected",
+      "close": "Close Selected",
+      "selected": "selected",
+      "hint": "Select rows for bulk actions",
+      "none": "No false-positive notifications selected.",
+      "restored": "notifications successfully restored",
+      "closed": "notifications successfully closed"
+    },
+    "registerTitle": "False Positive Register",
+    "recordsIdentified": "RECORDS IDENTIFIED",
+    "entriTerdeteksi": "entries detected",
+    "headers": {
+      "date": "Date",
+      "tool": "Tool",
+      "signature": "Rule / Signature",
+      "category": "Category",
+      "severity": "Severity",
+      "assetScope": "Asset / Scope",
+      "description": "Description",
+      "reasonFP": "FP Reason",
+      "frequency": "Frequency",
+      "analyst": "Analyst",
+      "proposedTuning": "Proposed Tuning",
+      "status": "Status",
+      "tuning": "Tuning",
+      "notes": "Notes"
+    },
+    "tooltips": {
+      "date": "FPR recording time",
+      "tool": "Detecting security product",
+      "signature": "Specific detection rule",
+      "category": "Attack tactic category",
+      "severity": "Threat severity level",
+      "assetScope": "Impacted asset or host",
+      "description": "Technical description of false positive",
+      "reasonFP": "Analyst argument for benign status",
+      "frequency": "How often this occurs",
+      "analyst": "FPR reporter identity",
+      "proposedTuning": "Proposed way to resolve false positive",
+      "status": "Review status",
+      "tuning": "New rule implementation status"
+    }
+  },
+  "footer": {
+    "builtWith": "Built with",
+    "forCommunity": "for the Community",
+    "feedback": "Technical Feedback",
+    "rights": "All intellectual property rights reserved.",
+    "securePlatform": "Security Operations Platform",
+    "documentation": "Documentation",
+    "support": "Support",
+    "privacy": "Privacy",
+    "all": "ALL",
+    "to": "TO",
+    "csv": "EXPORT CSV",
+    "json": "EXPORT JSON",
+    "syncing": "SYNCING...",
+    "deepSearch": "DEEP SEARCH",
+    "archiveMode": "ARCHIVE MODE",
+    "context": "CONTEXT",
+    "technicalDetail": "TECHNICAL DETAIL",
+    "system": "SYSTEM",
+    "reloading": "RELOADING..."
+  },
+  "errorBoundary": {
+    "title": "Platform Interception Failure",
+    "desc": "The mission-critical engine has encountered a runtime violation. Forensic logs have been generated. Perform immediate system reboot or return to the gate.",
+    "reboot": "Reboot Environment",
+    "returnToGate": "Return to Gate"
+  },
+  "about_core": {
+    "title": "PLATFORM CORE",
+    "desc": "Advanced Security Operations Ecosystem for unified monitoring and incident response.",
+    "architecture": "ARCHITECTURE",
+    "architectureItems": [
+      "Native Wazuh Manager & Indexer Integration",
+      "Force-Graph Based Node Visualization",
+      "Forensic-Grade Triage Engine",
+      "Synchronized Global State Management"
+    ],
+    "featureFunctionsTitle": "CAPABILITIES",
+    "featureFunctions": [
+      "Real-Time Payload Analysis",
+      "Standardized Incident Escalation",
+      "Shift Management & Personnel Accountability",
+      "Automated Executive Reporting"
+    ],
+    "workflow": "STANDARD OPERATIONAL PROCEDURES",
+    "workflowPath": "TRIAGE -> INVESTIGATION -> ESCALATION -> RESOLUTION",
+    "workflowStagesTitle": "SYSTEM PHASES",
+    "workflowStages": [
+      {
+        "label": "DETECTION",
+        "desc": "Capturing raw events from distributed endpoint agents."
+      },
+      {
+        "label": "NORMALIZATION",
+        "desc": "Transforming heterogeneous metadata into uniform investigation schema."
+      },
+      {
+        "label": "AUGMENTATION",
+        "desc": "Enriching context using OpenCTI threat intelligence and historical correlation."
+      },
+      {
+        "label": "RESPONSE",
+        "desc": "Executing mitigation actions and administrative case closure."
+      }
+    ],
+    "systemCore": "ENGINE STATUS",
+    "versionStack": "BUILD STACK",
+    "disclaimerTitle": "LEGAL DISCLOSURE: USAGE PROTOCOL",
+    "disclaimer": "This software is an enterprise-grade monitoring dashboard. Unauthorized access attempts, reverse engineering, or data tampering are strictly prohibited and logged by the persistent audit engine. Full compliance with international cybersecurity laws is mandatory."
   }
 }
