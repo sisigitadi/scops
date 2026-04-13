@@ -1,0 +1,1554 @@
+{
+  "nav": {
+    "header": "Dasbor Navigasi",
+    "header_ops": "OPERASIONAL",
+    "header_mgmt_main": "MANAJEMEN",
+    "header_system": "TATA KELOLA PLATFORM",
+    "landing": "Portal Utama",
+    "dashboard": "Ikhtisar Keamanan",
+    "alerts": "Register Notifikasi",
+    "triage": "Ruang Kerja Triage",
+    "reports": "Pusat Laporan",
+    "about": "Informasi Platform",
+    "ingestion": "Penyuntikan Data",
+    "false-positive": "False Positive",
+    "audit": "Log Forensik",
+    "settings": "Pusat Kendali",
+    "settings_global": "Pusat Kendali",
+    "management": "Pusat Manajemen",
+    "operations": "Operasi Taktis"
+  },
+  "sidebar": {
+    "secOpsCenter": "PUSAT OPERASI KEAMANAN",
+    "lightMode": "Mode Terang",
+    "darkMode": "Mode Gelap",
+    "userProfile": "Profil Pengguna",
+    "identity": "Identitas Analis",
+    "language": "Bahasa",
+    "theme": "Tema UI"
+  },
+  "topbar": {
+    "dashboard": "DASHBOARD",
+    "wazuhManager": "WAZUH MANAGER v4",
+    "wazuhIndexer": "WAZUH INDEXER NODE",
+    "endpoint": "ENDPOINT:",
+    "service": "LAYANAN:",
+    "intelCoreUrl": "URL INTEL:",
+    "trustLevel": "TINGKAT KEPERCAYAAN:",
+    "confidence": "KEPERCAYAAN",
+    "targetChannel": "SALURAN TUJUAN:",
+    "monitorStatus": "STATUS MONITOR:",
+    "active": "AKTIF",
+    "standby": "SIAGA",
+    "throughput": "THROUGHPUT",
+    "openctiHub": "OPENCTI INTEL CORE",
+    "stats": {
+      "portal": "PORTAL",
+      "threats": "ANCAMAN",
+      "logs": "LOGS"
+    }
+  },
+  "personnel": "PERSONEL",
+  "common": {
+    "locale_tag": "id-ID",
+    "appTitle": "SOC OPS",
+    "appSubtitle": "Pusat Kontrol Keamanan",
+    "productionTag": "Mode Produksi",
+    "productionNotice": "Platform terhubung ke infrastruktur keamanan operasional.",
+    "records": "entitas/catatan",
+    "search": "Pencarian Cepat",
+    "all": "Semua",
+    "restrictedNotice": "Akses Dibatasi: Tindakan ini memerlukan otorisasi tingkat lanjut.",
+    "integrityVerified": "INTEGRITAS TERVERIFIKASI",
+    "reliabilityTracking": "SISTEM BERJALAN NORMAL",
+    "systemNotification": "NOTIFIKASI SISTEM",
+    "newAlert": "Notifikasi Baru",
+    "to": "HINGGA",
+    "action": "Tindakan",
+    "exportLogs": "EKSPOR LOG",
+    "view": "Lihat",
+    "cancel": "Batal",
+    "common_cancel": "Batal",
+    "metric": "Metrik",
+    "value": "Nilai",
+    "empty": "Data tidak ditemukan dengan kriteria filter saat ini.",
+    "noData": "MENUNGGU DATA",
+    "emptyLabel": "KOSONG",
+    "bulk": {
+      "none": "Tidak ada alert yang dipilih.",
+      "notice": "Tindakan massal akan diterapkan pada {count} alert."
+    },
+    "validation": {
+      "required": "Harap isi kolom ini.",
+      "email": "Harap masukkan format email yang valid.",
+      "minLength": "Input terlalu pendek.",
+      "password": "Kata sandi tidak memenuhi kriteria."
+    },
+    "runtime": {
+      "waitingIndexerTitle": "Konfigurasi Integrasi Diperlukan",
+      "waitingIndexerMessage": "Aplikasi belum terhubung ke sumber data utama atau intelijen ancaman.",
+      "waitingIndexerDetail": "Harap lengkapi konfigurasi Integrasi (Wazuh, OpenCTI, dan Telegram) di menu Pengaturan untuk mengaktifkan fitur ini.",
+      "openIntegrationSettings": "Buka Pengaturan Integrasi",
+      "cannotLoadTitle": "Layanan alert tidak dapat dimuat",
+      "cannotLoadMessage": "Halaman tidak dapat mengambil data alert dari layanan runtime saat ini.",
+      "tooManyRequestsTitle": "Terlalu banyak permintaan",
+      "tooManyRequestsMessage": "Server menolak permintaan karena densitas request terlalu tinggi.",
+      "degradedTitle": "Layanan berjalan dalam mode degradasi",
+      "degradedMessage": "Sinkronisasi live sedang gagal. Data cache masih tersedia.",
+      "retryLiveSync": "Coba Sinkronisasi Ulang",
+      "retryConnection": "Coba Koneksi Ulang"
+    },
+    "technicalDetail": "Detail Teknis",
+    "personnel": "PERSONEL",
+    "forensicDoc": "DOKUMENTASI AKTIVITAS FORENSIK",
+    "reliabilityTracking": "PELACAKAN RELIABILITAS",
+    "versionHighDensity": "v5.4.0 High-Density",
+    "exportLogs": "EKSPOR LOG",
+    "disclaimer": "Pernyataan Sanggahan (Disclaimer)",
+    "csv": "EKSPOR CSV",
+    "json": "EKSPOR JSON",
+    "downloadCsv": "UNDUH CSV",
+    "downloadJson": "UNDUH JSON",
+    "downloadcsv": "UNDUH CSV",
+    "downloadjson": "UNDUH JSON",
+    "abort": "ABORTASI PROSES",
+    "system": "SISTEM",
+    "onDuty": "BERTUGAS",
+    "minutes": "menit",
+    "seconds": "detik",
+    "context": "Konteks",
+    "timeRange": "Rentang Waktu Investigasi",
+    "diagnosticLab": "Diagnostik Lab & Pemicu Manual",
+    "securityTip": "Tip Keamanan",
+    "securityDesc": "Payload yang dimasukkan secara manual akan melewati filter SIEM standar tetapi tetap akan ditangkap oleh mesin audit platform untuk pelacakan integritas.",
+    "diagnostic": "Diagnostik",
+    "unknownUser": "Pengguna Tidak Dikenal",
+    "demoOperator": "Demo",
+    "syncing": "Sinkronisasi...",
+    "loading": {
+      "neuralModule": "INISIALISASI MODUL NEURAL",
+      "handshake": "HANDSHAKE AMAN DALAM PROSES"
+    },
+    "transactionId": "ID Transaksi",
+    "forensicSignature": "Tanda Tangan Forensik",
+    "deepSearch": "Pencarian Dalam",
+    "archiveMode": "Mode Arsip",
+    "syncError": "Koneksi Terputus",
+    "synchronized": "Terhubung",
+    "notConfigured": "Belum Dikonfigurasi",
+    "timeOptions": {
+      "1": "1 Jam Terakhir",
+      "24": "24 Jam Terakhir",
+      "168": "7 Hari Terakhir",
+      "all": "Seluruh Cakupan Data"
+    },
+    "passwordRequired": "Kata sandi wajib diisi untuk pengguna baru.",
+    "saveUserFailed": "Gagal menyimpan data pengguna.",
+    "deleteUserFailed": "Gagal menghapus pengguna.",
+    "system": {
+      "accessDenied": "Akses Ditolak: Tingkat Hak Akses Read-Only Aktif.",
+      "justificationTooShort": "Justifikasi harus minimal 10 karakter.",
+      "saved": "Metadata operasional berhasil disimpan.",
+      "context": "Konteks"
+    }
+  },
+  "buttons": {
+    "openDashboard": "Masuk Platform",
+    "viewRepository": "Repositori Sumber",
+    "demoGuest": "Akses Demo (Baca Saja)",
+    "saveUpdate": "Simpan Perubahan",
+    "markFalsePositive": "Tandai False Positive",
+    "escalate": "Eskalasi Insiden",
+    "closeAlert": "Tutup Notifikasi",
+    "addNote": "Tambah Catatan Analis",
+    "triage": "Mulai Triage",
+    "resetData": "Atur Ulang Data",
+    "switchRole": "Ganti Peran Akses",
+    "logout": "Keluar Sistem"
+  },
+  "auth": {
+    "roleAnalyst": "Analis L1 (Triage)",
+    "roleL2": "Spesialis Investigasi (L2)",
+    "roleManager": "Manajer Operasional SOC",
+    "roleAdmin": "Administrator Sistem",
+    "roleAuditor": "Auditor Eksekutif",
+    "roleDemo": "Demo (Publik)",
+    "currentRole": "Tingkat Wewenang Saat Ini",
+    "personas": {
+      "admin": {
+        "name": "Arsitek Keamanan Senior",
+        "desc": "Akses penuh & konfigurasi keamanan"
+      },
+      "manager": {
+        "name": "Manajer SOC",
+        "desc": "Laporan strategis & pengawasan tim"
+      },
+      "l2": {
+        "name": "Analis L2",
+        "desc": "Forensik mendalam & resolusi kasus"
+      },
+      "l1": {
+        "name": "Analis L1",
+        "desc": "Triage notifikasi & investigasi awal"
+      },
+      "auditor": {
+        "name": "Auditor Eksekutif",
+        "desc": "Akses baca-saja untuk pelaporan & pengawasan"
+      },
+      "demo": {
+        "name": "Demo",
+        "desc": "Akses baca-saja dengan obfuskasi data sensitif"
+      }
+    },
+    "analystIdentity": "IDENTITAS ANALIS"
+  },
+  "management": {
+    "title": "Pusat Manajemen",
+    "subtitle": "Hub Terpadu untuk Manajemen Informasi SIM-SOC",
+    "onDuty": "PETUGAS AKTIF",
+    "totalRoster": "TOTAL PERSONEL",
+    "activeShifts": "SHIFT OPERASIONAL",
+    "governanceHeader": "Integritas & Akuntabilitas Operasional",
+    "auditorAccess": "Akses Auditor",
+    "auditorDesc": "Akses baca-saja aktif. Seluruh catatan handover dan parameter shift dalam pengawasan enkripsi audit.",
+    "tabs": {
+      "roster": "DAFTAR PERSONEL",
+      "performance": "PERFORMA STRATEGIS",
+      "infrastructure": "INFRASTRUKTUR",
+      "governance": "TATA KELOLA"
+    },
+    "reliability": "PELACAKAN RELIABILITAS",
+    "optimal": "STABIL",
+    "performance": {
+      "velocity": "VELOSITAS RESPON AGREGAT",
+      "velocityDesc": "RATA-RATA WAKTU TRIAGE GLOBAL",
+      "sla": "KEPATUHAN SLA GLOBAL",
+      "slaDesc": "JENDELA AKUNTABILITAS 24 JAM",
+      "activeCases": "INVESTIGASI AKTIF",
+      "activeCasesDesc": "SAAT INI DITANGANI OLEH ANALIS",
+      "capabilityTitle": "Intelijen Kemampuan Analis",
+      "capabilityDesc": "Korelasi Efektivitas SLA & Volume Tindakan",
+      "totalActions": "TOTAL TINDAKAN",
+      "efficiency": "IKHTISAR EFISIENSI",
+      "topSkill": "KEAHLIAN UTAMA",
+      "topSkillValue": "IR KRITIS",
+      "breaches": "{count} PELANGGARAN",
+      "analystId": "ID ANALIS"
+    },
+    "infra": {
+      "monitorTitle": "Monitor Uptime Real-time",
+      "monitorDesc": "Status Ketersediaan Integrasi Aktif",
+      "latency": "LATENSI",
+      "uptime": "UPTIME",
+      "historyTitle": "Log Insiden Reliabilitas",
+      "historyDesc": "Linimasa Peristiwa Stabilitas & Pemeliharaan",
+      "noIncidents": "TIDAK ADA INSIDEN KESEHATAN TERCATAT",
+      "eventStability": "PERISTIWA STABILITAS",
+      "statusChanged": "Status infrastruktur berubah dari {prev} ke {next}.",
+      "services": {
+        "wazuh_manager": "WAZUH MANAGER",
+        "wazuh_indexer": "WAZUH INDEXER",
+        "opencti": "OPENCTI INTEL CORE",
+        "telegram": "NOTIFIKASI TELEGRAM"
+      }
+    },
+    "sop": {
+      "searchDocs": "CARI SOP...",
+      "complianceStatus": "Status Kepatuhan",
+      "complianceDesc": "Seluruh prosedur dalam perpustakaan ini saat ini aktif dan wajib dipatuhi.",
+      "lastUpdated": "TERAKHIR DIPERBARUI",
+      "editProtocol": "UBAH PROTOKOL",
+      "saveProtocol": "SIMPAN PROTOKOL",
+      "discard": "BATALKAN",
+      "markdownPlaceholder": "TULIS PROTOKOL DALAM MARKDOWN...",
+      "selectProtocol": "PILIH PROTOKOL DARI PERPUSTAKAAN",
+      "categories": {
+        "PROCEDURE": "PROSEDUR",
+        "COMPLIANCE": "KEPATUHAN",
+        "POLICY": "KEBIJAKAN"
+      }
+    }
+  },
+  "login": {
+    "title": "Verifikasi Eksekutif",
+    "subtitle": "Masukkan kredensial organisasi untuk akses sistem.",
+    "email": "Email Organisasi",
+    "password": "Kata Sandi",
+    "submit": "Lanjutkan",
+    "demoButton": "Masuk Mode Demo",
+    "backToPortal": "Kembali ke Portal Utama",
+    "errorDefault": "Verifikasi gagal",
+    "personaError": "Konfigurasi persona tidak ditemukan di portal"
+  },
+  "landing": {
+    "badge": "Portal Akses Operasional",
+    "featuresTitle": "Kapabilitas Sistem",
+    "workflowTitle": "Alur Kerja Operasional",
+    "features": [
+      "Monitoring alert real-time dengan filter prioritas dan korelasi insiden",
+      "Triage investigatif dengan playbook, catatan, dan jejak audit kasus",
+      "Pelaporan operasional dan eksekutif berbasis data dengan ekspor PDF",
+      "Kontrol akses berbasis peran (RBAC) untuk Admin, Manager, Analyst, Auditor, dan Demo"
+    ],
+    "workflow": [
+      "Deteksi alert dari layanan runtime (Wazuh Indexer/BFF)",
+      "Validasi dan pengayaan intelijen ancaman (OpenCTI)",
+      "Keputusan triage: investigasi, eskalasi, false-positive, atau penutupan",
+      "Pelaporan, audit, dan handover operasional berbasis metrik"
+    ],
+    "disclaimerText": "Platform ini terhubung ke infrastruktur keamanan riil. Seluruh data yang ditampilkan bersifat operasional dan rahasia.",
+    "productionNotice": "Platform terhubung ke infrastruktur keamanan produksi.",
+    "productionBadge": "Infrastruktur Produksi Aktif"
+  },
+  "dashboard": {
+    "title": "Ikhtisar Keamanan",
+    "desc": "Wawasan real-time untuk triage dan pelaporan.",
+    "priorityInsights": "Wawasan Ancaman Prioritas",
+    "severityDistribution": "Distribusi Tingkat Bahaya",
+    "categoryDistribution": "Klasifikasi Ancaman",
+    "topHosts": "Host Terdampak",
+    "topRules": "Aturan Deteksi Teratas",
+    "recentAlerts": "Aliran Notifikasi Terbaru",
+    "latestEvents": "Aktivitas log terakhir",
+    "kpi": {
+      "totalAlerts": "Total Volume Notifikasi",
+      "highPriorityAlerts": "Ancaman Prioritas",
+      "openCases": "Kasus Aktif",
+      "escalatedCases": "Kasus Eskalasi",
+      "falsePositives": "False Positive",
+      "monitoredAgents": "Agen Terpantau",
+      "correlatedCases": "Temuan Terkorelasi"
+    },
+    "insights": [
+      "Deteksi anomali pada protokol otentikasi aset kritikal.",
+      "Pelanggaran integritas file ditemukan pada direktori sistem yang diproteksi.",
+      "Peningkatan aktivitas eskalasi wewenang dalam 24 jam terakhir.",
+      "Log keamanan utama berasal dari kategori identitas pengguna."
+    ],
+    "strategicPulse": "RINGKASAN STATUS OPERASIONAL"
+  },
+  "alerts": {
+    "noAlertSelected": "MENUNGGU TARGET",
+    "noAlertDesc": "Navigasikan ke Register Peringatan dan pilih peringatan untuk mulai investigasi triage.",
+    "title": "Register Notifikasi",
+    "subtitle": "Telusuri dan saring log keamanan secara mendalam untuk investigasi tingkat lanjut.",
+    "tacticalActions": "Unduh",
+    "filterSeverity": "Tingkat Bahaya",
+    "filterCategory": "Kategori Ancaman",
+    "filterStatus": "Status Tiket",
+    "filterHostname": "Identitas Sistem",
+    "filterPeriod": "Periode Waktu",
+    "periodOptions": {
+      "all": "Semua Waktu",
+      "last1h": "1 Jam Terakhir",
+      "last8h": "8 Jam Terakhir",
+      "last12h": "12 Jam Terakhir",
+      "today": "Hari Ini",
+      "weekly": "7 Hari Terakhir",
+      "monthly": "30 Hari Terakhir",
+      "custom": "Kustom"
+    },
+    "noData": "TIDAK ADA DATA TERDETEKSI",
+    "to": "HINGGA",
+    "searchPlaceholder": "Rule ID, Host, User, Alamat IP atau Deskripsi...",
+    "tableTitle": "Register Event Aktif",
+    "optionLabels": {
+      "open": "Terbuka",
+      "investigating": "Sedang Diinvestigasi",
+      "closed": "Selesai",
+      "critical": "Kritikal",
+      "high": "Tinggi",
+      "medium": "Menengah",
+      "low": "Rendah",
+      "Authentication": "Akses Identitas",
+      "Privilege Escalation": "Anomali Wewenang",
+      "Network Anomaly": "Perilaku Jaringan",
+      "File Integrity Monitoring": "Integritas Sistem"
+    },
+    "headers": {
+      "date": "Tanggal",
+      "alertId": "ID Notifikasi",
+      "ruleDescription": "Deskripsi Aturan",
+      "severity": "Tingkat Kerawanan",
+      "status": "Status Tiket",
+      "analyst": "Analis Penanggung Jawab",
+      "action": "Tindakan",
+      "time": "Waktu",
+      "investigate": "INVESTIGASI",
+      "notifId": "ID NOTIFIKASI",
+      "incidentId": "ID INSIDEN",
+      "timelineSev": "LINIMASA / KERAWANAN",
+      "timeline": "LINIMASA",
+      "ruleContext": "DETEKSI / KONTEKS ATURAN",
+      "clusterContext": "KONTEKS KLUSTER",
+      "impactedAsset": "ASET TERDAMPAK",
+      "impactedHosts": "HOST TERDAMPAK",
+      "hostname": "Host",
+      "sourceIp": "IP SUMBER",
+      "agentName": "NAMA AGEN",
+      "count": "JUMLAH",
+      "events": "KEJADIAN",
+      "operation": "OPERASI",
+      "attackVector": "VEKTOR SERANGAN",
+      "ruleId": "ID Aturan",
+      "ruleLevel": "LEVEL ATURAN",
+      "category": "Kategori Ancaman",
+      "id": "ID Notifikasi",
+      "timestamp": "Stempel Waktu"
+    },
+    "export": {
+      "previewTitle": "PROTOKOL PRATINJAU EKSPOR",
+      "format": "FORMAT TARGET",
+      "totalRecords": "TOTAL PAYLOAD",
+      "entries": "ENTRI",
+      "snapshot": "Snapshot Data (5 Baris Pertama)",
+      "truncated": "... metadata terpotong untuk kejelasan pratinjau ...",
+      "confirm": "UNDUH"
+    },
+    "status": {
+      "targetsSelected": "{count} TARGET TERPILIH",
+      "awaitingSelection": "MENUNGGU PEMILIHAN TARGET",
+      "correlatedOperations": "OPERASI TERKAIT"
+    },
+    "bulk": {
+      "investigating": "Investigasi Massal",
+      "close": "Tutup Massal",
+      "falsePositive": "False Positive Massal",
+      "selected": "terpilih",
+      "hint": "Pilih notifikasi untuk mengaktifkan tindakan massal",
+      "none": "Tidak ada notifikasi yang dipilih.",
+      "success": "{count} notifikasi berhasil diperbarui sebagai {action}."
+    },
+    "clusters": {
+      "title": "Klaster Insiden",
+      "subtitle": "grup terkorelasi",
+      "desc": "Dikelompokkan berdasarkan IP Sumber + ID Aturan untuk mengurangi gangguan peringatan selama lonjakan.",
+      "headers": {
+        "incidentId": "ID Insiden",
+        "count": "Jumlah Event",
+        "hosts": "Host",
+        "latest": "Terbaru"
+      },
+      "empty": "Tidak ada insiden terkorelasi untuk filter saat ini.",
+      "investigate": "Investigasi"
+    },
+    "messages": {
+      "deepSearchComplete": "Pencarian dalam selesai. Menampilkan hasil gabungan dari indeks arsip.",
+      "archiveSearchInitiated": "Memulai kueri indeks terdistribusi untuk pola: {pattern}",
+      "simulateAttacks": "Simulasi 500 Serangan",
+      "exportSuccess": "Ekspor log berhasil dimulai."
+    }
+  },
+  "triage": {
+    "title": "Workspace Investigasi Triage",
+    "subtitle": "Validasi ancaman keamanan, pengayaan konteks operasional, dan pengambilan keputusan mitigasi.",
+    "detailTitle": "Analisis Mendalam Event",
+    "formTitle": "Mesin Keputusan Triage",
+    "notesTitle": "Lini Masa Investigasi",
+    "navigator": "NAVIGATOR ANTRIAN",
+    "prevAlert": "Alert Sebelumnya",
+    "nextAlert": "Alert Berikutnya",
+    "rawPayload": "PAYLOAD EVENT ASLI",
+    "checklist": "Daftar Periksa Verifikasi Cepat",
+    "workflow": "Prosedur Operasional Rekomendasi",
+    "statusOptions": {
+      "open": "Terbuka",
+      "investigating": "Dalam Investigasi",
+      "closed": "Selesai"
+    },
+    "fields": {
+      "alertId": "ID Notifikasi",
+      "ruleId": "ID Aturan Deteksi",
+      "ruleDescription": "Deskripsi Teknis",
+      "ruleLevel": "LEVEL ATURAN",
+      "category": "KATEGORI ANCAMAN",
+      "severity": "Level Risiko",
+      "agentName": "Identitas Endpoint",
+      "hostname": "Nama Sistem",
+      "assetCriticality": "Peringkat Nilai Aset",
+      "user": "Identitas Terkait",
+      "sourceIp": "IP Sumber",
+      "eventCount": "Densitas Event",
+      "decoder": "Decoder",
+      "mitreTechnique": "Teknik MITRE ATT&CK",
+      "status": "Status Investigasi",
+      "summary": "Ringkasan Kasus Operasional",
+      "initialAssessment": "Penilaian Awal Analis",
+      "evidence": "Temuan Bukti Digital",
+      "actionTaken": "Tindakan Mitigasi Terlaksana",
+      "recommendation": "Saran Strategis Pemulihan",
+      "analyst": "Analis Penanggung Jawab",
+      "notes": "Jurnal Operasional"
+    },
+    "messages": {
+      "saved": "Catatan investigasi teknis telah disimpan ke penyimpanan lokal.",
+      "falsePositive": "Notifikasi keamanan berhasil diklasifikasikan sebagai False Positive.",
+      "escalated": "Prioritas investigasi dinaikkan ke analisis tingkat lanjut.",
+      "closed": "Kasus keamanan berhasil diselesaikan dan ditutup.",
+      "pendingReview": "Catatan: Eskalasi sedang menunggu tinjauan Senior."
+    },
+    "intel": {
+      "title": "Intelijen Ancaman OpenCTI",
+      "fetch": "Ambil Intelijen",
+      "fetching": "Mengambil...",
+      "noData": "Belum ada konteks eksternal yang diambil."
+    },
+    "caseTrail": {
+      "title": "Jejak Kasus",
+      "noActivity": "Belum ada aktivitas yang tercatat."
+    },
+    "playbook": {
+      "title": "Playbook Cerdas",
+      "auth": [
+        "Verifikasi lokasi IP sumber",
+        "Periksa akun yang gagal berulang kali",
+        "Cek jika user sedang cuti/libur"
+      ],
+      "malware": [
+        "Isolasi jaringan endpoint",
+        "Ambil dump memori",
+        "Pindai dengan AV sekunder"
+      ],
+      "privilege": [
+        "Cek perubahan kebijakan sudoers",
+        "Audit riwayat sesi pengguna",
+        "Identifikasi proses induk"
+      ],
+      "network": [
+        "Periksa log firewall",
+        "Identifikasi protokol/port",
+        "Verifikasi reputasi domain tujuan"
+      ],
+      "default": [
+        "Ikuti SOP standar",
+        "Dokumentasikan semua temuan"
+      ]
+    },
+    "escalation": {
+      "modalTitle": "Eskalasi Wajib (Mandatory)",
+      "modalSubtitle": "Anda akan melakukan eskalasi pada notifikasi ini. Berikan justifikasi teknis untuk tinjauan L2/Manajer.",
+      "placeholder": "Contoh: Terverifikasi pergerakan lateral melalui pass-the-hash...",
+      "errorTooShort": "Justifikasi harus minimal 10 karakter.",
+      "confirm": "Konfirmasi Eskalasi",
+      "cancel": "Batal"
+    },
+    "noAlertSelected": "Tidak ada notifikasi yang dipilih.",
+    "noAlertDesc": "Buka halaman Alert Register dan pilih notifikasi untuk memulai investigasi triage.",
+    "presence": {
+      "viewing": "{count} Analis sedang meninjau alert ini",
+      "you": "Aktivitas Anda sedang dipantau oleh sistem real-time.",
+      "active": "Analis Aktif",
+      "intercept": "Intersepsi Personel",
+      "location": "LOKASI",
+      "ip": "ALAMAT IP"
+    },
+    "correlation": {
+      "title": "Peta Korelasi Visual",
+      "subtitle": "Hubungan visual antara alert saat ini dengan entitas lingkungan.",
+      "legend": {
+        "target": "Alert Target",
+        "related": "Alert Terkait",
+        "ip": "IP Sumber",
+        "rule": "ID Aturan"
+      },
+      "noData": "Data tidak cukup untuk menghasilkan peta korelasi."
+    }
+  },
+  "reports": {
+    "title": "Pusat Laporan",
+    "subtitle": "Wawasan informatif dalam format Periodik (Shift, Harian, & Mingguan).",
+    "shift": "Serah Terima Shift SOC",
+    "daily": "Ringkasan Operasional Harian",
+    "weekly": "Ikhtisar Mingguan Strategis",
+    "executive": "Laporan Eksekutif",
+    "findings": "Temuan Ancaman Kritis",
+    "recommendations": "Mitigasi Strategis",
+    "radarTitle": "Radar Distribusi Ancaman",
+    "downloadPdf": "Unduh Laporan PDF",
+    "downloadpdfall": "Unduh Laporan PDF (Seluruh Data)",
+    "downloadpdfcustom": "Unduh Laporan PDF (Data Terpilih)",
+    "downloadPdfError": "Gagal membuat PDF. Silakan coba lagi, atau persempit data terpilih.",
+    "status": {
+      "databaseRecognized": "DATA DITEMUKAN: {count} KEJADIAN KEAMANAN"
+    },
+    "exportScope": {
+      "all": "PDF: Semua Data",
+      "custom": "PDF: Data Terpilih"
+    },
+    "exportScopeLabel": "Cakupan Export",
+    "scopeSelection": "PILIHAN CAKUPAN",
+    "filterSet": "KONFIGURASI FILTER",
+    "noDataTitle": "TIDAK ADA DATA TERIDENTIFIKASI",
+    "noDataSubtitle": "Menunggu aliran data log keamanan untuk menghasilkan analisis laporan.",
+    "severityLabels": {
+      "critical": "KRITIS",
+      "high": "TINGGI",
+      "medium": "MENENGAH"
+    },
+    "cardLabels": {
+      "alertsProcessed": "Log Notifikasi Terselesaikan",
+      "escalations": "Total Eskalasi",
+      "falsePositives": "False Positive",
+      "mtta": "MTTA (Pengakuan)",
+      "totalAlerts": "Volume Total Notifikasi",
+      "incidentCandidates": "Indikator Insiden",
+      "containmentActions": "Prosedur Mitigasi",
+      "mttr": "MTTR (Resolusi)",
+      "totalWeeklyAlerts": "Akumulasi Mingguan",
+      "escalatedCases": "Eskalasi Tier-2",
+      "falsePositiveRate": "Rasio False Positive",
+      "monitoredAgents": "Agen Terpantau"
+    },
+    "metricMap": {
+      "criticalAlerts": "Volume Risiko Kritis",
+      "highAlerts": "Volume Risiko Tinggi",
+      "investigationsClosed": "Penyelesaian Analisis",
+      "pendingHandoverItems": "Serah Terima Tertunda",
+      "authenticationEvents": "Log Akses Identitas",
+      "privilegeEscalationEvents": "Log Anomali Wewenang",
+      "fileIntegrityEvents": "Log Integritas Sistem",
+      "networkAnomalyEvents": "Log Perilaku Jaringan",
+      "weekOverWeekAlertGrowth": "Tren Notifikasi (MoM)",
+      "topAlertCategory": "Vektor Ancaman Utama",
+      "topRuleFamily": "Keluarga Aturan Teratas",
+      "rulesTunedThisWeek": "Penyesuaian Aturan Minggu Ini"
+    },
+    "executiveSummary": "Postur keamanan terpantau stabil dengan peningkatan efisiensi triage. Analis difokuskan pada mitigasi risiko otentikasi eksternal.",
+    "findingsList": [
+      "Percobaan login ilegal terdeteksi menargetkan akun dengan wewenang administratif.",
+      "Modifikasi atribut sistem pada node server meningkat selama periode tinjauan.",
+      "Diperlukan optimalisasi kebijakan integritas untuk mengurangi kebisingan selama pemeliharaan rutin."
+    ],
+    "recommendationsList": [
+      "Optimalkan ambang batas deteksi untuk meminimalkan log redundan selama jendela maintenance.",
+      "Terapkan kebijakan penguncian akun yang lebih ketat pada sistem aset bernilai tinggi.",
+      "Tingkatkan alur kerja verifikasi manual untuk jalur akses eksternal yang anomali."
+    ]
+  },
+  "ingestion": {
+    "title": "PENYUNTIKAN DATA TAKTIS",
+    "subtitle": "KONSUL ADMINISTRATIF AMAN UNTUK SIMULASI ALIRAN DATA DAN VALIDASI NORMALISASI.",
+    "rawJsonTitle": "PENYUNTIKAN PAYLOAD JSON",
+    "jsonPlaceholder": "MASUKKAN JSON ASLI...",
+    "btnSubmitJson": "SUNTIKKAN ALIRAN DATA",
+    "btnClearPayload": "BERSIHKAN DATA SISTEM",
+    "adminOnlyNotice": "Hanya Administrator yang memiliki wewenang untuk melakukan penyuntikan data langsung ke dalam engine.",
+    "protocolTitle": "PROTOKOL",
+    "protocolDesc": "Seluruh payload yang dikirimkan akan melalui proses normalisasi otomatis sebelum didistribusikan ke register notifikasi global.",
+    "schemaInfo": "SPESIFIKASI SKEMA",
+    "protocolSchema": "Gunakan format objek JSON atau array objek dengan kunci mandatory: rule, agent, dan timestamp.",
+    "payloadTemplate": "TEMPLAT PAYLOAD",
+    "empty": "Input JSON tidak boleh kosong.",
+    "success": "Payload berhasil disuntikkan ke dalam register.",
+    "error": "Gagal mengurai JSON. Pastikan format valid.",
+    "confirmClear": "Apakah Anda yakin ingin mematikan seluruh data simulasi?",
+    "clearSuccess": "Register berhasil dibersihkan.",
+    "clearNone": "Tidak ada data simulasi yang ditemukan."
+  },
+  "fp": {
+    "title": "False Positive",
+    "subtitle": "Pengelolaan alert yang telah terverifikasi aman untuk optimasi akurasi deteksi.",
+    "searchPlaceholder": "Cari False Positive...",
+    "bulk": {
+      "restore": "Pulihkan Massal",
+      "close": "Tutup Massal",
+      "selected": "terpilih",
+      "hint": "Pilih baris untuk tindakan massal",
+      "none": "Tidak ada False Positive yang dipilih.",
+      "restored": "notifikasi dipulihkan",
+      "closed": "notifikasi ditutup"
+    }
+  },
+
+  "about": {
+    "title": "Spesifikasi Platform",
+    "desc": "Pusat komando keamanan terintegrasi untuk pemantauan ancaman, respons insiden, dan pelaporan operasional SOC.",
+    "platformStatus": "Status Platform",
+    "coreEngine": "Inti Mesin",
+    "workflow": "Prosedur Operasional Standar",
+    "architecture": "Arsitektur Sistem Dasar",
+    "disclaimerTitle": "Pernyataan Hukum & Batasan Penggunaan",
+    "disclaimer": "Seluruh data yang ditampilkan bersifat rahasia operasional dan dilindungi kebijakan keamanan organisasi.",
+    "workflowPath": "Deteksi -> Validasi -> Pengayaan -> Keputusan -> Eskalasi -> Resolusi",
+    "workflowStagesTitle": "Alur Kerja Aplikasi",
+    "featureFunctionsTitle": "Fitur & Fungsi Aplikasi",
+    "systemCore": "INTI SISTEM",
+    "versionStack": "VERSI STACK",
+    "architectureItems": [
+      "Inti: React v18 + Vite + Tailwind CSS",
+      "Kerangka: Pola Infrastruktur Modular Reusable",
+      "Standar: Integrasi Skema Data Keamanan Wazuh",
+      "Performa: Mesin Sisi Klien dengan Latensi Rendah"
+    ],
+    "featureFunctions": [
+      "Visualisasi distribusi ancaman dan metrik KPI dashboard",
+      "Register Notifikasi dengan filter lanjutan, tindakan massal, dan klaster insiden",
+      "Workspace Triage dengan pengayaan intelijen ancaman, playbook, dan jejak kasus",
+      "Pusat Laporan dengan ekspor data berbasis PDF/CSV/JSON",
+      "Log Audit Operasional untuk akuntabilitas aktivitas analis",
+      "Hub Pengaturan & Integrasi (Wazuh, OpenCTI, Telegram, Branding, Manajemen Pengguna)"
+    ],
+    "workflowStages": [
+      {
+        "label": "Tahap 1: Monitoring",
+        "desc": "Mengumpulkan dan menampilkan alert dari sumber SIEM."
+      },
+      {
+        "label": "Tahap 2: Validasi",
+        "desc": "Menyaring prioritas alert berdasarkan severity, status, dan kategori."
+      },
+      {
+        "label": "Tahap 3: Enrichment",
+        "desc": "Menambahkan konteks intelijen ancaman untuk analisis lebih dalam."
+      },
+      {
+        "label": "Tahap 4: Triage",
+        "desc": "Menentukan keputusan investigasi, eskalasi, false-positive, atau close."
+      },
+      {
+        "label": "Tahap 5: Reporting & Audit",
+        "desc": "Menyusun laporan, dokumentasi, dan jejak aktivitas operasional."
+      }
+    ],
+    "securityEcosystem": "EKOSISTEM KEAMANAN"
+  },
+  "settings": {
+    "title": "PUSAT KENDALI",
+    "subtitle": "Konfigurasikan operasi inti SOC, umpan intelijen, and akses identitas.",
+    "integratorGuideTitle": "Panduan Integrasi Dashboard Enterprise",
+    "fullIntegratorScript": "Unduh Skrip Integrator Lengkap",
+    "stability": "STABILITAS",
+    "integrator": {
+      "guideTitle": "Panduan Integrasi Dashboard Enterprise",
+      "guideSubtitle": "Panduan lengkap konfigurasi hirarki sistem SOC untuk penghubung Wazuh SIEM, Wazuh Indexer, dan OpenCTI Threat Intelligence.",
+      "step1Title": "Konfigurasi Wazuh Manager (API v4)",
+      "step1Desc": "Wazuh Manager bertindak sebagai unit kontrol. Pastikan API diaktifkan untuk mengizinkan aplikasi {appName} melakukan manajemen agen dan cek aturan.",
+      "step1Host": "Host: Alamat IP/Domain Manager (Default Port: 55000)",
+      "step1Auth": "Auth: Gunakan kredensial API (User: wazuh-wui / User kustom)",
+      "step2Title": "Akses Wazuh Indexer (Data Node)",
+      "step2Desc": "Indexer menyimpan semua log alert. Tanpa ini, dashboard tidak akan menampilkan \"Security Events\" secara real-time.",
+      "step2Tip": "Security Tip: Pastikan port 9200 terbuka di firewall (ufw/iptables) agar aplikasi Dashboard dapat melakukan query langsung ke index wazuh-alerts-*",
+      "step3Title": "Pemasangan Script Integrator OpenCTI",
+      "step1Desccti": "Script ini berjalan di sisi Wazuh Manager untuk secara otomatis mengirim indikator (IP/Hash) ke OpenCTI dan memperkaya data log dengan konteks ancaman.",
+      "libInstall": "A. Instalasi Library Python",
+      "scriptDeploy": "B. Script Deployment",
+      "scriptDeployDesc": "Gunakan perintah berikut untuk menyiapkan file eksekusi:",
+      "activation": "C. Aktivasi ossec.conf",
+      "activationDesc": "Edit file /var/ossec/etc/ossec.conf dan tambahkan blok integrasi:",
+      "activityResume": "Resume Aktivitas Pengerasan (Mandatory Log)",
+      "troubleshooting": "Troubleshooting (Pemecahan Masalah)",
+      "err401Title": "Error 401 Unauthorized",
+      "err401Desc": "Pastikan username/password API Wazuh atau Token OpenCTI sudah benar. Cek juga apakah user memiliki permission administrator.",
+      "errTimeoutTitle": "Connection Timeout",
+      "errTimeoutDesc": "Periksa port 55000, 9200, dan 8080. Pastikan tidak ada firewall yang memblokir komunikasi antar server Dashboard, Wazuh, dan OpenCTI."
+    },
+    "readOnlyNotice": "Mode Baca Saja",
+    "groupGeneral": "Operasional Global",
+    "groupBranding": "Identitas & Logo",
+    "groupIntegrations": "Integrasi Layanan",
+    "corporateBrandingAsset": "Logo",
+    "groupBrandingDesc": "Sesuaikan tampilan platform. Logo yang diunggah akan tercermin di seluruh navigasi dashboard, portal login, dan laporan PDF.",
+    "resetBranding": "Atur Ulang Branding",
+    "groupBrandingSubtitle": "Konfigurasi identitas global & aset korporat",
+    "groupShifts": "Manajemen Shift & Penjadwalan",
+    "groupShiftsDesc": "Tentukan jendela waktu operasional dan target personel untuk setiap shift jaga SOC.",
+    "groupUserMain": "Manajemen Pengguna Operasional",
+    "groupUserDesc": "Kelola akses identitas untuk personel SOC dan persona demo.",
+    "btnProvision": "Provisi Pengguna",
+    "editUserTitle": "MODIFIKASI IDENTITAS",
+    "addUserTitle": "PROVISI PERSONA BARU",
+    "provisionForm": {
+      "title": "Provisi Pengguna Baru",
+      "name": "Nama Lengkap",
+      "email": "Username / Nama Pengguna",
+      "password": "Kata Sandi",
+      "passwordPlaceholder": "Kosongkan jika tidak ingin mengubah",
+      "role": "Peran Operasional",
+      "cancel": "BATAL",
+      "finalize": "SELESAIKAN PROVISI",
+      "update": "PERBARUI PERSONA",
+      "skills": "KEAHLIAN (PISAHKAN DENGAN KOMA)",
+      "experience": "TAHUN PENGALAMAN"
+    },
+    "userTable": {
+      "identity": "Identitas / Nama Lengkap",
+      "endpoint": "Username Pengguna",
+      "persona": "Persona",
+      "policy": "Kebijakan Auth",
+      "action": "Tindakan",
+      "policyStandard": "STANDAR",
+      "capabilityMatrix": "MATRIKS KAPABILITAS",
+      "noSkills": "BELUM ADA TAG KAPABILITAS",
+      "experienceYears": "{count} THN PENGALAMAN"
+    },
+    "anchors": {
+      "branding": "IDENTITAS VISUAL",
+      "identity": "MANAJEMEN IDENTITAS",
+      "integrations": "INTEGRASI LAYANAN",
+      "infrastructure": "KONFIGURASI SISTEM",
+      "audit": "LOG AUDIT TATA KELOLA",
+      "overview": "RINGKASAN SISTEM"
+    },
+    "dashboard": {
+      "title": "COMMAND INTELLIGENCE",
+      "subtitle": "Status kedaulatan infrastruktur dan tata kelola identitas.",
+      "uptime": "UPTIME GLOBAL",
+      "identities": "CAKUPAN IDENTITAS",
+      "auditCount": "DENYUT TATA KELOLA",
+      "auditDesc": "EVENT SISTEM & MUTASI DATA",
+      "activityTrend": "TREN AKTIVITAS KONFIG",
+      "roleDist": "DISTRIBUSI PERAN PERSONEL",
+      "personaDist": "TERDISTRIBUSI PADA {count} PERSONA",
+      "maintenance": "PEMELIHARAAN DATA",
+      "exportBtn": "EKSPOR KONFIGURASI",
+      "importBtn": "PULIHKAN DATA",
+      "backupDesc": "Cadangkan seluruh pengaturan platform ke file JSON lokal sebagai fail-safe.",
+      "restoreDesc": "Unggah file cadangan untuk memulihkan konfigurasi sistem.",
+      "importSuccess": "Konfigurasi berhasil dipulihkan.",
+      "importError": "File tidak valid atau rusak.",
+      "exportSuccess": "Konfigurasi berhasil diekspor.",
+      "active": "AKTIF",
+      "managed": "TERKELOLA",
+      "window24h": "JENDELA 24 JAM",
+      "executeExport": "EKSEKUSI EKSPOR TERENKRIPSI",
+      "initiateRestore": "MULAI PEMULIHAN DATA",
+      "pulseTitle": "DENYUT RELIABILITAS INTEGRASI",
+      "statusOptimal": "STABIL",
+      "statusOffline": "LURING"
+    },
+    "tooltips": {
+      "appName": "Identifikator global platform yang terlihat di header dan metadata.",
+      "orgName": "Nama entitas untuk kebutuhan kepatuhan dan kepemilikan laporan.",
+      "logo": "Aset identitas visual. Mendukung PNG/SVG dengan transparansi.",
+      "provisionName": "Identifikasi lengkap analis untuk kebutuhan jejak audit forensik.",
+      "provisionEmail": "Identifikator sistem unik yang digunakan untuk otentikasi aman.",
+      "provisionPass": "Kredensial aman untuk otentikasi analis. Direkomendasikan minimal 8 karakter.",
+      "provisionRole": "Tingkat kontrol akses (RBAC) yang menentukan kapabilitas platform.",
+      "provisionSkills": "Kapabilitas khusus untuk penugasan tugas taktis.",
+      "provisionExp": "Senioritas operasional untuk perencanaan tenaga kerja.",
+      "ttShiftRep": "Panduan untuk laporan serah terima shift, menguraikan tindakan tertunda dan status operasional.",
+      "ttDailyRep": "Ringkasan operasional harian, mendetailkan metrik utama, peringatan yang diselidiki, dan kinerja tim.",
+      "ttWeeklyRep": "Ikhtisar mingguan strategis untuk tinjauan eksekutif, menyoroti tren dan ketahanan infrastruktur.",
+      "ttAuditHandover": "Log rincian serah terima komando yang dibagikan antar Shift Leader.",
+      "ttSchedules": "Kalender master yang menggambarkan alokasi tugas global termasuk ketidakhadiran (Sakit/Izin).",
+      "ttShiftMgmt": "Pemetaan jadwal putaran, kapasitas minimal tugas, dan pengaturan blok kalender analis.",
+      "wazuhHost": "Alamat IP atau FQDN dari node utama Wazuh Manager Anda.",
+      "wazuhPort": "Port komunikasi API. Default adalah 55000.",
+      "wazuhUser": "Username API Manager. Defaultnya adalah 'wazuh-wui' atau admin kustom.",
+      "wazuhPass": "Kata sandi API Manager. Jaga kredensial Anda untuk mencegah kontrol tanpa izin.",
+      "wazuhIndexer": "Alamat data node untuk menjalankan kueri OpenSearch/Elastic.",
+      "indexerUser": "Username node data. Defaultnya biasanya adalah 'admin'.",
+      "indexerPass": "Kata sandi node data. Lindungi ini untuk mengamankan data insiden historis.",
+      "openctiUrl": "URL lingkungan intelijen inti untuk pengayaan ancaman.",
+      "openctiToken": "Token Bearer untuk otorisasi API. Ditemukan di profil pengguna OpenCTI Anda.",
+      "openctiConfidence": "Kepastian indikator minimum yang diperlukan untuk memperkaya alert.",
+      "telegramBot": "Token otorisasi yang diberikan oleh BotFather untuk transmisi aman.",
+      "telegramChat": "Identifikator unik untuk saluran triage atau siaran target.",
+      "shiftName": "Identifikator deskriptif untuk jendela operasional taktis.",
+      "shiftWindow": "Batasan waktu kronologis (mulai/selesai) untuk shift ini.",
+      "shiftStaffing": "Persyaratan analis minimum untuk menjaga integritas operasional.",
+      "guideStep1": "Membangun jabat tangan aman dengan Wazuh Manager API untuk pengambilan insiden proaktif.",
+      "guideStep2": "Menghubungkan ke backend pencarian untuk menganalisis tren historis dan klaster alert.",
+      "guideStep3": "Implementasi skrip python taktis untuk mengotomatisasi pengayaan intelijen ancaman.",
+      "tabOverview": "Ikhtisar eksekutif terkait kesehatan infrastruktur, identitas, dan denyut audit.",
+      "tabBranding": "Tata kelola identitas platform, termasuk metadata korporat dan aset visual.",
+      "tabIdentity": "Komando pusat untuk provisi pengguna, definisi RBAC, dan keahlian analis.",
+      "tabIntegrations": "Suite konektivitas taktis untuk node ekosistem (Wazuh, OpenCTI, Telegram).",
+      "tabInfra": "Konfigurasi backend granular untuk persistensi database, log forensik, dan keamanan.",
+      "dashUptime": "Persentase layanan taktis aktif yang berhasil melakukan jabat tangan dengan platform.",
+      "dashIdentities": "Total persona tenaga kerja yang diprovisi dalam hub identitas SOC.",
+      "dashAudits": "Jumlah perubahan konfigurasi dan operasional kritis yang dicatat dalam buku besar forensik.",
+      "dashExport": "Menghasilkan payload JSON yang berisi status lengkap platform.",
+      "dashImport": "Memulihkan status platform dari cadangan konfigurasi JSON yang divalidasi.",
+      "ttRoleDist": "Visualisasi sebaran komposisi analis, manajer, dan peran lainnya dalam SOC.",
+      "ttDataMaint": "Modul komando eksekusi manual untuk manipulasi, pencadangan, dan pemulihan data inti.",
+      "ttLogo": "Pengaturan visual inti untuk personalisasi platform sesuai dengan identitas organisasi.",
+      "ttActiveSessions": "Daftar analis yang sedang online, terhubung via WebSocket, dan memiliki sesi operasional aktif.",
+      "ttUserMgmt": "Pusat kontrol untuk membuat, mengedit, atau menonaktifkan akun operator dan kredensial akses.",
+      "ttIntegrationsPulse": "Status jabat tangan API secara langsung untuk memastikan konektivitas node kritis (Wazuh, CTI).",
+      "ttWazuhSetup": "Konfigurasi handshake master API untuk sinkronisasi peringatan keamanan dari Wazuh.",
+      "ttWazuhApi": "Titik akses API Manajer Wazuh untuk mengambil data telemetri yang dienkripsi.",
+      "ttWazuhIndexer": "Node OpenSearch untuk penyimpanan dan historiografi rekaman keamanan tingkat klaster.",
+      "ttOpenCTISetup": "Koneksi ke otak intelijen ancaman eksternal untuk memperkaya data deteksi lokal.",
+      "ttDatabase": "Penyimpanan eksternal performa tinggi untuk persistensi rekaman forensik jangka panjang dan kueri investigasi.",
+      "ttTelegram": "Hub pengiriman pesan prioritas tinggi untuk memberitahukan analis on-call terkait insiden kritis.",
+      "ttSyncConnect": "Parameter interval permintaan untuk menyelaraskan buffer data eksternal dengan server dalam ruang.",
+      "ttDbTTL": "Konfigurasi batas waktu hidup rekaman forensik dan retensi database sebelum rotasi otomatis.",
+      "ttAuditAtt": "Rekaman masuk/keluar shift serta kehadiran anggota untuk akuntabilitas operasional harian.",
+      "ttOpsSchedule": "Tampilan kalender master dari seluruh jadwal tugas dan status ketersediaan (Cuti/Sakit).",
+      "ttAnalystIntel": "Pemetaan keahlian spesifik analis (Malware, Jaringan, Forensik) untuk penempatan prioritas beban kerja.",
+      "ttRealtimeUptime": "Monitor presisi detak jantung TCP/HTTP untuk melacak metrik Uptime global SOC.",
+      "ttIncRelLog": "Rekaman historis komprehensif atas penanganan tiket dari deteksi hingga triase.",
+      "ttForensicLog": "Ledger log non-repudiasi yang menyimpan seluruh mutasi konfigurasi dan aksi platform.",
+      "ttRawJson": "Muatan struktur data asli yang direkam oleh sensor dari pergerakan ancaman.",
+      "ttActiveEventReg": "Daftar semua peringatan yang tertunda, yang dimuat di memori menunggu triase analitik.",
+      "ttIncidentCluster": "Grup peringatan berulang yang dipetakan secara otomatis berdasarkan indeks kesamaan taktis.",
+      "ttThreatRadar": "Pemetaan distribusi taktik ancaman berdasar matriks MITRE ATT&CK dari data masuk.",
+      "ttExecReport": "Ringkasan komando eksekutif yang diformat spesifik untuk dewan strategis SOC.",
+      "ttSocHandoverRep": "Draft laporan otomatis dari metrik serah terima antar tim.",
+      "ttDailyOpsRep": "Metrik evaluasi 24-jam meliputi SLA, resolusi MTTR, dan densitas ancaman hari ini.",
+      "ttDailyMetRep": "Raw data kuantitatif yang mengkalkulasi efisiensi SOC dalam jendela 24 jam.",
+      "ttWeeklyStrategic": "Laporan tren dan postur keseluruhan yang menyoroti pergeseran TTP adversary.",
+      "ttWeeklyMetRep": "Tinjauan performa tim dalam metrik mingguan untuk keputusan penyesuaian beban kerja."
+    },
+    "infra": {
+      "sync": {
+        "title": "Sinkronisasi & Konektivitas",
+        "pollingInterval": "Polling Global (detik)",
+        "timeoutMs": "API Handshake Timeout (ms)",
+        "maxRetries": "Retry Koneksi",
+        "alertBatchSize": "Batch Size Alert",
+        "pollingIntervalTooltip": "Frekuensi detak jantung penyegaran data dashboard.",
+        "timeoutMsTooltip": "Waktu tunggu maksimum untuk respons alat eksternal (Wazuh/OpenCTI).",
+        "maxRetriesTooltip": "Jumlah upaya untuk menyambungkan kembali saat terjadi kegagalan.",
+        "alertBatchSizeTooltip": "Jumlah notifikasi untuk diambil per siklus permintaan."
+      },
+      "database": {
+        "title": "Persistensi Database & TTL",
+        "presenceTtlMinutes": "TTL Sesi Aktif (menit)",
+        "cleanupThresholdDays": "Kebijakan Arsip (hari)",
+        "autoVacuum": "Auto-Optimasi DB",
+        "presenceTtlMinutesTooltip": "Berapa lama seorang analis tetap Live tanpa aktivitas sebelum dihapus.",
+        "cleanupThresholdDaysTooltip": "Kasus yang lebih tua dari ini akan dipindahkan ke penyimpanan jangka panjang.",
+        "autoVacuumTooltip": "Aktifkan vacuuming otomatis SQLite untuk performa."
+      },
+      "logging": {
+        "title": "Audit Forensik & Logging",
+        "auditRetentionDays": "Retensi Audit Log (hari)",
+        "minLevel": "Verboritas Log Lokal",
+        "systemVisibility": "Penegakan Visibilitas",
+        "auditRetentionDaysTooltip": "Durasi penyimpanan jejak forensik administratif.",
+        "minLevelTooltip": "Level minimum logging sistem internal yang ditangkap.",
+        "systemVisibilityTooltip": "Postur keamanan untuk visibilitas pemantauan sesi."
+      },
+      "security": {
+        "title": "Keamanan & Tata Kelola Akses",
+        "sessionTimeoutMinutes": "Timeout Sesi Global (menit)",
+        "autoLockIdle": "Auto-Lock Saat Idle (menit)",
+        "passwordComplexity": "Kebijakan Kredensial",
+        "sessionTimeoutMinutesTooltip": "Total durasi sesi yang tersedia sebelum otentikasi ulang.",
+        "autoLockIdleTooltip": "Kunci antarmuka browser setelah periode tidak aktif.",
+        "passwordComplexityTooltip": "Persyaratan kerumitan yang diberlakukan untuk analis baru."
+      },
+      "warning": {
+        "title": "Peringatan Integritas Operasional",
+        "desc": "Penyesuaian infrastruktur berdampak pada sinkronisitas persistensi dan throughput database. Modifikasi retensi log dan parameter TTL sesi akan segera mengubah visibilitas forensik dan manajemen siklus sesi di seluruh arsitektur dashboard."
+      }
+    },
+    "buttons": {
+      "testConnection": "Uji Koneksi",
+      "restoreDefaults": "Kembalikan Default",
+      "saveConfig": "SIMPAN",
+      "saved": "Konfigurasi Tersimpan",
+      "replace": "Ganti Logo"
+    },
+    "quickNav": "NAVIGASI CEPAT",
+    "groupWazuh": "Setup Layanan API Wazuh",
+    "groupWazuhDesc": "Operasi keamanan inti dan pencatatan log insiden.",
+    "wazuhFields": {
+      "endpoint": "Endpoint Manager",
+      "port": "Port API",
+      "user": "User API",
+      "password": "Kunci Akses API",
+      "status": "Status Node",
+      "test": "Uji Handshake API",
+      "managerPanel": "Wazuh Manager (API v4)",
+      "indexerPanel": "Wazuh Indexer (Data Node)",
+      "indexerHost": "Host Indexer",
+      "apiStatus": "STATUS API",
+      "dataStatus": "STATUS DATA",
+      "established": "MAPAN",
+      "nominal": "NOMINAL",
+      "ultra": "ULTRA",
+      "validate": "VALIDASI",
+      "probe": "PROBE",
+      "stability": "STABILITAS",
+      "handshake": "SINKRONISASI SISTEM",
+      "dispatchHandshake": "KIRIM SINKRONISASI UJI",
+      "tokenAuth": "OTENTIKASI TOKEN",
+      "botToken": "TOKEN API BOT",
+      "targetChat": "ID CHAT TUJUAN",
+      "engineDisabled": "MESIN DINONAKTIFKAN"
+    },
+    "groupOpencti": "Setup Intelijen Ancaman OpenCTI",
+    "openctiFields": {
+      "url": "URL Lingkungan",
+      "token": "Token API Bearer",
+      "confidence": "Ambang Kepercayaan",
+      "confidenceDesc": "Hanya serap indikator dengan kepercayaan lebih tinggi dari nilai ini.",
+      "status": "Status Koneksi API",
+      "test": "Verifikasi Handshake",
+      "showGuide": "Buka Panduan",
+      "hideGuide": "Tutup Panduan"
+    },
+    "groupTelegram": "Monitor Notifikasi Telegram",
+    "telegramFields": {
+      "config": "Konfigurasi Penerima",
+      "token": "Token API Bot",
+      "chatId": "ID Chat / Saluran",
+      "test": "Verifikasi Status Bot"
+    },
+    "fields": {
+      "appName": "Nama Antarmuka Platform",
+      "orgName": "Identitas Organisasi",
+      "theme": "Skema Visual UI",
+      "endpoint": "Alamat Node Manajemen",
+      "apiKey": "Token / Kunci Otorisasi",
+      "port": "Port Akses",
+      "status": "Konektivitas Antarmuka",
+      "enabled": "Aktifkan Status Modul",
+      "botToken": "Token Otorisasi Bot",
+      "chatId": "Identitas Grup Penerima (ID)",
+      "webhook": "URL Webhook Masuk",
+      "phone": "Nomor Identitas Gateway",
+      "model": "Varian Mesin AI",
+      "provider": "Penyedia Layanan AI"
+    },
+    "roles": {
+      "admin": "ADMINISTRATOR SISTEM",
+      "manager": "MANAJER OPERASIONAL SOC",
+      "l1_analyst": "ANALIS L1 (TRIAGE)",
+      "l2_analyst": "SPESIALIS INVESTIGASI (L2)",
+      "auditor": "AUDITOR EKSEKUTIF",
+      "demo": "DEMO (PUBLIK)"
+    },
+    "shifts": {
+      "addShift": "TAMBAH JENDELA SHIFT",
+      "shiftName": "NAMA SHIFT",
+      "opsWindow": "JENDELA OPERASIONAL",
+      "startTime": "Waktu Mulai",
+      "endTime": "Waktu Selesai",
+      "composition": "Komposisi Wajib",
+      "analysts": "Analis (L1)",
+      "leaders": "Leader (L2+)",
+      "minPersonnel": "MINIMUM PERSONEL",
+      "minPersonnelDesc": "TARGET MINIMUM PERSONEL AKTIF UNTUK SHIFT INI",
+      "govNoteTitle": "Catatan Tata Kelola Operasional",
+      "govNoteDesc": "Komposisi yang ditetapkan digunakan untuk pemantauan kepatuhan tugas real-time. Shift yang tidak memenuhi persyaratan staf minimum akan memicu peringatan dalam konsol Pusat Kendali."
+    },
+    "integrations": {
+      "threatIntelDesc": "Agregator Intelijen Ancaman",
+      "telegramHeader": "NOTIFIKASI TELEGRAM",
+      "telegramDesc": "Peringatan Instan via Bot",
+      "databaseHeader": "GUDANG DATABASE EKSTERNAL",
+      "databaseDesc": "Penyimpanan Forensik Historis",
+      "confidenceDesc": "FILTER INTEL BERDASARKAN SKOR KEYAKINAN ANALIS",
+      "btnHideInfo": "SEMBUNYIKAN INFO",
+      "btnSetupOps": "SETUP OPERASIONAL",
+      "btnProbeHub": "UJI HUB",
+      "btnHandshake": "EKSEKUSI TEST HANDSHAKE",
+      "handshakeLabel": "HANDSHAKE SISTEM:",
+      "engineDisabled": "MESIN NOTIFIKASI DINONAKTIFKAN"
+    },
+    "users": {
+      "tooltipEdit": "Ubah Identitas",
+      "tooltipDelete": "Hapus Pengguna",
+      "tooltipProtected": "Admin Terproteksi",
+      "policyLabel": "Keamanan: RBAC STANDAR"
+    },
+    "messages": {
+      "saved": "Konfigurasi platform telah diperbarui.",
+      "handshakeSuccess": "Koneksi Berhasil. Protokol Terverifikasi.",
+      "botVerified": "Bot Terverifikasi: Aktif",
+      "errorDefaultUser": "Kesalahan: Akun administratif default tidak dapat dihapus.",
+      "userRemoved": "Akun pengguna dihapus.",
+      "userProvisioned": "Pengguna baru berhasil divalidasi.",
+      "userUpdated": "Identitas pengguna berhasil diperbarui.",
+      "logoUploaded": "Logo branding diunggah ke buffer pratinjau.",
+      "brandingReset": "Branding diatur ulang ke standar sistem.",
+      "logoSizeError": "Ukuran gambar terlalu besar. Direkomendasikan maksimal 2MB.",
+      "logoPreviewNotice": "Logo branding diunggah ke buffer pratinjau.",
+      "invalidUrl": "Format URL tidak valid. Harus diawali dengan http/https.",
+      "invalidToken": "Token API hilang, terlalu pendek, atau tidak valid.",
+      "invalidHost": "Host Wazuh wajib diisi (Min. 3 karakter).",
+      "wazuhManagerSuccess": "Wazuh Manager: ✅ Terhubung — API Aktif",
+      "wazuhIndexerSuccess": "Wazuh Indexer: ✅ Terhubung — Klaster Aktif",
+      "openctiSuccess": "OpenCTI: ✅ Terhubung — Versi",
+      "botConnected": "Bot Terhubung — @",
+      "networkError": "⚠️ Jaringan Tidak Terjangkau — Server mungkin mati, di balik proxy, atau diblokir oleh CORS.",
+      "tokenRequired": "Token Bot Telegram wajib diisi.",
+      "invalidBotToken": "Token Bot tidak valid.",
+      "userExists": "Nama pengguna (email) sudah terdaftar dalam sistem."
+    },
+    "livePresence": {
+      "title": "PEMANTAUAN SESI AKTIF",
+      "subtitle": "Monitoring Kehadiran & Sesi Forensik",
+      "statusOnline": "ONLINE",
+      "statusOnDuty": "SEDANG BERTUGAS",
+      "forceLogout": "TERMINASI SESI",
+      "confirmLogout": "Apakah Anda yakin ingin mengakhiri sesi pengguna ini?",
+      "loggedOutByAdmin": "Sesi Anda telah diakhiri oleh administrator.",
+      "empty": "TIDAK ADA SESI AKTIF LAINNYA",
+      "ttForceLogout": "Terminasi sesi paksa untuk menjaga integritas keamanan jika terdeteksi aktivitas anomali atau pergantian petugas yang tidak sah.",
+      "ttOnDuty": "Analis ini terdaftar dalam jadwal shift aktif dan telah melakukan konfirmasi masuk tugas."
+    }
+  },
+  "ops": {
+    "command": "PUSAT KENDALI OPS",
+    "duty": {
+      "on": "BERTUGAS",
+      "off": "Menunggu Ganti Shift",
+      "none": "TIDAK ADA SHIFT AKTIF",
+      "status": "DUTY: {count} ANGGOTA AKTIF",
+      "standby": "SIAGA",
+      "membersActive": "{count} PERSONEL AKTIF"
+    },
+    "shifts": {
+      "morning": "Shift 1",
+      "afternoon": "Shift 2",
+      "night": "Shift 3"
+    },
+    "activeStatus": "{count} ANALIS AKTIF • PENANGGUNG JAWAB: {leader}",
+    "standbyStatus": "SISTEM SIAGA • TIDAK ADA ANALIS AKTIF",
+    "roster": {
+      "title": "Jadwal Kerja Personel",
+      "add": "TAMBAH ANALIS"
+    },
+    "handover": {
+      "new": "SERAH TERIMA BARU",
+      "title": "Log Serah Terima",
+      "empty": "TIDAK ADA LOG SERAH TERIMA YANG TERDETEKSI",
+      "label": "SERAH TERIMA OPERASIONAL",
+      "verifiedBy": "DIVERIFIKASI OLEH {name}",
+      "modal": {
+        "title": "Deklarasi Serah Terima",
+        "subtitle": "Dokumentasikan status operasional, insiden luar biasa, dan tugas tertunda untuk shift berikutnya.",
+        "label": "CATATAN SERAH TERIMA",
+        "placeholder": "Masukkan ringkasan operasional detail di sini...",
+        "submit": "KONFIRMASI SERAH TERIMA"
+      }
+    },
+    "shift": {
+      "title": "Parameter Shift"
+    },
+    "stats": {
+      "sla": "KEPATUHAN SLA",
+      "slaDesc": "Kinerja optimal. Dihitung berdasarkan target MTTA."
+    },
+    "tactical": {
+      "title": "PERINGATAN TAKTIS",
+      "desc": "Log serah terima adalah bukti SOC yang mengikat secara hukum. Pastikan semua alur investigasi utama didokumentasikan sebelum akhir shift."
+    },
+    "calendar": {
+      "title": "PENJADWALAN OPERASIONAL",
+      "subtitle": "Perencanaan Rotasi & Jam Kerja Analis",
+      "daysAbbr": [
+        "MIN",
+        "SEN",
+        "SEL",
+        "RAB",
+        "KAM",
+        "JUM",
+        "SAB"
+      ],
+      "modal": {
+        "title": "JADWAL OPERASIONAL",
+        "tabs": {
+          "shift": "Penugasan",
+          "attendance": "Absensi"
+        }
+      },
+      "btn": {
+        "assign": "TENTUKAN TIM",
+        "save": "Simpan Jadwal"
+      },
+      "noSchedule": "Belum ada analis yang ditugaskan",
+      "minPersonnel": "Minimum Tim",
+      "ready": "SIAP"
+    },
+    "attendance": {
+      "title": "Status Kehadiran",
+      "sick": "SAKIT",
+      "leave": "IJIN",
+      "holiday": "LIBUR",
+      "unauthorized": "ABSEN"
+    },
+    "monitor": {
+      "title": "Monitor Kehadiran & Kepatuhan",
+      "subtitle": "Live Compliance Monitor",
+      "activeShift": "Shift Sekarang",
+      "atShift": "Personel pada Shift ini",
+      "empty": "TIDAK ADA JADWAL HARI INI",
+      "status": {
+        "onDuty": "SEDANG BERTUGAS",
+        "awaiting": "MENUNGGU LOGIN",
+        "offSchedule": "LUAR JADWAL"
+      }
+    },
+    "shiftGuard": {
+      "entryTitle": "PROTOKOL MASUK SHIFT",
+      "exitTitle": "PROTOKOL KELUAR SHIFT",
+      "subtitle": "PENJAGA AKUNTABILITAS SISTEM",
+      "identity": "IDENTITAS ANALIS",
+      "timestamp": "WAKTU LOKAL",
+      "entryLabel": "KONFIRMASI MULAI TUGAS",
+      "exitLabel": "RINGKASAN TUGAS & SERAH TERIMA",
+      "required": "WAJIB DIISI",
+      "entryPlaceholder": "Berikan catatan singkat fokus tugas atau pembaruan yang diterima...",
+      "exitPlaceholder": "Ringkas tiket kritis, kendala, dan hasil operasional shift ini...",
+      "entryDirective": "TUGAS OPERASIONAL TELAH DIMULAI. SELURUH TINDAKAN ANDA AKAN DICATAT DALAM LOG KEAMANAN TERPUSAT.",
+      "exitDirective": "PASTIKAN SELURUH DOKUMENTASI INSIDEN TELAH DISELESAIKAN. SERAH TERIMA YANG TIDAK LENGKAP DAPAT MENGGANGGU EFEKTIVITAS TIM BERIKUTNYA.",
+      "actionCommence": "MASUK SHIFT",
+      "actionFinalize": "SELESAI SHIFT",
+      "actionCancel": "BATAL",
+      "liveQueue": "KONTEKS ANTRIAN REAL-TIME",
+      "activeTickets": "TIKET AKTIF ANDA",
+      "valQueueEntry": "Saya mengonfirmasi beban kerja antrian insiden saat ini",
+      "valReadyEntry": "Saya telah ditugaskan dan siap untuk monitoring aktif",
+      "valEthicsEntry": "Saya mematuhi Kode Etik Profesional SOC",
+      "valUpdateExit": "Saya telah memperbarui seluruh catatan investigasi pada tiket saya",
+      "valBriefExit": "Insiden kritis telah diserahterimakan ke tim berikutnya",
+      "valStabilityExit": "Lingkungan stabil dan diserahterimakan untuk kontinuitas",
+      "managerEntryTitle": "PENGAMBILALIHAN KOMANDO OPERASIONAL",
+      "managerExitTitle": "TINJAUAN PERFORMA SHIFT",
+      "valTeamReady": "Saya mengonfirmasi tim lengkap dan siap bertugas",
+      "valKpiVerified": "Saya telah memverifikasi KPI shift dan kepatuhan SLA",
+      "adminEntryTitle": "PENGECEKAN INTEGRITAS INFRASTRUKTUR",
+      "valInfraHealthy": "Saya memastikan seluruh integrasi sistem dalam kondisi sehat",
+      "auditorEntryTitle": "INISIASI SESI KEPATUHAN",
+      "valComplianceAware": "Saya sadar akun saya bersifat Read-Only dan aktivitas dicatat",
+      "rosterSnapshot": "RINGKASAN PERSONEL AKTIF",
+      "noActivePersonnel": "TIDAK ADA PERSONEL AKTIF DALAM CAKUPAN",
+      "contextAdmin": "KONTEKS TOTAL OPERASIONAL & INFRA",
+      "contextManager": "KONTEKS KOMANDO TIM",
+      "contextAuditor": "KONTEKS KEPATUHAN",
+      "unassignedAlerts": "KRITIKAL/TINGGI BELUM DITUGASKAN",
+      "alertsCount": "PERINGATAN",
+      "personnelOnDuty": "PERSONEL BERTUGAS",
+      "infraReady": "INFRA SIAP",
+      "auditorNotice": "\"Akses tingkat Observer diberikan. Interaksi platform terbatas pada pengawasan investigatif. Tidak ada mutasi produksi yang diizinkan.\""
+    }
+  },
+  "notFound": {
+    "title": "KONEKSI NEURAL TERPUTUS",
+    "desc": "JALUR YANG DIMINTA TIDAK DAPAT DISELESAIKAN OLEH GATEWAY AUDIT INTI.",
+    "back": "REBOOT KE BERANDA",
+    "routerCrash": "KEGAGALAN ROUTER",
+    "routerDesc": "PROTOKOL ROUTING INTERNAL GAGAL MEMUAT MODUL NEURAL YANG DIMINTA.",
+    "unknownViolation": "PELANGGARAN SISTEM TIDAK DIKENAL"
+  },
+  "tooltips": {
+    "date": "Stempel waktu pembuatan catatan notifikasi oleh Wazuh Manager.",
+    "time": "Stempel waktu presisi saat perilaku ancaman teridentifikasi.",
+    "alertId": "Identifier keamanan global unik untuk catatan event tertentu.",
+    "ruleId": "Nomor identifikasi dari aturan deteksi teknis yang terpicu.",
+    "ruleDescription": "Deskripsi teknis mendetail tentang perilaku ancaman atau anomali.",
+    "category": "Grup klasifikasi insiden utama (Otentikasi, Serangan, Audit).",
+    "hostname": "Identitas utama dari sistem host yang berada dalam pengawasan.",
+    "sourceIp": "Alamat IP asal dari inisiator insiden atau sumber ancaman.",
+    "status": "Tahapan operasional saat ini untuk tiket insiden tertentu.",
+    "analyst": "Petugas operasional SOC yang melakukan investigasi kasus.",
+    "action": "Workspace triage mendetail untuk aktivitas analis teknis.",
+    "severity": "Tingkat urgensi risiko untuk memprioritaskan tim respon operasional.",
+    "ruleLevel": "Skor kritikalitas aturan teknis. Nilai tinggi menunjukkan risiko kritis.",
+    "agent": "Endpoint pengawasan yang mentransmisikan data ke node manajemen.",
+    "falsePositive": "Notifikasi yang tampak mencurigakan namun dikonfirmasi aman (benign).",
+    "incidentCandidate": "Notifikasi keamanan dengan indikator yang memenuhi ambang batas insiden.",
+    "mitreTechnique": "Pemetaan Taktik & Teknik Serangan (ATT&CK) untuk profil ancaman.",
+    "fileIntegrityMonitoring": "Pengawasan atribut sistem dan integritas file secara tidak sah.",
+    "eventCount": "Jumlah aktivitas tertentu yang diagregasikan ke dalam satu konteks notifikasi.",
+    "decoder": "Parser yang mengidentifikasi dan menginterpretasikan aliran data log mentah.",
+    "totalAlerts": "Indikator volume kumulatif dari seluruh catatan keamanan digital yang terdaftar.",
+    "openCases": "Antrean insiden tertunda yang saat ini sedang dalam investigasi aktif.",
+    "alertsProcessed": "Volume notifikasi yang berhasil melewati validasi awal dan masuk ke sistem triage.",
+    "escalations": "Total catatan notifikasi yang diteruskan ke penyelidik tingkat lanjut untuk analisis mendalam.",
+    "falsePositives": "Notifikasi yang tampak mencurigakan namun telah dikonfirmasi aman (benign).",
+    "mtta": "MTTA (Initial Response Time): Rata-rata kecepatan interaksi pertama analis terhadap alert.",
+    "mttr": "MTTR (Case Resolution Time): Rata-rata rentang waktu penuh penyelesaian insiden dari deteksi hingga penutupan.",
+    "incidentCandidates": "Notifikasi keamanan dengan indikator teknis yang memenuhi ambang batas risiko tinggi.",
+    "containmentActions": "Volume prosedur mitigasi digital (isolasi, blokir) yang berhasil diaktivasi tim.",
+    "falsePositiveRate": "Persentase perbandingan alert aman terhadap total volume operasional.",
+    "totalWeeklyAlerts": "Akumulasi volume alert aktif yang terdaftar dalam siklus 7 hari terakhir.",
+    "monitoredAgents": "Jumlah total sensor endpoint yang mentransmisikan data ke node manajemen.",
+    "escalatedCases": "Rasio kasus yang memerlukan penanganan Tier-2 dibandingkan total laporan.",
+    "escalatedCase": "Notifikasi yang diteruskan ke analis tingkat lanjut untuk investigasi mendalam.",
+    "categoryDistribution": "Distribusi volume berdasarkan klasifikasi tipe ancaman standar.",
+    "topHosts": "Daftar 5 host endpoint yang paling sering terdampak.",
+    "topRules": "Daftar 5 aturan deteksi teknis yang paling aktif.",
+    "recentAlerts": "Ringkasan monitoring live untuk 8 entitas terakhir di aliran alert.",
+    "landingFeaturesTitle": "Ringkasan kapabilitas utama yang tersedia langsung dari portal utama.",
+    "architectureTitle": "Profil tumpukan teknologi sistem yang mendasari antarmuka ini.",
+    "workflowPath": "Metodologi operasional standar penanganan alert dan triage.",
+    "landingWorkflowTitle": "Urutan alur kerja operasional dari deteksi awal hingga pelaporan akhir.",
+    "aboutSopWorkflow": "Rantai prosedur standar lintas tim SOC untuk memastikan respon konsisten.",
+    "aboutWorkflowStages": "Tahapan mendetail alur kerja aplikasi dari monitoring hingga pelaporan & audit.",
+    "aboutFeatureFunctions": "Daftar fungsi inti platform yang digunakan dalam operasi SOC harian.",
+    "restoreFP": "Pulihkan rekaman keamanan ke antrean prioritas aktif.",
+    "dashboardTitle": "Ringkasan visual postur keamanan dan status kesehatan sistem.",
+    "alertsTitle": "Register digital seluruh anomali perilaku ancaman yang terdeteksi.",
+    "reportsTitle": "Akses ke modul pelaporan intelijen dan operasional.",
+    "ingestionTitle": "Alat teknis untuk menyuntikkan log keamanan eksternal ke penyimpanan sistem.",
+    "fpTitle": "Register log untuk alert yang dikecualikan dari prioritas investigasi.",
+    "triageTitle": "Workspace teknis mendalam untuk analisis anomali dan pengambilan keputusan.",
+    "correlatedCases": "Pengelompokkan otomatis berdasarkan IP Sumber atau identitas Host utama.",
+    "management": "Hub terpadu untuk operasi SOC, kepatuhan shift, dan akuntabilitas tim.",
+    "toLight": "Beralih ke Skema Terang",
+    "toDark": "Beralih ke Skema Gelap",
+    "indicator": {
+      "wazuh": {
+        "label": "WAZUH ECOSYSTEM",
+        "syncing": "Sedang mensinkronkan data alert dari Wazuh Indexer (Port 9200).",
+        "connected": "Sistem terhubung sepenuhnya. Seluruh node Wazuh (Manager & Indexer) beroperasi normal.",
+        "disconnected": "Koneksi ke infrastruktur Wazuh terputus. Harap periksa status layanan Indexer.",
+        "partialConnected": "Koneksi parsial — beberapa node belum siap.",
+        "error": "Gagal koneksi: {message}",
+        "managerTitle": "API Manager (v4)",
+        "indexerTitle": "Indexer (Data Node)",
+        "host": "Alamat Node",
+        "port": "Port Layanan",
+        "user": "Akun API",
+        "apiStatus": "Status API",
+        "dataStatus": "Status Data",
+        "lastSync": "Sinkronisasi Terakhir",
+        "refreshInterval": "Interval Sinkron",
+        "seconds": "detik",
+        "notConfigured": "Belum dikonfigurasi",
+        "status": "Status"
+      },
+      "opencti": {
+        "label": "OPENCTI THREAT HUB",
+        "connected": "Umpan intelijen aktif. Data diperkaya dengan indikator ancaman OpenCTI (STIX).",
+        "disconnected": "Layanan intelijen tidak terjangkau. Periksa otentikasi Bearer Token.",
+        "url": "Alamat Endpoint",
+        "confidence": "Ambang Kepercayaan",
+        "notConfigured": "Belum dikonfigurasi",
+        "status": "Status"
+      },
+      "telegram": {
+        "label": "TELEGRAM ALERT GATEWAY",
+        "connected": "Bot operasional. Alert akan diteruskan ke Telegram Chat ID tujuan secara instan.",
+        "disconnected": "Gateway bot tidak aktif. Harap verifikasi Token Bot dan Chat ID.",
+        "chatId": "Identitas Chat",
+        "notConfigured": "Belum dikonfigurasi",
+        "status": "Status"
+      },
+      "demo": "Mode Demo: Semua layanan disimulasikan sebagai terhubung."
+    }
+  },
+  "footer": {
+    "builtWith": "Dibuat dengan",
+    "forCommunity": "untuk Komunitas",
+    "feedback": "Umpan Balik Teknis",
+    "rights": "Seluruh hak kekayaan intelektual dilindungi undang-undang.",
+    "securePlatform": "Platform Operasi Keamanan",
+    "documentation": "Dokumentasi",
+    "support": "Dukungan",
+    "privacy": "Privasi",
+    "all": "SEMUA",
+    "to": "HINGGA",
+    "csv": "EKSPOR CSV",
+    "json": "EKSPOR JSON",
+    "syncing": "MENYINKRONKAN...",
+    "deepSearch": "PENCARIAN MENDALAM",
+    "archiveMode": "MODE ARSIP",
+    "context": "KONTEKS",
+    "technicalDetail": "DETAIL TEKNIS",
+    "system": "SISTEM",
+    "reloading": "MEMUAT ULANG..."
+  },
+  "onboarding": {
+    "btnNext": "Lanjut",
+    "btnBack": "Kembali",
+    "btnSkip": "Lewati",
+    "btnFinish": "Mulai Sistem",
+    "dashboard": {
+      "title": "Ikhtisar Keamanan Komprehensif",
+      "desc": "Pantau metrik KPI, distribusi tingkat bahaya, dan tren ancaman secara real-time untuk pengambilan keputusan cepat."
+    },
+    "alerts": {
+      "title": "Register Notifikasi & Forensik",
+      "desc": "Telusuri seluruh log keamanan dengan filter presisi tinggi dan sistem klastering untuk mengurangi noise."
+    },
+    "triage": {
+      "title": "Workspace Triage Strategis",
+      "desc": "Gunakan Playbook, integrasi OpenCTI, dan catatan investigasi untuk memvalidasi serta memitigasi ancaman."
+    },
+    "management": {
+      "title": "Tata Kelola & Manajemen Ops",
+      "desc": "Kelola jadwal personel, pantau kesehatan infrastruktur, dan akses pustaka kebijakan SOP dalam satu hub."
+    },
+    "settings": {
+      "title": "Pusat Kendali Konfigurasi",
+      "desc": "Atur branding organisasi, integrasi API, dan manajemen akses pengguna dengan fleksibilitas penuh."
+    },
+    "forensic": {
+      "title": "Log Audit Forensik Global",
+      "desc": "Jejak akuntabilitas menyeluruh untuk setiap tindakan analis dan mutasi data dalam sistem."
+    }
+  },
+  "errorBoundary": {
+    "title": "Kegagalan Intersepsi Platform",
+    "desc": "Mesin mission-critical mengalami pelanggaran runtime. Log forensik telah dihasilkan. Lakukan reboot sistem segera atau kembali ke gerbang.",
+    "reboot": "Reboot Lingkungan",
+    "returnToGate": "Kembali ke Gerbang"
+  },
+  "system": {
+    "accessDenied": "Akses Ditolak: Tingkat Hak Akses Read-Only Aktif.",
+    "actionDenied": "Tindakan Ditolak: Tidak dapat memutuskan sesi Anda sendiri.",
+    "actionDeniedUnauthorized": "Tindakan Ditolak: Tingkat Hak Akses Tidak Mencukupi.",
+    "syncingPersonnel": "MENYINKRONKAN MANAJEMEN OPERASIONAL...",
+    "syncingPage": "MENYINKRONKAN...",
+    "operationalGate": "GERBANG OPERASIONAL",
+    "dataSyncActive": "SINKRONISASI DATA AKTIF",
+    "justificationTooShort": "Justifikasi harus minimal 10 karakter.",
+    "secureNode": "NODE_AMAN",
+    "internalNode": "INTERNAL",
+    "unknownLocation": "TIDAK DIKETAHUI",
+    "personnelHub": "HUB KEHADIRAN PERSONEL",
+    "general": "UMUM"
+  },
+  "fpos": {
+    "title": "TATA KELOLA SUPRESI SISTEM",
+    "subtitle": "REGISTER VIRTUALISASI PERFORMA TINGGI UNTUK AUDIT DAN PEMULIHAN TANDA TANGAN NOTIFIKASI YANG DIBERHENTIKAN.",
+    "searchPlaceholder": "CARI ARSIP SUPRESI...",
+    "bulk": {
+      "restore": "Pulihkan Pilihan",
+      "close": "Tutup Pilihan",
+      "selected": "terpilih",
+      "hint": "Pilih baris untuk tindakan massal",
+      "none": "Tidak ada notifikasi false-positive yang dipilih.",
+      "restored": "notifikasi berhasil dipulihkan",
+      "closed": "notifikasi berhasil ditutup"
+    },
+    "registerTitle": "Register False Positive",
+    "recordsIdentified": "RECORDS IDENTIFIED",
+    "entriTerdeteksi": "entri terdeteksi",
+    "headers": {
+      "date": "Tanggal",
+      "tool": "Tool",
+      "signature": "Rule / Signature",
+      "category": "Kategori",
+      "severity": "Severity",
+      "assetScope": "Asset / Scope",
+      "description": "Deskripsi",
+      "reasonFP": "Alasan FP",
+      "frequency": "Frekuensi",
+      "analyst": "Analis",
+      "proposedTuning": "Usulan Tuning",
+      "status": "Status",
+      "tuning": "Tuning",
+      "notes": "Catatan"
+    },
+    "tooltips": {
+      "date": "Waktu pencatatan FPR",
+      "tool": "Produk keamanan pendeteksi",
+      "signature": "Aturan deteksi spesifik",
+      "category": "Kategori taktik serangan",
+      "severity": "Tingkat keparahan ancaman",
+      "assetScope": "Aset atau host terdampak",
+      "description": "Deskripsi teknis false positive",
+      "reasonFP": "Argumentasi analis tentang status benign",
+      "frequency": "Seberapa sering hal ini terjadi",
+      "analyst": "Identitas pelapor FPR",
+      "proposedTuning": "Usulan cara mengatasi false positive",
+      "status": "Status peninjauan",
+      "tuning": "Status penerapan aturan baru"
+    }
+  },
+  "audit": {
+    "title": "Log Forensik",
+    "tabAccountability": "AKUNTABILITAS PERSONEL",
+    "tabTechnical": "RIWAYAT TEKNIS DATA",
+    "searchPlaceholder": "CARI LOG (AKTOR, TINDAKAN, DETAIL)...",
+    "noRecordsFound": "TIDAK ADA REKAMAN DITEMUKAN",
+    "headers": {
+      "status": "STATUS",
+      "timestamp": "STEMPEL WAKTU",
+      "actor": "AKTOR/PENGGUNA",
+      "category": "KATEGORI",
+      "action": "TINDAKAN",
+      "details": "DETAIL"
+    },
+    "recordsFound": "REKAMAN DILOG",
+    "results": {
+      "success": "BERHASIL",
+      "failure": "GAGAL",
+      "warning": "PERINGATAN"
+    },
+    "details": {
+      "title": "Analisis Detail Forensik",
+      "metadata": "Konteks Metadata",
+      "txHash": "TX-HASH",
+      "target": "TARGET",
+      "result": "HASIL",
+      "actionType": "TIPE TINDAKAN",
+      "actorIdentity": "Identitas Aktor"
+    },
+    "diff": {
+      "initial": "DATA PENYEDIAAN AWAL",
+      "purged": "DATA REKAMAN DIHAPUS",
+      "before": "{key} (SEBELUM)",
+      "after": "{key} (SESUDAH)"
+    },
+    "categories": {
+      "ALL": "SEMUA",
+      "AUTH": "AKSES IDENTITAS",
+      "USER_MANAGEMENT": "MANAJEMEN PENGGUNA",
+      "CONFIGURATION": "KONFIGURASI",
+      "SHIFT": "JADWAL SHIFT",
+      "MANAGEMENT": "MANAJEMEN",
+      "ALERT": "AKSI NOTIFIKASI",
+      "SYSTEM": "INTI SISTEM",
+      "SETTINGS": "KONFIG GLOBAL",
+      "REPORTS": "GEN LAPORAN",
+      "GENERAL": "UMUM",
+      "USER": "IDENTITAS",
+      "CASE": "INSIDEN",
+      "POLICY": "KEBIJAKAN",
+      "INFRA": "INFRASTRUKTUR",
+      "REPORT": "PELAPORAN",
+      "SOP": "PROSEDUR",
+      "CREDENTIAL": "KEAMANAN",
+      "FIREWALL": "FIREWALL",
+      "ACCOUNT": "AKUN",
+      "SENSITIVE": "SENSITIF",
+      "SERVICE": "LAYANAN"
+    },
+    "technical": {
+      "administrativeAction": "Tindakan Administratif"
+    }
+  },
+  "about_core": {
+    "title": "INTI PLATFORM",
+    "desc": "Ekosistem Pusat Operasi Keamanan Lanjutan untuk pemantauan terpadu dan respons insiden.",
+    "architecture": "ARSITEKTUR",
+    "architectureItems": [
+      "Integrasi Native Wazuh Manager & Indexer",
+      "Visualisasi Node Berbasis Force-Graph",
+      "Mesin Triage Forensic-Grade",
+      "Synchronized Global State Management"
+    ],
+    "featureFunctionsTitle": "KAPABILITAS",
+    "featureFunctions": [
+      "Analisis Payload Real-Time",
+      "Eskalasi Insiden Terstandarisasi",
+      "Manajemen Shift & Akuntabilitas Personel",
+      "Pelaporan Eksekutif Otomatis"
+    ],
+    "workflow": "PROSEDUR OPERASIONAL STANDAR",
+    "workflowPath": "TRIAGE -> INVESTIGASI -> ESKALASI -> RESOLUSI",
+    "workflowStagesTitle": "FASE SISTEM",
+    "workflowStages": [
+      {
+        "label": "DETEKSI",
+        "desc": "Penangkapan event mentah dari agen endpoint yang tersebar secara terdistribusi."
+      },
+      {
+        "label": "NORMALISASI",
+        "desc": "Transformasi metadata heterogen menjadi standar skema investigasi seragam."
+      },
+      {
+        "label": "AUGMENTASI",
+        "desc": "Pengayaan konteks menggunakan intelijen ancaman OpenCTI dan korelasi historis."
+      },
+      {
+        "label": "RESPONS",
+        "desc": "Eksekusi tindakan mitigasi dan penutupan kasus secara administratif."
+      }
+    ],
+    "systemCore": "STATUS ENGINE",
+    "versionStack": "BUILD STACK",
+    "disclaimerTitle": "PENGUNGKAPAN HUKUM: PROTOKOL PENGGUNAAN",
+    "disclaimer": "Perangkat lunak ini adalah dasbor pemantauan tingkat perusahaan. Upaya akses tidak sah, reverse engineering, atau perusakan data sangat dilarang dan dicatat oleh mesin audit persisten. Kepatuhan penuh terhadap hukum keamanan siber internasional adalah wajib."
+  }
+}

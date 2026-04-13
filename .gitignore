@@ -1,0 +1,41 @@
+# Dependencies
+node_modules
+server/node_modules
+
+# Build output
+dist
+server/dist
+
+# Environment variables
+.env
+.env.local
+.env.production
+server/.env
+
+# IDE & OS
+.DS_Store
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+logs
+*.log
+
+# Internal Documentation & Artifacts
+*.md
+!README.md
+!manual_book.md
+scratch/
+.gemini/
+dev.db
+*.ps1
+*.bat
+vite.config.js.timestamp-*

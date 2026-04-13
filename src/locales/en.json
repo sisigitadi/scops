@@ -1,0 +1,1409 @@
+{
+  "nav": {
+    "header": "Navigation Dashboard",
+    "header_ops": "OPERATIONAL",
+    "header_mgmt_main": "MANAGEMENT",
+    "header_system": "PLATFORM GOVERNANCE",
+    "landing": "Main Portal",
+    "dashboard": "Security Overview",
+    "alerts": "Alert Register",
+    "triage": "Triage Workspace",
+    "reports": "Report Center",
+    "about": "Platform Info",
+    "ingestion": "Inject Payload",
+    "false-positive": "False Positive",
+    "audit": "Forensic Logs",
+    "settings": "Control Center",
+    "settings_global": "Control Center",
+    "management": "Management Hub",
+    "operations": "Tactical Operations"
+  },
+  "sidebar": {
+    "secOpsCenter": "SECURITY OPERATIONS CENTER",
+    "lightMode": "Light Mode",
+    "darkMode": "Dark Mode",
+    "userProfile": "User Profile",
+    "identity": "Analyst Identity",
+    "language": "Language",
+    "theme": "UI Theme"
+  },
+  "topbar": {
+    "dashboard": "DASHBOARD",
+    "wazuhManager": "WAZUH MANAGER v4",
+    "wazuhIndexer": "WAZUH INDEXER NODE",
+    "endpoint": "ENDPOINT:",
+    "service": "SERVICE:",
+    "intelCoreUrl": "INTEL URL:",
+    "trustLevel": "TRUST LEVEL:",
+    "confidence": "CONFIDENCE",
+    "targetChannel": "TARGET CHANNEL:",
+    "monitorStatus": "MONITOR STATUS:",
+    "active": "ACTIVE",
+    "standby": "STANDBY",
+    "throughput": "THROUGHPUT",
+    "openctiHub": "OPENCTI INTEL CORE",
+    "stats": {
+      "portal": "PORTAL",
+      "threats": "THREATS",
+      "logs": "LOGS"
+    }
+  },
+  "personnel": "PERSONNEL",
+  "common": {
+    "locale_tag": "en-US",
+    "appTitle": "SOC OPS",
+    "appSubtitle": "Security Control Center",
+    "productionTag": "Production Mode",
+    "productionNotice": "Platform is connected to operational security infrastructure.",
+    "records": "entities/records",
+    "search": "Quick Search",
+    "all": "All",
+    "restrictedNotice": "Access Restricted: This action requires advanced authorization.",
+    "integrityVerified": "INTEGRITY VERIFIED",
+    "forensicDoc": "DISTRIBUTED FORENSIC DOCUMENTATION",
+    "reliabilityTracking": "OPERATIONAL RELIABILITY TRACKING",
+    "exportLogs": "EXPORT AUDIT TRAIL",
+    "systemNotification": "SYSTEM NOTIFICATION",
+    "newAlert": "New Alert",
+    "to": "TO",
+    "action": "Action",
+    "exportLogs": "EXPORT LOGS",
+    "view": "View",
+    "cancel": "Cancel",
+    "common_cancel": "Cancel",
+    "metric": "Metric",
+    "value": "Value",
+    "empty": "No data found with current filter criteria.",
+    "noData": "AWAITING DATA",
+    "emptyLabel": "EMPTY",
+    "validation": {
+      "required": "Please fill out this field.",
+      "email": "Please enter a valid email address.",
+      "minLength": "Input is too short.",
+      "password": "Password does not meet requirements."
+    },
+    "runtime": {
+      "waitingIndexerTitle": "Integration Configuration Required",
+      "waitingIndexerMessage": "The application is not yet connected to core data sources or threat intelligence.",
+      "waitingIndexerDetail": "Please complete the Integration configuration (Wazuh, OpenCTI, and Telegram) in the Settings menu to enable this feature.",
+      "openIntegrationSettings": "Open Integration Settings",
+      "cannotLoadTitle": "Alert service cannot be loaded",
+      "cannotLoadMessage": "The page cannot retrieve alert data from the current runtime service.",
+      "tooManyRequestsTitle": "Too many requests",
+      "tooManyRequestsMessage": "Server rejected the request due to high request density.",
+      "degradedTitle": "Service running in degraded mode",
+      "degradedMessage": "Live synchronization is currently failing. Cached data is still available.",
+      "retryLiveSync": "Try Re-syncing",
+      "technicalDetail": "Technical detail",
+      "retryConnection": "Retry Connection"
+    },
+    "technicalDetail": "Technical Detail",
+    "personnel": "PERSONNEL",
+    "forensicDoc": "FORENSIC ACTIVITY DOCUMENTATION",
+    "reliabilityTracking": "RELIABILITY TRACKING",
+    "versionHighDensity": "v5.4.0 High-Density",
+    "exportLogs": "EXPORT LOGS",
+    "disclaimer": "Disclaimer Statement",
+    "diagnosticLab": "Lab Diagnostic & Manual Trigger",
+    "securityTip": "Security Tip",
+    "securityDesc": "Manually ingested payloads will bypass standard SIEM filters but will be captured by the platform's audit engine for integrity tracking.",
+    "diagnostic": "Diagnostic",
+    "unknownUser": "Unknown User",
+    "demoOperator": "Demo",
+    "onDuty": "ON DUTY",
+    "minutes": "minutes",
+    "seconds": "seconds",
+    "timeRange": "Investigation Time Range",
+    "syncing": "Syncing...",
+    "context": "Context",
+    "downloadCsv": "Download CSV",
+    "downloadJson": "Download JSON",
+    "downloadcsv": "Download CSV",
+    "downloadjson": "Download JSON",
+    "loading": {
+      "neuralModule": "INITIALIZING NEURAL MODULE",
+      "handshake": "SECURE HANDSHAKE IN PROGRESS"
+    },
+    "transactionId": "Transaction ID",
+    "forensicSignature": "Forensic Signature",
+    "deepSearch": "Deep Search",
+    "archiveMode": "Archive Mode",
+    "syncError": "Connection Lost",
+    "synchronized": "Connected",
+    "notConfigured": "Not Configured",
+    "timeOptions": {
+      "1": "Last 1 Hour",
+      "24": "Last 24 Hours",
+      "168": "Last 7 Days",
+      "all": "Full Data Scope"
+    },
+    "system": {
+      "accessDenied": "Access Denied: Read-Only Authorization Level Active.",
+      "justificationTooShort": "Justification must be at least 10 characters.",
+      "saved": "Operational metadata committed successfully.",
+      "context": "Context"
+    }
+  },
+  "buttons": {
+    "openDashboard": "Enter Platform",
+    "viewRepository": "Source Repository",
+    "demoGuest": "Demo Access (Read-Only)",
+    "saveUpdate": "Save Changes",
+    "markFalsePositive": "Mark False Positive",
+    "escalate": "Escalate Incident",
+    "closeAlert": "Close Notification",
+    "addNote": "Add Analyst Note",
+    "triage": "Start Triage",
+    "resetData": "Reset Data",
+    "switchRole": "Switch Access Role",
+    "logout": "Logout System"
+  },
+  "auth": {
+    "roleAnalyst": "L1 Analyst (Triage)",
+    "roleL2": "Investigation Specialist (L2)",
+    "roleManager": "SOC Operations Manager",
+    "roleAdmin": "System Administrator",
+    "roleAuditor": "Executive Auditor",
+    "roleDemo": "Demo Reviewer (Public)",
+    "currentRole": "Current Authority Level",
+    "personas": {
+      "admin": {
+        "name": "Senior Security Architect",
+        "desc": "Full access & security configuration"
+      },
+      "manager": {
+        "name": "SOC Manager",
+        "desc": "Strategic reporting & team oversight"
+      },
+      "l2": {
+        "name": "L2 Analyst",
+        "desc": "Deep forensics & case resolution"
+      },
+      "l1": {
+        "name": "L1 Analyst",
+        "desc": "Alert triage & initial investigation"
+      },
+      "auditor": {
+        "name": "Executive Auditor",
+        "desc": "Read-only access for reporting & oversight"
+      },
+      "demo": {
+        "name": "Demo Reviewer",
+        "desc": "Read-only access with sensitive data obfuscation"
+      }
+    },
+    "analystIdentity": "ANALYST IDENTITY"
+  },
+  "management": {
+    "title": "Management Hub",
+    "subtitle": "Unified Hub for SIM-SOC Information Management",
+    "onDuty": "PERSONNEL ON-DUTY",
+    "totalRoster": "TOTAL ROSTER",
+    "activeShifts": "ACTIVE SHIFTS",
+    "governanceHeader": "Operational Integrity & Accountability",
+    "auditorAccess": "Auditor Access",
+    "auditorDesc": "Read-only access active. All handover records and shift parameters are under encrypted audit surveillance.",
+    "tabs": {
+      "roster": "OPERATIONAL ROSTER",
+      "performance": "ANALYST CAPABILITY INTELLIGENCE",
+      "infrastructure": "TOOL RELIABILITY",
+      "governance": "SOP LIBRARY"
+    },
+    "reliability": "TEAM RELIABILITY",
+    "optimal": "OPTIMAL",
+    "performance": {
+      "velocity": "AGGREGATE RESPONSE VELOCITY",
+      "velocityDesc": "GLOBAL AVERAGE TRIAGE TIME",
+      "sla": "GLOBAL SLA COMPLIANCE",
+      "slaDesc": "24HR WINDOW ACCOUNTABILITY",
+      "activeCases": "ACTIVE INVESTIGATIONS",
+      "activeCasesDesc": "CURRENTLY HANDLED BY ANALYSTS",
+      "capabilityTitle": "Analyst Capability Intelligence",
+      "capabilityDesc": "SLA Effectiveness & Action Volume Correlation",
+      "totalActions": "TOTAL ACTIONS",
+      "efficiency": "EFFICIENCY OVERVIEW",
+      "topSkill": "top skill",
+      "topSkillValue": "CRITICAL IR",
+      "breaches": "{count} BREACHES",
+      "analystId": "ANALYST ID"
+    },
+    "infra": {
+      "monitorTitle": "Real-time Uptime Monitor",
+      "monitorDesc": "Active Integration Availability Status",
+      "latency": "LATENCY",
+      "uptime": "UPTIME",
+      "historyTitle": "Reliability Incident Log",
+      "historyDesc": "Timeline of Stability & Maintenance Events",
+      "noIncidents": "NO HEALTH INCIDENTS RECORDED",
+      "eventStability": "STABILITY EVENT",
+      "statusChanged": "Infrastructure status mutated from {prev} to {next}.",
+      "services": {
+        "wazuh_manager": "WAZUH MANAGER",
+        "wazuh_indexer": "WAZUH INDEXER",
+        "opencti": "OPENCTI INTEL CORE",
+        "telegram": "TELEGRAM NOTIFIER"
+      }
+    },
+    "sop": {
+      "searchDocs": "SEARCH SOP...",
+      "complianceStatus": "Compliance Status",
+      "complianceDesc": "All procedures in this library are currently active and must be followed.",
+      "lastUpdated": "LAST UPDATED",
+      "editProtocol": "EDIT PROTOCOL",
+      "saveProtocol": "SAVE PROTOCOL",
+      "discard": "DISCARD",
+      "markdownPlaceholder": "WRITE PROTOCOL IN MARKDOWN...",
+      "selectProtocol": "SELECT A PROTOCOL FROM THE LIBRARY",
+      "categories": {
+        "PROCEDURE": "PROCEDURE",
+        "COMPLIANCE": "COMPLIANCE"
+      },
+      "defaultDocs": [
+        {
+          "id": "sop-001",
+          "title": "SOP: Incident Response Lifecycle",
+          "category": "PROCEDURE",
+          "content": "## SOC Incident Response Lifecycle\n\n### 1. Detection & Identification\nAll alerts from **Wazuh** and **OpenCTI** must be triaged within 15 minutes.\n\n### 2. Containment\nIf a high-severity incident is confirmed, analysts must isolate the affected endpoint immediately.\n\n### 3. Documentation\nEvery action must be recorded in the **Handover Log** and **Audit Hub**."
+        },
+        {
+          "id": "sop-002",
+          "title": "Policy: Shift Handover Protocol",
+          "category": "COMPLIANCE",
+          "content": "## Shift Handover Protocol\n\n- **Requirement**: Mandatory for all Analysts and Shift Leaders.\n- **Process**: Outgoing team must review all pending alerts with the incoming team.\n- **Verification**: Shift Leader must sign off on the Handover Log."
+        }
+      ]
+    }
+  },
+  "login": {
+    "title": "Executive Verification",
+    "subtitle": "Enter organizational credentials for system access.",
+    "email": "Organizational Email",
+    "password": "Password",
+    "submit": "Continue",
+    "demoButton": "Enter Demo Mode",
+    "backToPortal": "Back to Main Portal",
+    "errorDefault": "Verification failed",
+    "personaError": "Persona configuration not found in portal"
+  },
+  "landing": {
+    "badge": "Operational Access Portal",
+    "featuresTitle": "System Capabilities",
+    "workflowTitle": "Operational Workflow",
+    "features": [
+      "Real-time alert monitoring with priority filters and incident correlation",
+      "Investigative triage with playbooks, notes, and case audit trails",
+      "Data-driven operational and executive reporting with PDF export",
+      "Role-based access control (RBAC) for Admin, Manager, Analyst, Auditor, and Demo"
+    ],
+    "workflow": [
+      "Alert detection from runtime services (Wazuh Indexer/BFF)",
+      "Threat intelligence validation and enrichment (OpenCTI)",
+      "Triage decision: investigation, escalation, false-positive, or closure",
+      "Metric-based reporting, auditing, and operational handover"
+    ],
+    "disclaimerText": "This platform is connected to real security infrastructure. All displayed data is operational and confidential.",
+    "productionNotice": "Platform is connected to production security infrastructure.",
+    "productionBadge": "Active Production Infrastructure"
+  },
+  "dashboard": {
+    "title": "Security Overview",
+    "desc": "Real-time insights for triage and reporting.",
+    "priorityInsights": "Priority Threat Insights",
+    "severityDistribution": "Severity Distribution",
+    "categoryDistribution": "Threat Classification",
+    "topHosts": "Impacted Hosts",
+    "topRules": "Top Detection Rules",
+    "recentAlerts": "Latest Notification Stream",
+    "latestEvents": "Last log activities",
+    "kpi": {
+      "totalAlerts": "Total Alert Volume",
+      "highPriorityAlerts": "Priority Threats",
+      "openCases": "Active Cases",
+      "escalatedCases": "Escalated Cases",
+      "falsePositives": "False Positives",
+      "monitoredAgents": "Monitored Agents",
+      "correlatedCases": "Correlated Findings"
+    },
+    "insights": [
+      "Anomaly detection on critical asset authentication protocols.",
+      "File integrity violation found in protected system directory.",
+      "Increased privilege escalation activity in the last 24 hours.",
+      "Major security logs originate from user identity category."
+    ],
+    "strategicPulse": "STRATEGIC OVERVIEW STATUS"
+  },
+  "alerts": {
+    "noAlertSelected": "AWAITING TARGET",
+    "noAlertDesc": "Navigate to the Alert Register and select an alert to begin triage investigation.",
+    "title": "Security Alert Register",
+    "subtitle": "Browse and filter security logs in-depth for advanced investigation.",
+    "tacticalActions": "Tactical Actions",
+    "filterSeverity": "Severity Level",
+    "filterCategory": "Threat Category",
+    "filterStatus": "Ticket Status",
+    "filterHostname": "System Identity",
+    "filterPeriod": "Time Period",
+    "periodOptions": {
+      "all": "ALL TIME",
+      "last1h": "LAST 1 HOUR",
+      "last8h": "LAST 8 HOURS",
+      "last12h": "LAST 12 HOURS",
+      "today": "TODAY (DAILY)",
+      "weekly": "LAST 7 DAYS (WEEKLY)",
+      "monthly": "LAST 30 DAYS (MONTHLY)",
+      "custom": "--- CUSTOM RANGE ---"
+    },
+    "searchPlaceholder": "Rule ID, Host, User, IP Address or Description...",
+    "tableTitle": "Active Event Register",
+    "to": "TO",
+    "optionLabels": {
+      "open": "Open",
+      "investigating": "Investigating",
+      "closed": "Closed / Solved",
+      "critical": "Critical",
+      "high": "High",
+      "medium": "Medium",
+      "low": "Low",
+      "Authentication": "Identity Access",
+      "Privilege Escalation": "Authority Anomaly",
+      "Network Anomaly": "Network Behavior",
+      "File Integrity Monitoring": "System Integrity"
+    },
+    "headers": {
+      "date": "Date",
+      "alertId": "Notification ID",
+      "ruleDescription": "Rule Description",
+      "severity": "Severity",
+      "status": "Ticket Status",
+      "analyst": "Lead Analyst",
+      "action": "Action",
+      "investigate": "INVESTIGATE",
+      "notifId": "NOTIFICATION ID",
+      "incidentId": "INCIDENT ID",
+      "timelineSev": "TIMELINE / SEV",
+      "timeline": "TIMELINE",
+      "ruleContext": "DETECTION / RULE CONTEXT",
+      "clusterContext": "CLUSTER CONTEXT",
+      "impactedAsset": "IMPACTED ASSET",
+      "impactedHosts": "IMPACTED HOSTS",
+      "hostname": "Host",
+      "sourceIp": "SOURCE IP",
+      "agentName": "AGENT NAME",
+      "count": "COUNT",
+      "events": "EVENTS",
+      "operation": "OPERATION",
+      "attackVector": "ATTACK VECTOR",
+      "ruleId": "RULE ID",
+      "ruleLevel": "RULE LEVEL",
+      "category": "THREAT CATEGORY",
+      "time": "TIME",
+      "id": "ALERT ID"
+    },
+    "export": {
+      "previewTitle": "EXPORT PREVIEW PROTOCOL",
+      "format": "TARGET FORMAT",
+      "totalRecords": "TOTAL PAYLOAD",
+      "entries": "ENTRIES",
+      "snapshot": "Data Snapshot (First 5 Rows)",
+      "truncated": "... metadata truncated for preview clarity ...",
+      "confirm": "DOWNLOAD"
+    },
+    "status": {
+      "targetsSelected": "{count} TARGETS SELECTED",
+      "awaitingSelection": "AWAITING TARGET SELECTION",
+      "correlatedOperations": "CORRELATED OPERATIONS"
+    },
+    "bulk": {
+      "investigating": "Bulk Investigate",
+      "close": "Bulk Close",
+      "falsePositive": "Bulk False Positive",
+      "selected": "selected",
+      "hint": "Select alerts to enable bulk actions",
+      "none": "No alerts selected.",
+      "success": "{count} alerts successfully updated as {action}."
+    },
+    "clusters": {
+      "title": "Incident Clusters",
+      "subtitle": "correlated groups",
+      "desc": "Grouped by Source IP + Rule ID to reduce alert fatigue during surges.",
+      "headers": {
+        "incidentId": "Incident ID",
+        "count": "Event Count",
+        "hosts": "Hosts",
+        "latest": "Latest"
+      },
+      "empty": "No correlated incidents for current filter.",
+      "investigate": "Investigate"
+    },
+    "messages": {
+      "deepSearchComplete": "Deep search complete. Results aggregated from distributed indices.",
+      "archiveSearchInitiated": "Initiating distributed index query for pattern: {pattern}",
+      "simulateAttacks": "Simulate 500 Attacks",
+      "exportSuccess": "Log export successfully initiated."
+    }
+  },
+  "triage": {
+    "title": "Triage Investigation Workspace",
+    "subtitle": "Validate security threats, enrich operational context, and make mitigation decisions.",
+    "detailTitle": "Deep Event Analysis",
+    "formTitle": "Triage Decision Engine",
+    "notesTitle": "Investigation Timeline",
+    "navigator": "QUEUE NAVIGATOR",
+    "prevAlert": "Previous Alert",
+    "nextAlert": "Next Alert",
+    "rawPayload": "ORIGINAL EVENT PAYLOAD",
+    "checklist": "Quick Verification Checklist",
+    "workflow": "Recommended Operational Procedures",
+    "statusOptions": {
+      "open": "Active (Open)",
+      "investigating": "In Investigation",
+      "closed": "Case Resolved"
+    },
+    "fields": {
+      "alertId": "Alert ID",
+      "ruleId": "Detection Rule ID",
+      "ruleDescription": "Technical Description",
+      "ruleLevel": "RULE LEVEL",
+      "category": "THREAT CATEGORY",
+      "severity": "Risk Level",
+      "agentName": "Endpoint Identity",
+      "hostname": "System Name",
+      "assetCriticality": "Asset Criticality Rating",
+      "user": "Related Identity",
+      "sourceIp": "Source IP",
+      "eventCount": "Event Density",
+      "decoder": "Decoder",
+      "mitreTechnique": "MITRE ATT&CK Technique",
+      "status": "Investigation Status",
+      "summary": "Operational Case Summary",
+      "initialAssessment": "Initial Analyst Assessment",
+      "evidence": "Digital Evidence Findings",
+      "actionTaken": "Mitigation Actions Taken",
+      "recommendation": "Strategic Recovery Advice",
+      "analyst": "Assigned Analyst",
+      "notes": "Operational Journal"
+    },
+    "messages": {
+      "saved": "Technical investigation notes saved to local storage.",
+      "falsePositive": "Security alert successfully classified as False Positive.",
+      "escalated": "Investigation priority raised to advanced analysis.",
+      "closed": "Security case successfully resolved and closed.",
+      "pendingReview": "Note: Escalation is pending Senior review."
+    },
+    "intel": {
+      "title": "OpenCTI Threat Intelligence",
+      "fetch": "Fetch Intel",
+      "fetching": "Fetching...",
+      "noData": "No external context fetched yet."
+    },
+    "caseTrail": {
+      "title": "Case Trail",
+      "noActivity": "No activity recorded yet."
+    },
+    "playbook": {
+      "title": "Smart Playbook",
+      "auth": [
+        "Verify source IP location",
+        "Check for multiple failed accounts",
+        "Check if user was on vacation"
+      ],
+      "malware": [
+        "Isolate endpoint network",
+        "Collect memory dump",
+        "Scan with secondary AV"
+      ],
+      "privilege": [
+        "Check sudoers policy change",
+        "Audit user session history",
+        "Identify parent process"
+      ],
+      "network": [
+        "Check firewall logs",
+        "Identify protocol/port",
+        "Verify destination domain reputation"
+      ],
+      "default": [
+        "Follow standard SOP",
+        "Document all findings"
+      ]
+    },
+    "escalation": {
+      "modalTitle": "Mandatory Escalation",
+      "modalSubtitle": "You are escalating this alert. Provide technical justification for L2/Manager review.",
+      "placeholder": "Example: Verified lateral movement via pass-the-hash...",
+      "errorTooShort": "Justification must be at least 10 characters.",
+      "confirm": "Confirm Escalation",
+      "cancel": "Cancel"
+    },
+    "noAlertSelected": "No alert selected.",
+    "noAlertDesc": "Go to Alert Register and select an alert to start triage investigation.",
+    "presence": {
+      "viewing": "{count} Analysts viewing this alert",
+      "you": "Your activity is being monitored by the system in real-time."
+    },
+    "correlation": {
+      "title": "Visual Correlation Map",
+      "subtitle": "Visual link between current alert and environmental entities.",
+      "legend": {
+        "target": "Target Alert",
+        "related": "Related Alert",
+        "ip": "Source IP",
+        "rule": "Rule ID"
+      },
+      "noData": "Insufficient data to generate correlation map."
+    }
+  },
+  "reports": {
+    "title": "Intelligence & Operational Reporting",
+    "subtitle": "Informative insights in Periodic formats (Shift, Daily, & Weekly).",
+    "shift": "SOC Shift Handover",
+    "daily": "Daily Operational Summary",
+    "weekly": "Strategic Weekly Overview",
+    "executive": "Executive Report",
+    "findings": "Critical Threat Findings",
+    "recommendations": "Strategic Mitigations",
+    "radarTitle": "Threat Distribution Radar",
+    "downloadPdf": "Download PDF Report",
+    "downloadpdfall": "Download PDF (Full Report)",
+    "downloadpdfcustom": "Download PDF (Selected Scope)",
+    "downloadPdfError": "Failed to generate PDF. Please try again or narrow selected data.",
+    "status": {
+      "databaseRecognized": "DATABASE RECOGNIZED: {count} OPERATIONAL EVENTS"
+    },
+    "exportScope": {
+      "all": "PDF: All Data",
+      "custom": "PDF: Selected Data"
+    },
+    "exportScopeLabel": "Export Scope",
+    "scopeSelection": "SCOPE SELECTION",
+    "filterSet": "FILTER SET",
+    "noDataTitle": "NO DATA IDENTIFIED",
+    "noDataSubtitle": "Awaiting security log streams to generate report analysis.",
+    "severityLabels": {
+      "critical": "CRITICAL",
+      "high": "HIGH",
+      "medium": "MEDIUM"
+    },
+    "cardLabels": {
+      "alertsProcessed": "Resolved Alert Logs",
+      "escalations": "Total Escalations",
+      "falsePositives": "False Positive",
+      "mtta": "MTTA (Acknowledgment)",
+      "totalAlerts": "Total Alert Volume",
+      "incidentCandidates": "Incident Indicators",
+      "containmentActions": "Mitigation Procedures",
+      "mttr": "MTTR (Resolution)",
+      "totalWeeklyAlerts": "Weekly Accumulation",
+      "escalatedCases": "Tier-2 Escalations",
+      "falsePositiveRate": "False Positive Rate",
+      "monitoredAgents": "Monitored Agents"
+    },
+    "metricMap": {
+      "criticalAlerts": "Critical Risk Volume",
+      "highAlerts": "High Risk Volume",
+      "investigationsClosed": "Analytic Completion",
+      "pendingHandoverItems": "Pending Handovers",
+      "authenticationEvents": "Identity Access Logs",
+      "privilegeEscalationEvents": "Authority Anomaly Logs",
+      "fileIntegrityEvents": "System Integrity Logs",
+      "networkAnomalyEvents": "Network Behavior Logs",
+      "weekOverWeekAlertGrowth": "Alert Trend (MoM)",
+      "topAlertCategory": "Primary Threat Vector",
+      "topRuleFamily": "Top Rule Family",
+      "rulesTunedThisWeek": "Rules Tuned This Week"
+    },
+    "executiveSummary": "Security posture observed stable with increased triage efficiency. Analysts focused on mitigating external authentication risks.",
+    "findingsList": [
+      "Illegal login attempts detected targeting administrative accounts.",
+      "System attribute modifications on server nodes increased during the review period.",
+      "Policy integrity optimization required to reduce noise during routine maintenance."
+    ],
+    "recommendationsList": [
+      "Optimize detection thresholds to minimize redundant logs during maintenance windows.",
+      "Implement stricter account lockout policies on high-value asset systems.",
+      "Improve manual verification workflows for anomalous external access paths."
+    ]
+  },
+  "ingestion": {
+    "title": "Inject Payload",
+    "subtitle": "Inject security logs into the system via standard Wazuh JSON payload.",
+    "rawJsonTitle": "Raw JSON Payload",
+    "jsonPlaceholder": "// Paste standard Wazuh JSON array here.",
+    "btnSubmitJson": "Process Inject",
+    "systemIdentifier": "SYSTEM IDENTIFIER & PAYLOAD",
+    "payloadTemplate": "STANDARD PAYLOAD TEMPLATE",
+    "btnClearPayload": "Clear Payload",
+    "success": "Payload injection cycle processed and stored!",
+    "clearSuccess": "Local injection payload cleared without affecting external data.",
+    "clearNone": "No local injection payload to clear.",
+    "confirmClear": "Are you sure you want to clear all local injection payloads? External data will not be deleted.",
+    "adminOnlyNotice": "This page is for Admins only. External production data will not be deleted by this action.",
+    "protocolTitle": "PROTOCOL",
+    "protocolDesc": "DIRECT LOG INGESTION MANDATES STRICT JSON FORMAT COMPLIANCE. ANY DATA SCHEMA THAT FAILS TO ALIGN WITH SYSTEM STANDARDS WILL BE AUTOMATICALLY REJECTED BY THE NORMALIZATION ENGINE TO MAINTAIN DATABASE INTEGRITY.",
+    "schemaInfo": "SCHEMA SPECIFICATIONS",
+    "protocolSchema": "MANDATORY FIELDS: rule.id (Rule ID), rule.level (Level), rule.description (Description), agent.name (Host/Agent Name), and timestamp (@timestamp).",
+    "error": "Error: Unsupported input format or invalid JSON.",
+    "empty": "Warning: Payload input area is currently empty."
+  },
+  "fp": {
+    "title": "False Positive",
+    "subtitle": "Management of verified safe alerts to optimize detection accuracy.",
+    "searchPlaceholder": "Search False Positive...",
+    "bulk": {
+      "restore": "Bulk Restore",
+      "close": "Bulk Close",
+      "selected": "selected",
+      "hint": "Select rows for bulk actions",
+      "none": "No False Positive selected.",
+      "restored": "alerts restored",
+      "closed": "alerts closed"
+    }
+  },
+
+  "settings": {
+    "title": "CONTROL CENTER",
+    "subtitle": "Configure core SOC operations, intelligence feeds, and identity access.",
+    "integratorGuideTitle": "Enterprise Dashboard Integration Guide",
+    "fullIntegratorScript": "Download Full Integrator Script",
+    "stability": "STABILITY",
+    "integrator": {
+      "guideTitle": "Enterprise Dashboard Integration Guide",
+      "guideSubtitle": "Comprehensive SOC system hierarchy configuration for Wazuh SIEM, Indexer, and OpenCTI Threat Intelligence.",
+      "step1Title": "Wazuh Manager Configuration (API v4)",
+      "step1Desc": "The Wazuh Manager acts as the control unit. Ensure the API is enabled to allow the {appName} application to perform agent management and rule checks.",
+      "step1Host": "Host: Manager IP/Domain (Default Port: 55000)",
+      "step1Auth": "Auth: Use API credentials (User: wazuh-wui / Custom user)",
+      "step2Title": "Wazuh Indexer Access (Data Node)",
+      "step2Desc": "The Indexer stores all alert logs. Without this, the dashboard will not display \"Security Events\" in real-time.",
+      "step2Tip": "Security Tip: Ensure port 9200 is open in the firewall (ufw/iptables) so the Dashboard application can query the wazuh-alerts-* index directly.",
+      "step3Title": "OpenCTI Integrator Script Installation",
+      "step1Desccti": "This script runs on the Wazuh Manager side to automatically send indicators (IP/Hash) to OpenCTI and enrich log data with threat context.",
+      "libInstall": "A. Library Installation (Python)",
+      "scriptDeploy": "B. Script Deployment",
+      "scriptDeployDesc": "Use the following commands to prepare the execution files:",
+      "activation": "C. Activation in ossec.conf",
+      "activationDesc": "Edit the /var/ossec/etc/ossec.conf file and add the integration block:",
+      "activityResume": "Hardening Activity Resume (Mandatory Log)",
+      "troubleshooting": "Troubleshooting (Problem Solving)",
+      "err401Title": "Error 401 Unauthorized",
+      "err401Desc": "Ensure Wazuh API username/password or OpenCTI Token is correct. Also verify the user has administrator permissions.",
+      "errTimeoutTitle": "Connection Timeout",
+      "errTimeoutDesc": "Check ports 55000, 9200, and 8080. Ensure no firewall blocks communication between the Dashboard, Wazuh, and OpenCTI servers."
+    },
+    "readOnlyNotice": "Read-Only Mode",
+    "groupGeneral": "Global Operations",
+    "groupBranding": "Identity & Logo",
+    "groupIntegrations": "Service Integrations",
+    "corporateBrandingAsset": "Logo",
+    "groupBrandingDesc": "Customize the platform appearance. Uploaded logos will be reflected across dashboard navigation, login portals, and PDF reports.",
+    "resetBranding": "Reset Branding",
+    "groupBrandingSubtitle": "Configure global identifier & corporate assets",
+    "groupShifts": "Shift & Schedule Management",
+    "groupShiftsDesc": "Define operational time windows and mandatory team composition for each SOC duty shift.",
+    "groupUserMain": "Operational User Management",
+    "groupUserDesc": "Manage identity access for SOC personnel and demo personas.",
+    "btnProvision": "Provision User",
+    "editUserTitle": "MODIFY IDENTITY",
+    "addUserTitle": "PROVISION NEW PERSONA",
+    "provisionForm": {
+      "title": "Provision New User",
+      "name": "Full Name",
+      "email": "Username",
+      "password": "Password",
+      "passwordPlaceholder": "Leave empty to keep current",
+      "role": "Operational Role",
+      "cancel": "ABORT",
+      "finalize": "FINALIZE PROVISIONING",
+      "update": "UPDATE PERSONA",
+      "skills": "SKILLS (COMMA SEPARATED)",
+      "experience": "YEARS OF EXPERIENCE"
+    },
+    "userTable": {
+      "identity": "Identity / Full Name",
+      "endpoint": "Username",
+      "persona": "Persona",
+      "policy": "Auth Policy",
+      "action": "Action",
+      "policyStandard": "STANDARD",
+      "capabilityMatrix": "CAPABILITY MATRIX",
+      "noSkills": "NO CAPABILITY TAGS",
+      "experienceYears": "{count} YEARS EXP"
+    },
+    "quickNav": "QUICK NAVIGATION",
+    "groupWazuh": "Wazuh Service API Setup",
+    "groupWazuhDesc": "Core security operations and incident logging.",
+    "anchors": {
+      "branding": "VISUAL IDENTITY",
+      "identity": "IDENTITY MANAGEMENT",
+      "integrations": "SERVICE INTEGRATIONS",
+      "infrastructure": "SYSTEM CONFIGURATION",
+      "audit": "GOVERNANCE AUDIT LOGS",
+      "overview": "SYSTEM OVERVIEW"
+    },
+    "dashboard": {
+      "title": "COMMAND INTELLIGENCE",
+      "subtitle": "Status of infrastructure sovereignty and identity governance.",
+      "uptime": "GLOBAL UPTIME",
+      "identities": "IDENTITY COVERAGE",
+      "auditCount": "GOVERNANCE PULSE",
+      "auditDesc": "SYSTEM EVENTS & DATA MUTATIONS",
+      "activityTrend": "CONFIG ACTIVITY TREND",
+      "roleDist": "PERSONNEL ROLE DISTRIBUTION",
+      "personaDist": "DISTRIBUTED ACROSS {count} PERSONAS",
+      "maintenance": "DATA MAINTENANCE",
+      "exportBtn": "EXPORT CONFIG",
+      "importBtn": "RESTORE DATA",
+      "backupDesc": "Backup all platform settings to a local JSON file as a fail-safe.",
+      "restoreDesc": "Upload a backup file to restore system configuration.",
+      "importSuccess": "Configuration restored successfully.",
+      "importError": "Invalid or corrupted file.",
+      "exportSuccess": "Configuration exported successfully.",
+      "active": "ACTIVE",
+      "managed": "MANAGED",
+      "window24h": "24HR WINDOW",
+      "executeExport": "EXECUTE ENCRYPTED EXPORT",
+      "initiateRestore": "INITIATE DATA RESTORE",
+      "pulseTitle": "INTEGRATION RELIABILITY PULSE",
+      "statusOptimal": "OPTIMAL",
+      "statusOffline": "OFFLINE"
+    },
+    "tooltips": {
+      "appName": "Platform global identifier visible in headers and metadata.",
+      "orgName": "Entity name for compliance and reporting ownership.",
+      "logo": "Visual identity asset. Supports PNG/SVG with transparency.",
+      "provisionName": "Analyst full identification for forensic audit trails.",
+      "provisionEmail": "Unique system identifier used for secure authentication.",
+      "provisionPass": "Secure credential for analyst authentication. Minimum 8 characters recommended.",
+      "provisionRole": "The access control level (RBAC) that determines platform capabilities.",
+      "provisionSkills": "Specialized capabilities for tactical task assignments.",
+      "provisionExp": "Operational seniority for workforce planning.",
+      "ttShiftRep": "Guidance for shift handover reports, outlining pending actions and operational status.",
+      "ttDailyRep": "Daily operational summary, detailing key metrics, alerts investigated, and team performance.",
+      "ttWeeklyRep": "Strategic weekly overview for executive review, highlighting trends and infrastructure resilience.",
+      "wazuhHost": "IP address or FQDN of your primary Wazuh Manager node.",
+      "wazuhPort": "API communication port. Default is 55000.",
+      "wazuhUser": "Manager API username. Default is 'wazuh-wui' or a custom admin.",
+      "wazuhPass": "Manager API password. Secure your credentials to prevent unauthorized control.",
+      "wazuhIndexer": "Data node address for executing OpenSearch/Elastic queries.",
+      "indexerUser": "Data node username. Default is usually 'admin'.",
+      "indexerPass": "Data node password. Protect this to secure historical incident data.",
+      "openctiUrl": "Core intelligence environment URL for threat enrichment.",
+      "openctiToken": "Bearer token for API authorization. Found in your OpenCTI user profile.",
+      "openctiConfidence": "Minimum indicator certainty required to enrich alerts.",
+      "telegramBot": "Authorization token provided by BotFather for secure relay.",
+      "telegramChat": "Unique identifier for the target triage or broadcast channel.",
+      "shiftName": "Descriptive identifier for the tactical operational window.",
+      "shiftWindow": "Chronological start and end boundaries for this shift.",
+      "shiftStaffing": "Minimum analyst requirement to maintain operational integrity.",
+      "guideStep1": "Establishes a secure handshake with the Wazuh Manager API for proactive incident retrieval.",
+      "guideStep2": "Connects to the search backend to analyze historical trends and alert clusters.",
+      "guideStep3": "Deploys the tactical Python relay to automate threat intelligence enrichment.",
+      "tabOverview": "Executive display of infrastructure health, identities, and audit frequency.",
+      "tabBranding": "Platform identity governance, including corporate metadata and visual assets.",
+      "tabIdentity": "Central command for user provisioning, RBAC definitions, and analyst skills.",
+      "tabIntegrations": "Tactical connectivity suite for ecosystem nodes (Wazuh, OpenCTI, Telegram).",
+      "tabInfra": "Granular backend tuning for database persistence, forensic logging, and security.",
+      "dashUptime": "Percentage of active tactical services successfully handshaking with the platform.",
+      "dashIdentities": "Total workforce personas provisioned within the SOC identity hub.",
+      "dashAudits": "Number of critical configuration and operational changes recorded in the forensics ledger.",
+      "dashExport": "Generates an encrypted JSON payload containing the complete platform state.",
+      "dashImport": "Restores platform state from a validated JSON configuration backup.",
+      "ttRoleDist": "Visual distribution of analyst, manager, and other functional roles within the SOC.",
+      "ttDataMaint": "Manual execution center for core data manipulation, backups, and state restoration.",
+      "ttLogo": "Core visual configuration to personalize the platform aligning with organizational identity.",
+      "ttActiveSessions": "Registry of analysts currently online, bridged via WebSocket, and maintaining active duty.",
+      "ttUserMgmt": "Control center to provision, edit, or terminate operator credentials and portal access.",
+      "ttIntegrationsPulse": "Live API handshake statuses enforcing node connection integrity (Wazuh, CTI).",
+      "ttWazuhSetup": "Master API configuration block for retrieving raw security alerts from the Wazuh domain.",
+      "ttWazuhApi": "Direct Wazuh Manager API endpoint to fetch authorized encrypted telemetry.",
+      "ttWazuhIndexer": "OpenSearch cluster node utilized to warehouse and query historical security data.",
+      "ttOpenCTISetup": "Connection linkage to external threat intelligence brain to enrich local IoC data.",
+      "ttDatabase": "External high-performance storage for long-term forensic record persistence and investigative queries.",
+      "ttTelegram": "High-priority notification relay sending instant pages directly to the on-call responder team.",
+      "ttSyncConnect": "Data polling parameters to regulate backend buffer synchronization intervals.",
+      "ttDbTTL": "Threshold restrictions governing database retention and forensic rollover lifecycles.",
+      "ttAuditAtt": "Ledger detailing shift entry/exit points and duty presence for accountability tracking.",
+      "ttAuditHandover": "Communication log mapping chain-of-custody data transferred between Shift Leaders.",
+      "ttShiftMgmt": "Mapping configurations for operational rotations, capacity baselines, and calendar blocks.",
+      "ttOpsSchedule": "Master calendar depicting global duty allocations including absences (Sick/Leave).",
+      "ttAnalystIntel": "Mapping of distinct analyst proficiencies (Malware, Network, Forensics) for workload routing.",
+      "ttShiftRep": "Operational guidance for shift handover reporting, detailing pending investigations and critical status transitions.",
+      "ttDailyRep": "24-hour operational summary capturing key performance indicators, investigated threats, and team velocity.",
+      "ttWeeklyRep": "Broad strategic review for executive oversight, focusing on long-term infrastructure resilience and threat trends.",
+      "ttRealtimeUptime": "Precision measurement of continuous operational availability across all backend nodes.",
+      "ttIncRelLog": "Complete historical registry documenting every ticket from initial alert to closure.",
+      "ttForensicLog": "Non-repudiation administrative ledger capturing all configuration mutations to the platform.",
+      "ttRawJson": "Unmodified internal payload emitted straight from the sensor reflecting the true event state.",
+      "ttActiveEventReg": "Full suite of pending analytical warnings loaded into memory awaiting triage processing.",
+      "ttIncidentCluster": "Autonomous grouping of replicated alerts linked by tactical behavioral mapping.",
+      "ttThreatRadar": "Geometrical mapping of overarching threat tactics distributed across the MITRE ATT&CK matrix.",
+      "ttExecReport": "High-level synthesis formatted specifically for the C-level strategic security board.",
+      "ttSocHandoverRep": "Automated synthesis drafted directly from inter-team handover accountability logs.",
+      "ttDailyOpsRep": "24-hour evaluation tracking SLA responses, MTTR closures, and overall threat density.",
+      "ttDailyMetRep": "Raw quantitative dataset calculating overall SOC operational efficiency over a day.",
+      "ttWeeklyStrategic": "Broader review correlating threat postures and highlighting sustained adversary TTP shifts.",
+      "ttWeeklyMetRep": "Review characterizing the long-term stamina and performance of the SOC analyst pool."
+    },
+    "infra": {
+      "sync": {
+        "title": "Synchronization & Connectivity",
+        "pollingInterval": "Global Polling (sec)",
+        "timeoutMs": "API Handshake Timeout (ms)",
+        "maxRetries": "Connection Retries",
+        "alertBatchSize": "Alert Fetch Batch Size",
+        "pollingIntervalTooltip": "Frequency of dashboard data refresh heartbeats.",
+        "timeoutMsTooltip": "Maximum wait time for external tool responses (Wazuh/OpenCTI).",
+        "maxRetriesTooltip": "Number of attempts to reconnect on failure.",
+        "alertBatchSizeTooltip": "Number of alerts to retrieve per request cycle."
+      },
+      "database": {
+        "title": "Database Persistence & TTL",
+        "presenceTtlMinutes": "Active Session TTL (min)",
+        "cleanupThresholdDays": "Incident Archive Policy (days)",
+        "autoVacuum": "DB Auto-Optimization",
+        "presenceTtlMinutesTooltip": "How long an analyst stays Live without activity before purge.",
+        "cleanupThresholdDaysTooltip": "Cases older than this will be moved to long-term storage.",
+        "autoVacuumTooltip": "Enable automatic SQLite vacuuming for performance."
+      },
+      "logging": {
+        "title": "Forensic Audit & Logging",
+        "auditRetentionDays": "Audit Log Retention (days)",
+        "minLevel": "System Log Verbosity",
+        "systemVisibility": "Visibility Enforcement",
+        "auditRetentionDaysTooltip": "Duration to keep administrative forensic trails.",
+        "minLevelTooltip": "Minimum level of internal system logging captured.",
+        "systemVisibilityTooltip": "Security posture for session monitoring visibility."
+      },
+      "security": {
+        "title": "Security & Access Governance",
+        "sessionTimeoutMinutes": "Global Session Timeout (min)",
+        "autoLockIdle": "Auto-Lock on Idle (min)",
+        "passwordComplexity": "Credential Policy",
+        "sessionTimeoutMinutesTooltip": "Total available session duration before re-authentication.",
+        "autoLockIdleTooltip": "Lock browser interface after period of inactivity.",
+        "passwordComplexityTooltip": "Enforced complexity requirements for new analysts."
+      },
+      "warning": {
+        "title": "Operational Integrity Warning",
+        "desc": "Infrastructure adjustments impact persistence synchronicity and database throughput. Modification of log retention and session TTL parameters will immediately alter forensic visibility and session lifecycle management across the entire dashboard architecture."
+      }
+    },
+    "buttons": {
+      "saveConfig": "SAVE GLOBAL CONFIG",
+      "saved": "CONFIG APPLIED"
+    },
+    "roles": {
+      "admin": "SYSTEM ADMINISTRATOR",
+      "manager": "SOC OPERATIONS MANAGER",
+      "l1_analyst": "L1 ANALYST (TRIAGE)",
+      "l2_analyst": "INVESTIGATION SPECIALIST (L2)",
+      "auditor": "EXECUTIVE AUDITOR",
+      "demo": "DEMO (PUBLIC)"
+    },
+    "wazuhFields": {
+      "endpoint": "Manager Endpoint",
+      "port": "API Port",
+      "user": "API User",
+      "password": "Access Key / Password",
+      "status": "Node Status",
+      "test": "Test API Handshake",
+      "managerPanel": "Wazuh Manager (API v4)",
+      "indexerPanel": "Wazuh Indexer (Data Node)",
+      "indexerHost": "Indexer Host",
+      "apiStatus": "API STATUS",
+      "dataStatus": "DATA STATUS",
+      "established": "ESTABLISHED",
+      "nominal": "NOMINAL",
+      "ultra": "ULTRA",
+      "validate": "VALIDATE",
+      "probe": "PROBE",
+      "stability": "STABILITY",
+      "handshake": "SYSTEM HANDSHAKE",
+      "dispatchHandshake": "DISPATCH TEST HANDSHAKE",
+      "tokenAuth": "TOKEN AUTHENTICATION",
+      "botToken": "BOT AUTH TOKEN",
+      "targetChat": "TARGET CHAT ID",
+      "engineDisabled": "ENGINE DISABLED"
+    },
+    "openctiFields": {
+      "url": "Environment URL",
+      "token": "Bearer API Token",
+      "confidence": "Confidence Threshold",
+      "confidenceDesc": "Only ingest indicators with confidence higher than this value.",
+      "status": "API Connection Status",
+      "test": "Verify Handshake",
+      "showGuide": "Open Guide",
+      "hideGuide": "Close Guide"
+    },
+    "telegramFields": {
+      "config": "Receiver Configuration",
+      "token": "Bot API Token",
+      "chatId": "Chat ID / Channel",
+      "test": "Verify Bot Status"
+    },
+    "integrations": {
+      "threatIntelDesc": "Threat Intelligence Aggregator",
+      "telegramHeader": "TELEGRAM NOTIFICATIONS",
+      "telegramDesc": "Instant Alerts via Bot",
+      "databaseHeader": "EXTERNAL DATABASE VAULT",
+      "databaseDesc": "Historical Forensics Storage",
+      "confidenceDesc": "FILTER INTEL BY ANALYST CONFIDENCE SCORE",
+      "btnHideInfo": "HIDE INFO",
+      "btnSetupOps": "SETUP OPS",
+      "btnProbeHub": "PROBE HUB",
+      "btnHandshake": "DISPATCH TEST HANDSHAKE",
+      "handshakeLabel": "SYSTEM HANDSHAKE:",
+      "engineDisabled": "NOTIFICATION ENGINE DISABLED"
+    },
+    "users": {
+      "tooltipEdit": "Edit Identity",
+      "tooltipDelete": "Delete User",
+      "tooltipProtected": "Protected Admin",
+      "policyLabel": "Security: STANDARD RBAC"
+    },
+    "messages": {
+      "saved": "Platform configuration updated effectively.",
+      "handshakeSuccess": "Connection Successful. Protocol Verified.",
+      "botVerified": "Bot Verified: Active",
+      "errorDefaultUser": "Error: Default administrative account cannot be deleted.",
+      "userRemoved": "User account deleted.",
+      "userProvisioned": "New user successfully validated.",
+      "userUpdated": "User identity successfully updated.",
+      "logoUploaded": "Branding logo uploaded to preview buffer.",
+      "brandingReset": "Branding reset to system standards.",
+      "logoSizeError": "Image too large. Recommended max 2MB.",
+      "logoPreviewNotice": "Branding logo uploaded to preview buffer.",
+      "invalidUrl": "Invalid URL format. Must start with http/https.",
+      "invalidToken": "API Token missing, too short, or invalid.",
+      "invalidHost": "Wazuh Host is required (Min. 3 characters).",
+      "wazuhManagerSuccess": "Wazuh Manager: ✅ Connected — API Active",
+      "wazuhIndexerSuccess": "Wazuh Indexer: ✅ Connected — Cluster Active",
+      "openctiSuccess": "OpenCTI: ✅ Connected — Version",
+      "botConnected": "Bot Connected — @",
+      "networkError": "⚠️ Network Unreachable — Server might be down, behind a proxy, or blocked by CORS.",
+      "tokenRequired": "Telegram Bot Token is required.",
+      "invalidBotToken": "Invalid Bot Token."
+    },
+    "livePresence": {
+      "title": "ACTIVE SESSION MONITORING",
+      "subtitle": "Live Presence & Forensic Sessions",
+      "statusOnline": "ONLINE",
+      "statusOnDuty": "ON-DUTY",
+      "forceLogout": "FORCE DISCONNECT",
+      "confirmLogout": "Are you sure you want to terminate this user session?",
+      "loggedOutByAdmin": "Your session has been terminated by an administrator.",
+      "empty": "NO OTHER ACTIVE SESSIONS"
+    },
+    "shifts": {
+      "addShift": "ADD SHIFT WINDOW",
+      "shiftName": "SHIFT NAME",
+      "opsWindow": "OPERATIONAL WINDOW",
+      "startTime": "Start Time",
+      "endTime": "End Time",
+      "composition": "Required Composition",
+      "analysts": "Analysts (L1)",
+      "leaders": "Leaders (L2+)",
+      "minPersonnel": "MINIMUM PERSONNEL",
+      "minPersonnelDesc": "TARGET MINIMUM ACTIVE PERSONNEL FOR THIS SHIFT",
+      "govNoteTitle": "Operational Governance Note",
+      "govNoteDesc": "Assigned compositions are used for real-time duty compliance monitoring. Shifts failing to meet minimum staffing requirements will trigger alerts in the Control Center console."
+    }
+  },
+  "about": {
+    "title": "Platform Specifications",
+    "desc": "Integrated security command center for threat monitoring, incident response, and SOC operational reporting.",
+    "platformStatus": "Platform Status",
+    "coreEngine": "Core Engine",
+    "workflow": "Standard Operational Procedures",
+    "architecture": "Core System Architecture",
+    "disclaimerTitle": "Legal Disclaimer & Usage Limits",
+    "disclaimer": "All displayed data is operational confidential and protected by organizational security policies.",
+    "workflowPath": "Detection -> Validation -> Enrichment -> Decision -> Escalation -> Resolution",
+    "workflowStagesTitle": "Application Workflow",
+    "featureFunctionsTitle": "Features & Functions",
+    "systemCore": "SYSTEM CORE",
+    "versionStack": "VERSION STACK",
+    "architectureItems": [
+      "Core: React v18 + Vite + Tailwind CSS",
+      "Framework: Reusable Modular Infrastructure Patterns",
+      "Standard: Wazuh Security Data Schema Integration",
+      "Performance: Low-Latency Client-Side Engine"
+    ],
+    "featureFunctions": [
+      "Dashboard KPI and threat distribution visualization",
+      "Alert Register with advanced filters, bulk actions, and incident clustering",
+      "Triage Workspace with threat intelligence enrichment, playbooks, and case trails",
+      "Reports Center with data-driven PDF/CSV/JSON export",
+      "Operational Audit Log for analyst activity accountability",
+      "Settings & Integration Hub (Wazuh, OpenCTI, Telegram, Branding, User Management)"
+    ],
+    "workflowStages": [
+      {
+        "label": "Stage 1: Monitoring",
+        "desc": "Collect and display alerts from SIEM sources."
+      },
+      {
+        "label": "Stage 2: Validation",
+        "desc": "Filter alert priority based on severity, status, and category."
+      },
+      {
+        "label": "Stage 3: Enrichment",
+        "desc": "Add threat intelligence context for deeper analysis."
+      },
+      {
+        "label": "Stage 4: Triage",
+        "desc": "Determine investigation, escalation, false-positive, or closure decisions."
+      },
+      {
+        "label": "Stage 5: Reporting & Audit",
+        "desc": "Prepare reports, documentation, and activity audit trail."
+      }
+    ],
+    "securityEcosystem": "SECURITY ECOSYSTEM"
+  },
+  "ops": {
+    "command": "OPS COMMAND CENTER",
+    "duty": {
+      "on": "Team On-Duty",
+      "off": "Waiting for Shift",
+      "none": "NO ACTIVE SHIFT",
+      "status": "DUTY: {count} MEMBER(S) ACTIVE",
+      "standby": "SOC STANDBY",
+      "membersActive": "{count} MEMBERS ACTIVE"
+    },
+    "shifts": {
+      "morning": "Shift 1",
+      "afternoon": "Shift 2",
+      "night": "Shift 3"
+    },
+    "activeStatus": "{count} MEMBER(S) ACTIVE • LED BY {leader}",
+    "standbyStatus": "SYSTEM STANDBY • NO ACTIVE ANALYSTS",
+    "roster": {
+      "title": "Personnel Schedule",
+      "add": "ADD ANALYST"
+    },
+    "handover": {
+      "title": "Handover Logs",
+      "new": "NEW HANDOVER",
+      "empty": "No handover history available",
+      "label": "SHIFT HANDOVER",
+      "verifiedBy": "VERIFIED BY: {name}",
+      "modal": {
+        "title": "Execute Handover",
+        "subtitle": "Log shift transition and task status",
+        "label": "Tactical Shift Notes",
+        "placeholder": "Summarize key incidents, pending investigations, and task status...",
+        "submit": "SIGN-OFF & LOG"
+      }
+    },
+    "shift": {
+      "title": "Shift Parameters"
+    },
+    "stats": {
+      "sla": "SLA ADHERENCE",
+      "slaDesc": "Performance is optimal. Calculated based on MTTA targets."
+    },
+    "tactical": {
+      "title": "TACTICAL ALERT",
+      "desc": "Handover logs are legally binding SOC evidence. Ensure all major investigative threads are documented before shift termination."
+    },
+    "calendar": {
+      "title": "OPERATIONAL SCHEDULING",
+      "subtitle": "Rotation Planning & Working Hours",
+      "daysAbbr": [
+        "SUN",
+        "MON",
+        "TUE",
+        "WED",
+        "THU",
+        "FRI",
+        "SAT"
+      ],
+      "analysts": "ANALYSTS",
+      "modal": {
+        "title": "OPERATIONAL SCHEDULE",
+        "tabs": {
+          "shift": "Assignments",
+          "attendance": "Attendance"
+        }
+      },
+      "btn": {
+        "assign": "ASSIGN TEAM",
+        "save": "Save Schedule"
+      },
+      "noSchedule": "No analysts assigned yet",
+      "minPersonnel": "Min Personnel",
+      "ready": "READY"
+    },
+    "attendance": {
+      "title": "Attendance Status",
+      "sick": "SICK",
+      "leave": "LEAVE",
+      "holiday": "HOLIDAY",
+      "unauthorized": "ABSENT"
+    },
+    "monitor": {
+      "title": "Attendance & Compliance Monitor",
+      "subtitle": "Live Compliance Monitor",
+      "activeShift": "Active Shift",
+      "atShift": "Personnel on this Shift",
+      "empty": "NO SCHEDULE FOR TODAY",
+      "status": {
+        "onDuty": "ON-DUTY",
+        "awaiting": "AWAITING LOGIN",
+        "offSchedule": "OFF-SCHEDULE"
+      }
+    },
+    "shiftGuard": {
+      "entryTitle": "SHIFT START PROTOCOL",
+      "exitTitle": "SHIFT END PROTOCOL",
+      "subtitle": "SYSTEM ACCOUNTABILITY GUARD",
+      "identity": "ANALYST IDENTITY",
+      "timestamp": "LOCAL TIMESTAMP",
+      "entryLabel": "SHIFT START ACKNOWLEDGMENT",
+      "exitLabel": "DUTY SUMMARY & HANDOVER",
+      "required": "REQUIRED",
+      "entryPlaceholder": "Briefly acknowledge shift focus or received updates...",
+      "exitPlaceholder": "Summarize critical pending tickets, blocked tasks, and operational outcome...",
+      "entryDirective": "OPERATIONAL DUTY STARTED. ALL ACTIONS ARE RECORDED IN THE CENTRALIZED SECURITY LOGS.",
+      "exitDirective": "ENSURE ALL INCIDENT DOCUMENTATION IS COMPLETE. INCOMPLETE HANDOVER MAY DISRUPT NEXT SHIFT OPERATIONS.",
+      "actionCommence": "START SHIFT",
+      "actionFinalize": "END SHIFT",
+      "actionCancel": "CANCEL",
+      "liveQueue": "LIVE QUEUE CONTEXT",
+      "activeTickets": "YOUR ACTIVE TICKETS",
+      "valQueueEntry": "I acknowledge the current incident queue workload",
+      "valReadyEntry": "I am assigned and ready for active monitoring",
+      "valEthicsEntry": "I abide by the SOC Code of Professional Ethics",
+      "valUpdateExit": "I have updated all investigation notes for my tickets",
+      "valBriefExit": "Critical incidents have been briefed to the incoming team",
+      "valStabilityExit": "Environment is stable and handed over for continuity",
+      "managerEntryTitle": "OPERATIONAL COMMAND TAKEOVER",
+      "managerExitTitle": "SHIFT PERFORMANCE REVIEW",
+      "valTeamReady": "I confirm the team is complete and ready for duty",
+      "valKpiVerified": "I have verified shift KPIs and SLA adherence",
+      "adminEntryTitle": "INFRASTRUCTURE INTEGRITY CHECK",
+      "valInfraHealthy": "I confirm all system integrations are healthy",
+      "auditorEntryTitle": "COMPLIANCE SESSION INITIATION",
+      "valComplianceAware": "I acknowledge read-only access and audit logging",
+      "rosterSnapshot": "ACTIVE ROSTER SNAPSHOT",
+      "noActivePersonnel": "NO ACTIVE PERSONNEL IN SCOPE",
+      "contextAdmin": "TOTAL OPERATIONAL & INFRA CONTEXT",
+      "contextManager": "TEAM COMMAND CONTEXT",
+      "contextAuditor": "COMPLIANCE CONTEXT",
+      "unassignedAlerts": "CRITICAL/HIGH UNASSIGNED",
+      "alertsCount": "ALERTS",
+      "personnelOnDuty": "PERSONNEL ON-DUTY",
+      "infraReady": "INFRA READY",
+      "auditorNotice": "\"Observer-level access granted. Platform interaction is limited to investigative oversight. No production mutations are permitted.\""
+    }
+  },
+  "notFound": {
+    "title": "404 - Resource Out of Reach",
+    "desc": "The requested route or resource is not configured in this environment.",
+    "back": "Back to Main Gate"
+  },
+  "tooltips": {
+    "date": "Timestamp of security record creation by Wazuh Manager.",
+    "time": "Precise timestamp when threat behavior was identified.",
+    "alertId": "Unique global security identifier for a specific event record.",
+    "ruleId": "Identification number of the triggered technical detection rule.",
+    "ruleDescription": "Detailed technical description of threat behavior or anomaly.",
+    "category": "Primary incident classification group (Authentication, Attacks, Audit).",
+    "hostname": "Primary identity of the host system under surveillance.",
+    "sourceIp": "Origin IP address of the incident initiator or threat source.",
+    "status": "Current operational stage for a specific incident ticket.",
+    "analyst": "SOC operational officer performing the case investigation.",
+    "action": "Detailed triage workspace for technical analyst activities.",
+    "severity": "Risk urgency level for prioritizing operational response teams.",
+    "ruleLevel": "Technical rule criticality score. High values indicate critical risk.",
+    "agent": "Surveillance endpoint transmitting data to the management node.",
+    "falsePositive": "Notification that appears suspicious but is confirmed safe (benign).",
+    "incidentCandidate": "Security alert with indicators meeting the incident threshold.",
+    "mitreTechnique": "Mapping of Attack Tactics & Techniques (ATT&CK) for threat profiling.",
+    "fileIntegrityMonitoring": "Monitoring of unauthorized system attributes and file integrity.",
+    "eventCount": "Number of specific activities aggregated into one notification context.",
+    "decoder": "Parser that identifies and interprets raw log data streams.",
+    "totalAlerts": "Cumulative volume indicator of all registered digital security records.",
+    "openCases": "Pending incident queue currently under active investigation.",
+    "alertsProcessed": "Notification volume successfully passing initial validation into the triage system.",
+    "escalations": "Total notification records forwarded to advanced investigators for deep analysis.",
+    "falsePositives": "Notifications that appeared suspicious but were confirmed safe (benign).",
+    "mtta": "MTTA (Initial Response Time): Average speed of analyst first interaction with an alert.",
+    "mttr": "MTTR (Case Resolution Time): Average full lifespan of incident resolution from detection to closure.",
+    "incidentCandidates": "Security alerts with technical indicators meeting high-risk thresholds.",
+    "containmentActions": "Volume of digital mitigation procedures (isolation, block) successfully activated by the team.",
+    "falsePositiveRate": "Percentage ratio of safe alerts against total operational volume.",
+    "totalWeeklyAlerts": "Accumulated active alert volume registered in the last 7-day cycle.",
+    "monitoredAgents": "Total count of endpoint sensors transmitting data to the management node.",
+    "escalatedCases": "Ratio of cases requiring Tier-2 handling against total reports.",
+    "escalatedCase": "Alert forwarded to higher-level analyst for deeper investigation.",
+    "categoryDistribution": "Volume distribution by standard threat type classification.",
+    "topHosts": "List of top 5 endpoint hosts most frequently impacted.",
+    "topRules": "List of top 5 most active technical detection rules.",
+    "recentAlerts": "Live monitoring summary for the last 8 entries in the alert stream.",
+    "landingFeaturesTitle": "Summary of key capabilities available directly from the main portal.",
+    "architectureTitle": "Profile of the system technology stack underlying this interface.",
+    "workflowPath": "Standard operational methodology for alert handling and triage.",
+    "landingWorkflowTitle": "Sequence of operational workflow from initial detection to final reporting.",
+    "aboutSopWorkflow": "Chain of standard procedures across SOC teams to ensure consistent response.",
+    "aboutWorkflowStages": "Detailed application workflow stages from monitoring to reporting & audit.",
+    "aboutFeatureFunctions": "List of core platform functions used in daily SOC operations.",
+    "restoreFP": "Restore security record to the active priority queue.",
+    "dashboardTitle": "Visual summary of security posture and system health status.",
+    "alertsTitle": "Digital register of all detected threat behavior anomalies.",
+    "reportsTitle": "Access to operational and intelligence reporting modules.",
+    "ingestionTitle": "Technical tool for injecting external security logs into system storage.",
+    "fpTitle": "Log register for alerts excluded from investigation priority.",
+    "triageTitle": "Deep technical workspace for anomaly analysis and decision making.",
+    "correlatedCases": "Automated grouping based on Source IP or primary Host identity.",
+    "management": "Unified hub for SOC operations, shift compliance, and team accountability.",
+    "toLight": "Switch to Light Visual Scheme",
+    "toDark": "Switch to Dark Visual Scheme",
+    "indicator": {
+      "wazuh": {
+        "label": "WAZUH ECOSYSTEM",
+        "syncing": "Syncing alert data from Wazuh Indexer (Port 9200).",
+        "connected": "System fully connected. All Wazuh nodes (Manager & Indexer) operating normally.",
+        "disconnected": "Connection to Wazuh infrastructure lost. Please check Indexer service status.",
+        "partialConnected": "Partial connection — some nodes not yet ready.",
+        "error": "Connection failed: {message}",
+        "managerTitle": "API Manager (v4)",
+        "indexerTitle": "Indexer (Data Node)",
+        "host": "Node Address",
+        "port": "Service Port",
+        "user": "API Account",
+        "apiStatus": "API Status",
+        "dataStatus": "Data Status",
+        "lastSync": "Last sync",
+        "refreshInterval": "Sync Interval",
+        "seconds": "seconds",
+        "notConfigured": "Not configured",
+        "status": "Status"
+      },
+      "opencti": {
+        "label": "OPENCTI THREAT HUB",
+        "connected": "Intelligence feed active. Data enriched with OpenCTI threat indicators (STIX).",
+        "disconnected": "Intelligence service unreachable. Verify Bearer Token authentication.",
+        "url": "Endpoint Address",
+        "confidence": "Confidence Threshold",
+        "notConfigured": "Not configured",
+        "status": "Status"
+      },
+      "telegram": {
+        "label": "TELEGRAM ALERT GATEWAY",
+        "connected": "Bot operational. Alerts will be forwarded to target Telegram Chat ID instantly.",
+        "disconnected": "Bot gateway inactive. Please verify Bot Token and Chat ID.",
+        "chatId": "Chat Identity",
+        "notConfigured": "Not configured",
+        "status": "Status"
+      },
+      "demo": "Demo Mode: All services simulated as connected."
+    }
+  },
+  "footer": {
+    "builtWith": "Built with",
+    "forCommunity": "for the Community",
+    "feedback": "Technical Feedback",
+    "rights": "All intellectual property rights reserved.",
+    "securePlatform": "Security Operations Platform",
+    "documentation": "Documentation",
+    "support": "Support",
+    "privacy": "Privacy"
+  },
+  "onboarding": {
+    "btnNext": "Next",
+    "btnBack": "Back",
+    "btnSkip": "Skip",
+    "btnFinish": "Launch System",
+    "dashboard": {
+      "title": "Comprehensive Security Overview",
+      "desc": "Monitor KPI metrics, severity distribution, and threat trends in real-time for rapid decision making."
+    },
+    "alerts": {
+      "title": "Alert Register & Forensics",
+      "desc": "Explore all security logs with high-precision filters and clustering systems to eliminate noise."
+    },
+    "triage": {
+      "title": "Strategic Triage Workspace",
+      "desc": "Leverage Playbooks, OpenCTI integration, and investigative notes to validate and mitigate threats."
+    },
+    "management": {
+      "title": "Governance & Ops Management",
+      "desc": "Manage personnel schedules, monitor infrastructure health, and access SOP policy libraries in one hub."
+    },
+    "settings": {
+      "title": "Configuration Control Center",
+      "desc": "Configure organizational branding, API integrations, and user access management with full flexibility."
+    },
+    "forensic": {
+      "title": "Global Forensic Audit Logs",
+      "desc": "Complete accountability trail for every analyst action and data mutation within the system."
+    }
+  },
+  "audit": {
+    "title": "Forensic Log",
+    "subtitle": "Monitor operational activities and internal system automation.",
+    "tabAccountability": "PERSONNEL ACCOUNTABILITY",
+    "tabTechnical": "TECHNICAL DATA HISTORY",
+    "tableTitle": "System Audit Trail",
+    "searchPlaceholder": "SEARCH LOGS (ACTOR, ACTION, DETAILS)...",
+    "noRecordsFound": "NO FORENSIC RECORDS IDENTIFIED",
+    "headers": {
+      "status": "STATUS",
+      "timestamp": "TIMESTAMP",
+      "actor": "ACTOR / USER",
+      "category": "CATEGORY",
+      "action": "ACTION",
+      "details": "DETAILS"
+    },
+    "recordsFound": "RECORDS LOGGED",
+    "results": {
+      "success": "SUCCESS",
+      "failure": "FAILURE",
+      "warning": "WARNING"
+    },
+    "details": {
+      "title": "Forensic Detail Analysis",
+      "metadata": "Metadata Context",
+      "txHash": "TX-HASH",
+      "target": "TARGET",
+      "result": "RESULT",
+      "actionType": "ACTION TYPE",
+      "actorIdentity": "Actor Identity"
+    },
+    "diff": {
+      "initial": "INITIAL PROVISIONING DATA",
+      "purged": "RECORD DATA PURGED",
+      "before": "{key} (BEFORE)",
+      "after": "{key} (AFTER)"
+    },
+    "categories": {
+      "ALL": "ALL",
+      "AUTH": "IDENTITY ACCESS",
+      "USER_MANAGEMENT": "USER MANAGEMENT",
+      "CONFIGURATION": "CONFIGURATION",
+      "SHIFT": "SHIFT SCHEDULE",
+      "MANAGEMENT": "MANAGEMENT",
+      "ALERT": "ALERT ACTION",
+      "SYSTEM": "SYSTEM CORE",
+      "SETTINGS": "GLOBAL CONFIG",
+      "REPORTS": "REPORT GEN",
+      "GENERAL": "GENERAL",
+      "USER": "IDENTITY",
+      "CASE": "INCIDENT",
+      "POLICY": "POLICY",
+      "INFRA": "INFRASTRUCTURE",
+      "REPORT": "REPORTING",
+      "SOP": "PROCEDURE",
+      "CREDENTIAL": "SECURITY",
+      "FIREWALL": "FIREWALL",
+      "ACCOUNT": "ACCOUNT",
+      "SENSITIVE": "SENSITIVE",
+      "SERVICE": "SERVICE"
+    },
+    "technical": {
+      "administrativeAction": "Administrative Action"
+    }
+  }
+}
