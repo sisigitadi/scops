@@ -80,27 +80,31 @@ export default function AppTopbar({ onOpenSidebar, onOpenExitProtocol }: AppTopb
                   <Menu size={20} />
                 </button>
 
-                {/* Tactical Menu Hint - Only on mobile, pulses periodically */}
+                {/* Tactical Menu Hint - Only on mobile, pulses persistently */}
                 <motion.div 
-                  initial={{ opacity: 0, x: 10 }}
+                  initial={{ opacity: 0, y: 15 }}
                   animate={{ 
-                    opacity: [0, 1, 1, 0],
-                    x: [10, 3, 3, 10]
+                    opacity: 1,
+                    y: [15, 5, 15]
                   }}
                   transition={{ 
-                    duration: 4,
-                    repeat: Infinity,
-                    repeatDelay: 5
+                    opacity: { duration: 1 },
+                    y: { duration: 3, repeat: Infinity, ease: "easeInOut" }
                   }}
-                  className="lg:hidden absolute left-12 top-1/2 -translate-y-1/2 flex items-center gap-2 pointer-events-none whitespace-nowrap z-[110]"
+                  className="lg:hidden absolute left-1/2 -top-10 -translate-x-1/2 flex flex-col items-center pointer-events-none z-[200] whitespace-nowrap"
                 >
-                  <div className="flex items-center bg-bg-panel/90 border border-accent-cyan/30 rounded-lg py-1.5 px-3 backdrop-blur-md shadow-2xl shadow-accent-cyan/10">
-                    <span className="text-[7px] font-black text-accent-cyan tracking-[0.4em] uppercase mr-2">{t('nav.menu') || 'MENU'}</span>
-                    <motion.div
-                      animate={{ x: [-2, 2, -2] }}
-                      transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+                  <div className="flex flex-col items-center">
+                    <div className="bg-bg-panel/95 border border-accent-cyan/40 rounded-lg py-1.5 px-3 backdrop-blur-md shadow-[0_0_20px_rgba(34,211,238,0.2)]">
+                      <span className="text-[8px] font-black text-accent-cyan tracking-[0.4em] uppercase">{t('nav.menu') || 'MENU'}</span>
+                    </div>
+                    {/* Downward pointing arrow */}
+                    <motion.div 
+                      animate={{ y: [0, 4, 0] }}
+                      transition={{ duration: 1.5, repeat: Infinity }}
+                      className="mt-1 flex flex-col items-center"
                     >
-                      <div className="w-1.5 h-1.5 border-t-2 border-l-2 border-accent-cyan -rotate-45" />
+                      <div className="w-px h-3 bg-accent-cyan/60" />
+                      <div className="w-1.5 h-1.5 border-r border-b border-accent-cyan rotate-45 -mt-1" />
                     </motion.div>
                   </div>
                 </motion.div>
