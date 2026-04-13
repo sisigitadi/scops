@@ -50,34 +50,28 @@ export default function AppFooter() {
   ];
 
   return (
-    <footer className="w-full mt-auto py-6 px-8 flex flex-col items-center justify-center gap-4 bg-bg-topbar/5 backdrop-blur-sm relative z-10">
+    <footer className="w-full mt-auto py-10 px-8 flex flex-col items-center justify-center gap-6 bg-transparent relative z-10">
       <div className="absolute inset-x-0 top-0 h-[1px] bg-gradient-to-r from-transparent via-border-primary/20 to-transparent" />
       
-      <div className="flex flex-wrap items-center justify-center gap-4 text-[9px] font-black uppercase tracking-[0.2em]">
-        <motion.button 
-          onClick={() => setIsAboutOpen(true)}
-          className="text-accent-cyan hover:opacity-70 transition-opacity"
-        >
-          {(t('nav.about') as string) || 'ABOUT'}
-        </motion.button>
-        <div className="w-1 h-1 rounded-full bg-border-primary/20" />
-        <div className="flex items-center gap-3">
-          {socialLinks.map((social) => (
-            <a key={social.id} href={social.url} target="_blank" rel="noopener noreferrer" className="text-foreground-tertiary hover:text-accent-cyan transition-colors">
-              {social.icon}
-            </a>
-          ))}
-        </div>
+      {/* Row 1: Platform Information */}
+      <div className="flex items-center gap-6">
+        {socialLinks.map((social) => (
+          <a key={social.id} href={social.url} target="_blank" rel="noopener noreferrer" className="p-2.5 rounded-xl bg-bg-panel/40 border border-border-primary/20 text-foreground-tertiary hover:text-accent-cyan hover:border-accent-cyan/40 hover:shadow-[0_0_15px_rgba(34,211,238,0.1)] transition-all">
+            {social.icon}
+          </a>
+        ))}
       </div>
 
-      <div className="flex flex-col items-center gap-2">
-        <div className="flex items-center gap-2 text-[9px] font-black text-foreground-tertiary uppercase tracking-widest opacity-60">
-          <span>{(t('footer.builtWith') as string)}</span>
-          <Heart size={10} className="text-status-danger-text animate-pulse" fill="currentColor" />
-          <span>{(t('footer.forCommunity') as string)}</span>
-          <span>•</span>
-          <span className="text-foreground-primary opacity-100">&copy; {currentYear} SIGIT ADI</span>
-        </div>
+      {/* Row 2: Community Sentiment */}
+      <div className="flex items-center gap-2 text-[9px] font-black text-foreground-tertiary uppercase tracking-[0.3em] opacity-60">
+        <span>{(t('footer.builtWith') as string) || 'DIBUAT DENGAN'}</span>
+        <Heart size={12} className="text-status-danger-text animate-pulse" fill="currentColor" />
+        <span>{(t('footer.forCommunity') as string) || 'UNTUK KOMUNITAS'}</span>
+      </div>
+
+      {/* Row 3: Operational Signature */}
+      <div className="text-[10px] font-black text-foreground-secondary uppercase tracking-[0.4em]">
+        &copy; 2026 SIGIT ADI
       </div>
 
       <AboutModal isOpen={isAboutOpen} onClose={() => setIsAboutOpen(false)} />
