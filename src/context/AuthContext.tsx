@@ -141,7 +141,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     if (user && !user.avatar) {
       setUser(prev => prev ? { 
         ...prev, 
-        avatar: `https://api.dicebear.com/7.x/avataaars/svg?seed=${prev.name || prev.email}&skinColor=ffdbb4,edb98a` 
+        avatar: `https://api.dicebear.com/7.x/avataaars/svg?seed=${prev.name || prev.email}&skinColor=d08b5b&top=shortFlat,shortRound,shortWaved,sides,theCaesar,theCaesarAndSidePart&topProbability=100&facialHairProbability=40&facialHair=beardLight,beardMedium,moustacheFancy,moustacheMagnum` 
       } : null);
     }
   }, [user]);
@@ -184,7 +184,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         }
         const userWithAvatar = response.user || response;
         if (!userWithAvatar.avatar) {
-          userWithAvatar.avatar = `https://api.dicebear.com/7.x/avataaars/svg?seed=${userWithAvatar.name || userWithAvatar.email}&skinColor=ffdbb4,edb98a`;
+          userWithAvatar.avatar = `https://api.dicebear.com/7.x/avataaars/svg?seed=${userWithAvatar.name || userWithAvatar.email}&skinColor=d08b5b&top=shortFlat,shortRound,shortWaved,sides,theCaesar,theCaesarAndSidePart&topProbability=100&facialHairProbability=40&facialHair=beardLight,beardMedium,moustacheFancy,moustacheMagnum`;
         }
         return userWithAvatar;
       } catch (error: any) {
@@ -231,7 +231,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     }
 
     if (!matchedUser.avatar) {
-      matchedUser.avatar = `https://api.dicebear.com/7.x/avataaars/svg?seed=${matchedUser.name || matchedUser.email}&skinColor=ffdbb4,edb98a`;
+      matchedUser.avatar = `https://api.dicebear.com/7.x/avataaars/svg?seed=${matchedUser.name || matchedUser.email}&skinColor=d08b5b&top=shortFlat,shortRound,shortWaved,sides,theCaesar,theCaesarAndSidePart&topProbability=100&facialHairProbability=40&facialHair=beardLight,beardMedium,moustacheFancy,moustacheMagnum`;
     }
 
     return matchedUser;

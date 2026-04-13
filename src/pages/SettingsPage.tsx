@@ -369,14 +369,7 @@ export default function SettingsPage() {
               </div>
 
               <div className="flex items-center gap-4">
-                <button 
-                  onClick={handleSave}
-                  disabled={isReadOnly}
-                  className={`premium-button !py-3 !px-8 !text-[10px] !bg-accent-cyan !border-none !text-foreground-inverse shadow-xl shadow-accent-cyan/20 uppercase font-bold tracking-widest ${isReadOnly ? 'opacity-30' : 'hover:scale-105 transition-all'} ${isSaved ? '!bg-status-success-bg/20 !text-status-success-text' : ''}`}
-                >
-                  {isSaved ? <Check size={14} className="mr-3" /> : <Save size={14} className="mr-3" />}
-                  {isSaved ? t('settings.buttons.saved') : t('settings.buttons.saveConfig')}
-                </button>
+                {/* Save button removed from header - using floating action hub */}
               </div>
             </div>
           </header>

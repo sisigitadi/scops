@@ -55,7 +55,7 @@ export default function AuditPage() {
     data: null 
   });
 
-  const auditGridTemplate = 'minmax(130px, 0.8fr) minmax(240px, 2fr) minmax(180px, 1.2fr) minmax(320px, 2.5fr) 80px';
+  const auditGridTemplate = 'minmax(110px, 0.8fr) minmax(140px, 1fr) minmax(160px, 1.2fr) minmax(280px, 2.5fr) 70px';
   const tableContainerRef = useRef<HTMLDivElement>(null);
 
   // Accountability Logs (Human/Process centric)
@@ -318,7 +318,7 @@ export default function AuditPage() {
                 ref={tableContainerRef}
                 className="overflow-x-auto overflow-y-auto max-h-[70vh] custom-scrollbar rounded-2xl border border-border-primary/20 bg-bg-panel/60 relative"
               >
-                <div className="min-w-[1250px] relative">
+                <div className="min-w-[800px] lg:min-w-full relative">
                   <div
                     className="grid sticky top-0 z-50 bg-bg-panel border-y-2 border-border-primary text-[10px] font-black text-foreground-tertiary uppercase tracking-[0.2em]"
                     style={{ gridTemplateColumns: auditGridTemplate }}

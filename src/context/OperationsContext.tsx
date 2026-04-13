@@ -12,7 +12,8 @@ import { goldCases } from '../data/goldDataset';
 import { 
   demoPersonnel, 
   demoHandoverLogs, 
-  demoReliabilityLogs 
+  demoReliabilityLogs,
+  demoSchedules
 } from '../data/demoOperationsData';
 
 export interface Personnel {
@@ -124,7 +125,7 @@ export const OperationsProvider = ({ children }: { children: ReactNode }) => {
         id: u.id || u.email,
         name: u.name,
         role: u.role || 'ANALYST',
-        avatar: `https://api.dicebear.com/7.x/avataaars/svg?seed=${u.name}&skinColor=ffdbb4,edb98a&top=shortCurly,shortFlat,shortRound,shortWaved,sides,theCaesar,theCaesarAndSidePart&topProbability=100&facialHairProbability=40&facialHair=beardLight,beardMedium,moustacheFancy,moustacheMagnum`,
+        avatar: `https://api.dicebear.com/7.x/avataaars/svg?seed=${u.name}&skinColor=d08b5b&top=shortFlat,shortRound,shortWaved,sides,theCaesar,theCaesarAndSidePart&topProbability=100&facialHairProbability=40&facialHair=beardLight,beardMedium,moustacheFancy,moustacheMagnum`,
         status: 'standby'
       }));
       
@@ -336,8 +337,23 @@ export const OperationsProvider = ({ children }: { children: ReactNode }) => {
     const saved = localStorage.getItem('scops_handover_logs');
     return saved ? JSON.parse(saved) : [];
   });
-  const [schedules, setSchedules] = useState<Record<string, Record<string, string[]>>>({});
-  const [attendance, setAttendance] = useState<Record<string, Record<string, string>>>({});
+  const [schedules, setSchedules] = useState<Record<string, Record<string, string[]>>>(() => {
+    if (isDemoMode()) return demoSchedules;
+    return {};
+  });
+  const [attendance, setAttendance] = useState<Record<string, Record<string, string>>>(() => {
+    if (isDemoMode()) {
+      // Auto-populate attendance for today to show 'On Duty' instead of 'Awaiting'
+      const today = new Date().toISOString().split('T')[0];
+      const todaySched = demoSchedules[today] || {};
+      const att: Record<string, string> = {};
+      Object.values(todaySched).flat().forEach(id => {
+        att[id] = 'on-duty';
+      });
+      return { [today]: att };
+    }
+    return {};
+  });
 
   const fetchCalendarData = useCallback(async () => {
     if (isDemoMode()) return;
@@ -382,7 +398,7 @@ export const OperationsProvider = ({ children }: { children: ReactNode }) => {
           name: t.name, 
           role: t.role, 
           status: 'on-duty',
-          avatar: `https://api.dicebear.com/7.x/avataaars/svg?seed=${t.name}&skinColor=ffdbb4,edb98a&top=shortCurly,shortFlat,shortRound,shortWaved,sides,theCaesar,theCaesarAndSidePart&topProbability=100&facialHairProbability=40&facialHair=beardLight,beardMedium,moustacheFancy,moustacheMagnum`,
+          avatar: `https://api.dicebear.com/7.x/avataaars/svg?seed=${t.name}&skinColor=d08b5b&top=shortFlat,shortRound,shortWaved,sides,theCaesar,theCaesarAndSidePart&topProbability=100&facialHairProbability=40&facialHair=beardLight,beardMedium,moustacheFancy,moustacheMagnum`,
           joinedAt: t.joinedAt, 
           shiftNotes: t.notes 
         } as Personnel)));
