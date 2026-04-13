@@ -259,7 +259,7 @@ export default function AuditPage() {
 
         <StaggerItem>
            <div className="flex flex-col lg:flex-row gap-6 mb-8 items-start lg:items-center">
-              <div className="flex p-1.5 bg-bg-panel/40 border border-border-primary/20 rounded-2xl md:w-fit">
+              <div className="flex flex-wrap p-1.5 bg-bg-panel/40 border border-border-primary/20 rounded-2xl w-full md:w-fit">
                  {[
                   { id: 'ACCOUNTABILITY', label: t('audit.tabAccountability'), icon: <User size={14} /> },
                   { id: 'TECHNICAL', label: t('audit.tabTechnical'), icon: <DatabaseIcon size={14} /> }
@@ -267,10 +267,10 @@ export default function AuditPage() {
                   <button
                     key={tab.id}
                     onClick={() => { setActiveTab(tab.id as any); setFilterType('ALL'); }}
-                    className={`flex items-center gap-3 px-6 py-3 rounded-xl text-[10px] font-black tracking-widest transition-all ${activeTab === tab.id ? 'bg-accent-cyan border border-accent-cyan/40 text-background-main shadow-lg shadow-accent-cyan/20' : 'text-foreground-tertiary hover:text-foreground-primary'}`}
+                    className={`flex-1 md:flex-none flex items-center justify-center gap-3 px-3 sm:px-6 py-3 rounded-xl text-[10px] font-black tracking-widest transition-all ${activeTab === tab.id ? 'bg-accent-cyan border border-accent-cyan/40 text-background-main shadow-lg shadow-accent-cyan/20' : 'text-foreground-tertiary hover:text-foreground-primary'}`}
                   >
                     {tab.icon}
-                    {tab.label}
+                    <span className="truncate sm:whitespace-normal">{tab.label}</span>
                   </button>
                 ))}
               </div>
@@ -303,11 +303,11 @@ export default function AuditPage() {
         </StaggerItem>
         <StaggerItem>
           <div className="premium-capsule p-0 overflow-visible bg-bg-panel/80 backdrop-blur-2xl">
-            <div className="px-8 py-5 bg-bg-panel/60 border-b-2 border-border-primary flex items-center justify-between gap-6 relative z-10 font-black">
-              <span className="text-[10px] font-black uppercase tracking-[0.3em] text-accent-cyan bg-accent-cyan/10 px-6 py-2 rounded-xl border border-accent-cyan/20">
+            <div className="px-5 sm:px-8 py-5 bg-bg-panel/60 border-b-2 border-border-primary flex flex-col sm:flex-row sm:items-center justify-between gap-4 sm:gap-6 relative z-10 font-black">
+              <span className="text-[9px] sm:text-[10px] font-black uppercase tracking-[0.2em] sm:tracking-[0.3em] text-accent-cyan bg-accent-cyan/10 px-4 sm:px-6 py-2 rounded-xl border border-accent-cyan/20 w-fit">
                 {currentLogs.length} {(t('audit.recordsFound') as string)}
               </span>
-              <div className="flex items-center gap-3 opacity-40">
+              <div className="flex items-center gap-3 opacity-40 group-hover:opacity-100 transition-opacity">
                 <Shield size={14} className="text-accent-cyan" />
                 <span className="text-[10px] uppercase tracking-widest">{(t('common.integrityVerified') as string)}</span>
               </div>
@@ -318,7 +318,7 @@ export default function AuditPage() {
                 ref={tableContainerRef}
                 className="overflow-x-auto overflow-y-auto max-h-[70vh] custom-scrollbar rounded-2xl border border-border-primary/20 bg-bg-panel/60 relative"
               >
-                <div className="min-w-[800px] lg:min-w-full relative">
+                <div className="min-w-[600px] lg:min-w-full relative">
                   <div
                     className="grid sticky top-0 z-50 bg-bg-panel border-y-2 border-border-primary text-[10px] font-black text-foreground-tertiary uppercase tracking-[0.2em]"
                     style={{ gridTemplateColumns: auditGridTemplate }}
