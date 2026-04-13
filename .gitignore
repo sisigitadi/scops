@@ -32,7 +32,6 @@ logs
 # Internal Documentation & Artifacts
 *.md
 !README.md
-!manual_book.md
 scratch/
 .gemini/
 dev.db
