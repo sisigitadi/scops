@@ -35,7 +35,7 @@ export default defineConfig(({ mode }) => ({
       }
     })
   ],
-  base: mode === 'production' ? '/scops/' : '/',
+  base: '/',
   server: {
     proxy: {
       '/api': {

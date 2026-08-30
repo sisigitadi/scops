@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.1.0",
   "type": "module",
-  "homepage": "https://sisigitadi.github.io/scops/",
+  "homepage": "https://socops.sigitadi.id",
   "scripts": {
     "dev": "vite",
     "dev:bff": "node server/src/index.js",
