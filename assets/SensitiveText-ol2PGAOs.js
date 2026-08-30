@@ -1,0 +1,1 @@
+import{j as e}from"./index-Ciizd4Ps.js";function r({value:t,className:n="",mono:o=!1}){const s=t==null||t===""?"-":t;return e.jsx("span",{className:[n,o?"font-mono text-[11px] tracking-tight":""].filter(Boolean).join(" "),children:s})}export{r as S};

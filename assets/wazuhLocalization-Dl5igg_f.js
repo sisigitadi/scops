@@ -1,0 +1,1 @@
+const e={Authentication:"Autentikasi","Privilege Escalation":"Peningkatan Hak Akses","Network Anomaly":"Anomali Jaringan","File Integrity Monitoring":"Pemantauan Integritas File"};function r(n,i){return i!=="id"?n:e[n]||n}function a(n,i){return n?i!=="id"?n:{...n,category:r(n.category,i)}:null}function o(n,i){return n.map(t=>a(t,i))}export{o as l};
