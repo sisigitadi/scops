@@ -2568,6 +2568,7 @@ Setiap kali melakukan deployment ke repositori GitHub (`https://github.com/sisig
 | 2026-08-30 17:35 WIB | [UPGRADE] | v20.1.0 - MITRE ATT&CK Tactical Hub: Implemented 14 enterprise tactic matrix with dynamic alert correlation, heatmap intensity visualization, keyword matchers, and drilldown modals. | Done |
 | 2026-08-30 17:40 WIB | [UPGRADE] | v20.2.0 - SOAR-Lite Automation Engine: Implemented event-driven rule builder (IF condition -> THEN action), batch alert test simulator, suppression rules, and Telegram alert dispatchers. | Done |
 | 2026-08-30 17:45 WIB | [DEPLOY] | v20.3.0 - Enterprise Docker Multi-Container Architecture: Orchestrated production docker-compose.yml (Postgres 16, Redis 7, Express+Prisma BFF, Nginx SPA) with healthchecks and security configs. | Done |
+| 2026-08-30 17:50 WIB | [DEPLOY] | v20.3.1 - GitHub Live Sync & Pages Deployment: Pushed merged main branch to `https://github.com/sisigitadi/scops` and published production bundle live to GitHub Pages (`gh-pages`). | Done |
 
 ---
 
