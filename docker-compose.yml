@@ -1,0 +1,106 @@
+# =======================================================
+# SecOps Command Center — Production Docker Orchestration
+# Stack: PostgreSQL 16 + Redis 7 + Node.js BFF + Nginx SPA
+# =======================================================
+
+version: '3.8'
+
+services:
+  # 1. Primary Relational Storage (Target Database)
+  postgres:
+    image: postgres:16-alpine
+    container_name: secops-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-socops}
+      POSTGRES_USER: ${POSTGRES_USER:-socops_admin}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-socops_secret_pass_2026}
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-socops_admin} -d ${POSTGRES_DB:-socops}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - secops-net
+
+  # 2. Redis In-Memory Cache & Session Store
+  redis:
+    image: redis:7-alpine
+    container_name: secops-redis
+    restart: unless-stopped
+    command: redis-server --appendonly yes --requirepass "${REDIS_PASSWORD:-socops_redis_secret}"
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "-a", "${REDIS_PASSWORD:-socops_redis_secret}", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - secops-net
+
+  # 3. Backend-for-Frontend (Express + Socket.io + Prisma Engine)
+  bff:
+    build:
+      context: .
+      dockerfile: Dockerfile.bff
+    container_name: secops-bff
+    restart: unless-stopped
+    environment:
+      NODE_ENV: production
+      BFF_PORT: 8787
+      BFF_ALLOWED_ORIGIN: "*"
+      BFF_AUTH_JWT_SECRET: ${BFF_AUTH_JWT_SECRET:-secops_production_jwt_secret_key_2026_super_secure}
+      BFF_ENCRYPTION_KEY: ${BFF_ENCRYPTION_KEY:-secops_production_vault_aes_256_encryption_key}
+      DATABASE_URL: ${DATABASE_URL:-file:../prisma/dev.db}
+      WAZUH_MANAGER_HOST: ${WAZUH_MANAGER_HOST:-}
+      WAZUH_MANAGER_PORT: ${WAZUH_MANAGER_PORT:-55000}
+      WAZUH_MANAGER_USER: ${WAZUH_MANAGER_USER:-wazuh}
+      WAZUH_MANAGER_PASSWORD: ${WAZUH_MANAGER_PASSWORD:-}
+      WAZUH_INDEXER_HOST: ${WAZUH_INDEXER_HOST:-}
+      WAZUH_INDEXER_PORT: ${WAZUH_INDEXER_PORT:-9200}
+      WAZUH_INDEXER_USER: ${WAZUH_INDEXER_USER:-admin}
+      WAZUH_INDEXER_PASSWORD: ${WAZUH_INDEXER_PASSWORD:-}
+      OPENCTI_URL: ${OPENCTI_URL:-}
+      OPENCTI_TOKEN: ${OPENCTI_TOKEN:-}
+      TELEGRAM_BOT_TOKEN: ${TELEGRAM_BOT_TOKEN:-}
+      TELEGRAM_CHAT_ID: ${TELEGRAM_CHAT_ID:-}
+    ports:
+      - "8787:8787"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    networks:
+      - secops-net
+
+  # 4. High-Performance Tactical Frontend (Nginx Static + Reverse Proxy)
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: secops-frontend
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    depends_on:
+      - bff
+    networks:
+      - secops-net
+
+volumes:
+  postgres_data:
+    driver: local
+  redis_data:
+    driver: local
+
+networks:
+  secops-net:
+    driver: bridge
